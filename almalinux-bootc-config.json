@@ -1,0 +1,15 @@
+{
+    "Labels": {
+        "containers.bootc": "1",
+        "bootc.diskimage-builder": "quay.io/centos-bootc/bootc-image-builder",
+        "redhat.id": "almalinux",
+        "redhat.version-id": "9",
+        "org.opencontainers.image.source": "https://github.com/karelvanhecke/almalinux-bootc",
+        "org.opencontainers.image.description": "AlmaLinux bootc base image",
+        "org.opencontainers.image.licenses": "MIT"
+    },
+    "StopSignal": "SIGRTMIN+3",
+    "Env": [
+        "container=oci"
+    ]
+}
