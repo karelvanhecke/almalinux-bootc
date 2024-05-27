@@ -35,8 +35,8 @@ jobs:
       REGISTRY: ghcr.io/${{ github.repository_owner }}/bootc
     needs: check-changes
     if: needs.check-changes.outputs.image == 'true'
-    outputs:
-      digest: 
+    permissions:
+      packages: write
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
