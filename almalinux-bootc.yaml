@@ -17,6 +17,9 @@ include:
 packages:
   - dnf-yum
 
+exclude-packages:
+  - subscription-manager
+
 postprocess:
   - |
     #!/usr/bin/env bash
