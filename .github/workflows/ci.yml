@@ -26,7 +26,7 @@ jobs:
               - '.github/workflows/ci.yml'
               - 'fedora-bootc'
               - 'almalinux-bootc*'
-              - 'Containerfile'
+              - 'Dockerfile'
 
   build-push:
     name: Build base image
@@ -72,7 +72,7 @@ jobs:
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ steps.tags.outputs.tags }}
           containerfiles: |
-            Containerfile
+            Dockerfile
           oci: 'true'
           extra-args: |
             --security-opt=label=disable
