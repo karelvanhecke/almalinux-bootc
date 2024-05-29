@@ -4,6 +4,9 @@ on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
 
 jobs:
   check-changes:
@@ -20,7 +23,6 @@ jobs:
         with:
           filters: |
             image:
-              - '.github/workflows/ci.yml'
               - 'fedora-bootc'
               - '*.json'
               - '*.yaml'
@@ -30,10 +32,8 @@ jobs:
 
   build:
     name: Build base image
-    env:
-      IMAGE_NAME: almalinux
     needs: check-changes
-    if: needs.check-changes.outputs.image == 'true'
+    if: ${{ needs.check-changes.outputs.image == 'true' && github.event_name == 'pull_request' }}
     outputs:
       localimage: ${{ steps.export.outputs.localimage }}
       ociarchive: ${{ steps.export.outputs.ociarchive }}
@@ -48,7 +48,7 @@ jobs:
         id: build
         uses: redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056 # v2.13
         with:
-          image: ${{ env.IMAGE_NAME }}
+          image: almalinux-ci
           tags: ${{ github.sha }}
           containerfiles: |
             Dockerfile
@@ -104,3 +104,10 @@ jobs:
           ${{ needs.build.outputs.localimage }}
           bootc install to-disk --generic-image --skip-fetch-check --via-loopback
           /workdir/disk.img
+
+  release:
+    name: Release
+    permissions:
+      packages: write
+    if: ${{ needs.check-changes.outputs.image == 'true' && github.event_name == 'push' }}
+    uses: ./.github/workflows/release.yml
