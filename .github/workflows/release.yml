@@ -1,0 +1,76 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  build-publish:
+    name: Build and publish base image
+    env:
+      IMAGE_NAME: almalinux
+      REGISTRY: ghcr.io/${{ github.repository_owner }}/bootc
+    permissions:
+      packages: write
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+        with:
+          submodules: 'true'
+
+      - name: Set image tags
+        id: tags
+        run: |
+          #!/bin/bash
+
+          set -xeo pipefail
+          releasever=$(yq '.releasever' 'almalinux-bootc.yaml')
+          tags=$releasever
+          suffixes="${{ github.sha }} $(date +%Y%m%d) ${{ github.ref_name }}"
+
+          for suffix in $suffixes
+          do 
+            tags+=" ${releasever}-${suffix}"
+          done
+          echo "tags=$tags" >> "$GITHUB_OUTPUT"
+
+      - name: Build image
+        id: build
+        uses: redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056 # v2.13
+        with:
+          image: ${{ env.IMAGE_NAME }}
+          tags: ${{ steps.tags.outputs.tags }}
+          containerfiles: |
+            Dockerfile
+          oci: 'true'
+          extra-args: |
+            --security-opt=label=disable
+            --cap-add=all
+            --device /dev/fuse
+
+      - name: Push image to ghcr.io
+        id: push
+        uses: redhat-actions/push-to-registry@5ed88d269cf581ea9ef6dd6806d01562096bee9c # v2.8
+        with:
+          image: ${{ steps.build.outputs.image }}
+          tags: ${{ steps.build.outputs.tags }}
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Cosign
+        uses: sigstore/cosign-installer@59acb6260d9c0ba8f4a2f9d9b48431a222b68e20 # v3.5.0
+
+      - name: Sign image
+        env:
+          COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
+          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
+        run: >-
+          cosign sign --yes --key env://COSIGN_PRIVATE_KEY
+          --registry-password='${{ secrets.GITHUB_TOKEN }}'
+          --registry-username='${{ github.actor }}'
+          ${{ env.REGISTRY }}/${{ steps.build.outputs.image }}@${{ steps.push.outputs.digest }}
