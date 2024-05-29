@@ -20,88 +20,12 @@ packages:
 exclude-packages:
   - subscription-manager
 
-postprocess:
-  - |
-    #!/usr/bin/env bash
-    set -eo pipefail
-    cat << 'EOF' > /usr/lib/bootc/install/10-defaults.toml
-    [install.filesystem.root]
-    type = "xfs"
-    EOF
-
-  - |
-    #!/usr/bin/env bash
-    set -eo pipefail
-    mkdir -p /etc/pki/cosign
-    cat << 'EOF' > /etc/pki/cosign/bootc.pub
-    -----BEGIN PUBLIC KEY-----
-    MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1lKjx6kge0FRX0Q3AjSROFMfpA2v
-    pUA9ujQGkOwccFYiIdLm29l7GVsq7PwM4nwfRWS4lPRnxqZMtSRnxywlGg==
-    -----END PUBLIC KEY-----
-    EOF
-
-  - |
-    #!/usr/bin/env bash
-    set -eo pipefail
-    cat << 'EOF' > /etc/containers/policy.json
-    {
-        "default": [
-            {
-                "type": "reject"
-            }
-        ],
-        "transports": {
-            "docker": {
-                "ghcr.io/karelvanhecke/bootc": [
-                    {
-                        "type": "sigstoreSigned",
-                        "keyPath": "/etc/pki/cosign/bootc.pub",
-                        "signedIdentity": {
-                            "type": "matchRepository"
-                        }
-                    }
-                ],
-                "registry.access.redhat.com": [
-                    {
-                        "type": "signedBy",
-                        "keyType": "GPGKeys",
-                        "keyPaths": [
-                          "/etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release",
-                          "/etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta"
-                        ]
-                    }
-                ],
-                "registry.redhat.io": [
-                    {
-                        "type": "signedBy",
-                        "keyType": "GPGKeys",
-                        "keyPaths": [
-                          "/etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release",
-                          "/etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta"
-                        ]
-                    }
-                ],
-                "": [
-                    {
-                        "type": "insecureAcceptAnything"
-                    }
-                ]
-            },
-            "docker-daemon": {
-                "": [
-                    {
-                        "type": "insecureAcceptAnything"
-                    }
-                ]
-            }
-        }
-    }
-    EOF
-
-  - |
-    #!/usr/bin/env bash
-    set -eo pipefail
-    cat << 'EOF' > /etc/containers/registries.d/default.yaml
-    default-docker:
-      use-sigstore-attachments: true
-    EOF
+add-files:
+  - - bootc-install.toml
+    - /usr/lib/bootc/install/10-defaults.toml
+  - - cosign.pub
+    - /etc/pki/cosign/bootc.pub
+  - - containers-policy.json
+    - /etc/containers/policy.json
+  - - registries-default.yaml
+    - /etc/containers/registries.d/default.yaml
