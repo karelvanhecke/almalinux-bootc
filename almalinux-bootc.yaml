@@ -24,8 +24,8 @@ add-files:
   - - bootc-install.toml
     - /usr/lib/bootc/install/10-defaults.toml
   - - cosign.pub
-    - /etc/pki/cosign/bootc.pub
+    - /etc/pki/containers/ghcr.io-karelvanhecke-bootc.pub
   - - containers-policy.json
     - /etc/containers/policy.json
-  - - registries-default.yaml
-    - /etc/containers/registries.d/default.yaml
+  - - containers-registry.yaml
+    - /etc/containers/registries.d/ghcr.io-karelvanhecke-bootc.yaml
