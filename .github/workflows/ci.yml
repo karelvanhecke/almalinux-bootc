@@ -28,7 +28,7 @@ jobs:
               - '*.yaml'
               - '*.toml'
               - 'Dockerfile'
-              - 'cosign.pub'
+              - '*.pub'
 
   build-push:
     name: Build base image
