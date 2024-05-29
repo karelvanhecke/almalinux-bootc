@@ -23,10 +23,13 @@ jobs:
         with:
           filters: |
             image:
-              - '.github/workflows/ci.yml'
               - 'fedora-bootc'
               - 'almalinux-bootc*'
               - 'Dockerfile'
+              - 'cosign.pub'
+              - 'containers-policy.json'
+              - 'registries-default.yaml'
+              - 'bootc-install.toml'
 
   build-push:
     name: Build base image
