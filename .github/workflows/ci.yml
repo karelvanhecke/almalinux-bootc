@@ -24,12 +24,11 @@ jobs:
           filters: |
             image:
               - 'fedora-bootc'
-              - 'almalinux-bootc*'
+              - '*.json'
+              - '*.yaml'
+              - '*.toml'
               - 'Dockerfile'
               - 'cosign.pub'
-              - 'containers-policy.json'
-              - 'registries-default.yaml'
-              - 'bootc-install.toml'
 
   build-push:
     name: Build base image

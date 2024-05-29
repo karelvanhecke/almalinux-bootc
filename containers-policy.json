@@ -9,7 +9,7 @@
             "ghcr.io/karelvanhecke/bootc": [
                 {
                     "type": "sigstoreSigned",
-                    "keyPath": "/etc/pki/cosign/bootc.pub",
+                    "keyPath": "/etc/pki/containers/ghcr.io-karelvanhecke-bootc.pub",
                     "signedIdentity": {
                         "type": "matchRepository"
                     }
