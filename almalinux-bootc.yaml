@@ -29,3 +29,14 @@ add-files:
     - /etc/containers/policy.json
   - - containers-registry.yaml
     - /etc/containers/registries.d/ghcr.io-karelvanhecke-bootc.yaml
+  - - containers-registry-toolbox.yaml
+    - /etc/containers/registries.d/quay.io-toolbx-images.yaml
+  - - cosign-toolbox.pub
+    - /etc/pki/containers/quay.io-toolbx-images.pub
+
+postprocess:
+  - |
+    #!/usr/bin/env bash
+    set -xeo pipefail
+
+    sed -i 's,image = "registry.access.redhat.com/ubi9/toolbox:latest",image = "quay.io/toolbx-images/almalinux-toolbox:9",' /etc/containers/toolbox.conf
