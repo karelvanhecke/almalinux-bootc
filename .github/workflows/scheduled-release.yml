@@ -11,7 +11,6 @@ jobs:
     if: ${{ github.event_name != 'push' }}
     outputs:
       available: ${{ steps.updates.outputs.available }}
-      timestamp: ${{ steps.updates.outputs.timestamp }}
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
@@ -34,13 +33,10 @@ jobs:
           else
             echo "available='false'" >> "$GITHUB_OUTPUT"
           fi
-          echo "timestamp=$(date +%s)" >> "$GITHUB_OUTPUT"
 
   build-publish:
     uses: ./.github/workflows/release.yml
     secrets: inherit
-    with:
-      tag-suffixes: ${{ needs.check-updates.outputs.timestamp }}
     needs: check-updates
     if: ${{ needs.check-updates.outputs.available == 'true' }}
     permissions:

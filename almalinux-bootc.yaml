@@ -1,4 +1,3 @@
-releasever: 9
 variables:
   distro: "almalinux"
 
@@ -13,6 +12,7 @@ metadata:
 include:
   - fedora-bootc/tier-1/manifest.yaml
   - fedora-bootc/tier-1/kernel.yaml
+  - almalinux-bootc-version.yaml
 
 packages:
   - dnf-yum
@@ -39,4 +39,12 @@ postprocess:
     #!/usr/bin/env bash
     set -xeo pipefail
 
-    sed -i 's,image = "registry.access.redhat.com/ubi9/toolbox:latest",image = "quay.io/toolbx-images/almalinux-toolbox:9",' /etc/containers/toolbox.conf
+    . /etc/os-release
+    sed -i "s,image = \"registry.access.redhat.com/ubi${VERSION_ID%%.*}/toolbox:latest\",image = \"quay.io/toolbx-images/almalinux-toolbox:${VERSION_ID%%.*}\"," /etc/containers/toolbox.conf
+
+  - |
+    #!/usr/bin/env bash
+    set -xeo pipefail
+
+    . /etc/os-release
+    echo $VERSION_ID > /etc/dnf/vars/releasever

@@ -24,8 +24,6 @@ jobs:
   build-publish:
     uses: ./.github/workflows/release.yml
     secrets: inherit
-    with:
-      tag-suffixes: "${{ github.sha }} ${{ github.ref_name }}"
     needs: check-changes
     if: ${{ needs.check-changes.outputs.image == 'true' }}
     permissions:

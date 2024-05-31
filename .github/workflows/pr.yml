@@ -49,6 +49,8 @@ jobs:
             --security-opt=label=disable
             --cap-add=all
             --device /dev/fuse
+          labels: |
+            org.opencontainers.image.revision=${{ github.sha }}
 
       - name: Export image as oci archive
         id: export
