@@ -23,6 +23,7 @@ jobs:
 
   build-publish:
     uses: ./.github/workflows/release.yml
+    secrets: inherit
     with:
       tag-suffixes: "${{ github.sha }} ${{ github.ref_name }}"
     needs: check-changes
