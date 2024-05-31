@@ -1,0 +1,31 @@
+name: Continuous Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-changes:
+    name: Check changes since last commit
+    runs-on: ubuntu-24.04
+    outputs:
+      image: ${{ steps.changes.outputs.image }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+
+      - name: Check changes
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+        id: changes
+        with:
+          filters: ./.github/paths-filter.yml
+
+  build-publish:
+    uses: ./.github/workflows/release.yml
+    with:
+      tag-suffixes: "${{ github.sha }} ${{ github.ref_name }}"
+    needs: check-changes
+    if: ${{ needs.check-changes.outputs.image == 'true' }}
+    permissions:
+      packages: write

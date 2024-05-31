@@ -1,0 +1,7 @@
+image:
+  - 'fedora-bootc'
+  - '*.json'
+  - '*.yaml'
+  - '*.toml'
+  - 'Dockerfile'
+  - '*.pub'
