@@ -3,5 +3,7 @@ image:
   - '*.json'
   - '*.yaml'
   - '*.toml'
-  - 'Dockerfile'
   - '*.pub'
+builder:
+  - 'Dockerfile'
+  - '.github/workflows/pr.yml'
