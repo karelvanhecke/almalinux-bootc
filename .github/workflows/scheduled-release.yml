@@ -38,6 +38,7 @@ jobs:
 
   build-publish:
     uses: ./.github/workflows/release.yml
+    secrets: inherit
     with:
       tag-suffixes: ${{ needs.check-updates.outputs.timestamp }}
     needs: check-updates
