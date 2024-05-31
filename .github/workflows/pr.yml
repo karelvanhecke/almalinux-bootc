@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       image: ${{ steps.changes.outputs.image }}
+      builder: ${{ steps.changes.outputs.builder }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
@@ -24,7 +25,7 @@ jobs:
   build:
     name: Build base image
     needs: check-changes
-    if: ${{ needs.check-changes.outputs.image == 'true' }}
+    if: ${{ needs.check-changes.outputs.image == 'true' || needs.check-changes.outputs.builder == 'true' }}
     outputs:
       localimage: ${{ steps.export.outputs.localimage }}
       ociarchive: ${{ steps.export.outputs.ociarchive }}
