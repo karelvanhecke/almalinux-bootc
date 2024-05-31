@@ -22,7 +22,7 @@
 #
 # Because it's generating a base image and uses containerbuildcontextization features itself.
 # In the future some of this can be lifted.
-FROM docker.io/almalinux:9@sha256:08a1a5e016709844c5cfc0b003a24005d6464fa94f6bad582c14ab508a2dd634 as repos
+FROM docker.io/almalinux:9@sha256:8d722e4cd4c754f1a72364424502d3f3bd63c36aba575fb7039dab26f30ed8b7 as repos
 
 FROM quay.io/centos-bootc/bootc-image-builder@sha256:f94b033c74261cf076d8e4824ef1efe229818f6a37afe9d6247e382ffa4b46a7 as builder
 ARG MANIFEST=almalinux-bootc.yaml
