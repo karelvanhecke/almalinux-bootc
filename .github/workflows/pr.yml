@@ -1,10 +1,7 @@
-name: Continuous integration
+name: Pull Request
 
 on:
   pull_request:
-    branches:
-      - main
-  push:
     branches:
       - main
 
@@ -18,22 +15,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
 
-      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+      - name: Check changes
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
         id: changes
         with:
-          filters: |
-            image:
-              - 'fedora-bootc'
-              - '*.json'
-              - '*.yaml'
-              - '*.toml'
-              - 'Dockerfile'
-              - '*.pub'
+          filters: ./.github/paths-filter.yml
 
   build:
     name: Build base image
     needs: check-changes
-    if: ${{ needs.check-changes.outputs.image == 'true' && github.event_name == 'pull_request' }}
+    if: ${{ needs.check-changes.outputs.image == 'true' }}
     outputs:
       localimage: ${{ steps.export.outputs.localimage }}
       ociarchive: ${{ steps.export.outputs.ociarchive }}
@@ -91,7 +82,8 @@ jobs:
       - name: Import oci archive into containers-storage
         run: >-
           sudo skopeo copy oci-archive:${{ needs.build.outputs.ociarchive }}
-          containers-storage:${{ needs.build.outputs.localimage }}
+          containers-storage:${{ needs.build.outputs.localimage }} &&
+          sudo rm ${{ needs.build.outputs.ociarchive }}
 
       - name: Prepare disk file
         run: truncate -s5G disk.img
@@ -104,10 +96,3 @@ jobs:
           ${{ needs.build.outputs.localimage }}
           bootc install to-disk --generic-image --skip-fetch-check --via-loopback
           /workdir/disk.img
-
-  release:
-    name: Release
-    permissions:
-      packages: write
-    if: ${{ needs.check-changes.outputs.image == 'true' && github.event_name == 'push' }}
-    uses: ./.github/workflows/release.yml
