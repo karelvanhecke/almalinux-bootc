@@ -13,10 +13,6 @@ on:
         type: string
         required: false
         default: ghcr.io/${{ github.repository_owner }}/bootc
-      tag-suffixes:
-        description: Suffixes to append to the release version tags
-        type: string
-        required: true
 
 jobs:
   build-publish:
@@ -34,15 +30,15 @@ jobs:
         id: tags
         run: |
           #!/bin/bash
-
           set -xeo pipefail
-          releasever=$(yq '.releasever' 'almalinux-bootc.yaml')
-          tags=$releasever
 
-          for suffix in ${{ inputs.tag-suffixes }}
-          do 
-            tags+=" ${releasever}-${suffix}"
-          done
+          versionfile=almalinux-bootc-version.yaml
+
+          releasever=$(yq '.releasever' ${versionfile})
+          version=${releasever}.$(date +%s)
+          yq -i ".add-commit-metadata.version = \"${version}\"" ${versionfile}
+          tags="${releasever%%.*} $releasever $version"
+
           echo "tags=$tags" >> "$GITHUB_OUTPUT"
 
       - name: Build image
@@ -58,6 +54,8 @@ jobs:
             --security-opt=label=disable
             --cap-add=all
             --device /dev/fuse
+          labels: |
+            org.opencontainers.image.revision=${{ github.sha }}
 
       - name: Push image to ghcr.io
         id: push
