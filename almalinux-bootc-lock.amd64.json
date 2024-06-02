@@ -1,0 +1,2976 @@
+{
+  "packages": {
+    "NetworkManager": {
+      "evra": "1:1.46.0-4.el9_4.x86_64",
+      "digest": "sha256:8679e433c6fea0a9a3f1fd0fc2c776a4105f85aabc6ad2604d6df8f78b975b6c",
+      "metadata": {
+        "sourcerpm": "NetworkManager"
+      }
+    },
+    "NetworkManager-cloud-setup": {
+      "evra": "1:1.46.0-4.el9_4.x86_64",
+      "digest": "sha256:ed66fdd40e8f1ca1f867f3ced93f11347677152b69b6c5103983dbbeee36127a",
+      "metadata": {
+        "sourcerpm": "NetworkManager"
+      }
+    },
+    "NetworkManager-libnm": {
+      "evra": "1:1.46.0-4.el9_4.x86_64",
+      "digest": "sha256:62898608088be78114da5fd79c3b65a5a159839d6e1fac776e53ca2a56d61440",
+      "metadata": {
+        "sourcerpm": "NetworkManager"
+      }
+    },
+    "NetworkManager-tui": {
+      "evra": "1:1.46.0-4.el9_4.x86_64",
+      "digest": "sha256:c686af091f100ce4b116ed988034f84294f9a7a5afd7abe9bc797fd7a3405b7e",
+      "metadata": {
+        "sourcerpm": "NetworkManager"
+      }
+    },
+    "WALinuxAgent-udev": {
+      "evra": "2.7.0.6-9.el9_2.1.noarch",
+      "digest": "sha256:d9ccaa008b133b472f46956d365fecb599ce4e8df64e830f661a250d317c0f25",
+      "metadata": {
+        "sourcerpm": "WALinuxAgent"
+      }
+    },
+    "aardvark-dns": {
+      "evra": "2:1.10.0-3.el9_4.x86_64",
+      "digest": "sha256:fcd421d26dd541e77cc1fa1113dd7aa170d3d9a022fcfedbdbd927e39e0fd3cc",
+      "metadata": {
+        "sourcerpm": "aardvark-dns"
+      }
+    },
+    "acl": {
+      "evra": "2.3.1-4.el9.x86_64",
+      "digest": "sha256:3e703df65affd36c2098aca678d23df444bf409e9bd99a714c780e2ccf4ee596",
+      "metadata": {
+        "sourcerpm": "acl"
+      }
+    },
+    "adcli": {
+      "evra": "0.9.2-1.el9.x86_64",
+      "digest": "sha256:d150673cf3d308a28f80da70b6d9f72020091574b5358173b3558117f9c28f8b",
+      "metadata": {
+        "sourcerpm": "adcli"
+      }
+    },
+    "almalinux-gpg-keys": {
+      "evra": "9.4-1.el9.x86_64",
+      "digest": "sha256:92e8f6ded4cf9a1ff57c92d477671502c9584b09535ff0e894aacaaa11ee2a44",
+      "metadata": {
+        "sourcerpm": "almalinux-release"
+      }
+    },
+    "almalinux-release": {
+      "evra": "9.4-1.el9.x86_64",
+      "digest": "sha256:b01604eda7483090087a0d5fdb82d3ae6be8999da2301a88130723fb378729be",
+      "metadata": {
+        "sourcerpm": "almalinux-release"
+      }
+    },
+    "almalinux-repos": {
+      "evra": "9.4-1.el9.x86_64",
+      "digest": "sha256:0d0f3fb3a20360c35c571cf8b14341b92c61307865b7422a93e6e3cdff1b1ddb",
+      "metadata": {
+        "sourcerpm": "almalinux-release"
+      }
+    },
+    "alternatives": {
+      "evra": "1.24-1.el9.x86_64",
+      "digest": "sha256:62acedf9c5a5f8fcd7b7bead1d27700b4e844de0afa7d03a0237ad083a57dcc7",
+      "metadata": {
+        "sourcerpm": "chkconfig"
+      }
+    },
+    "attr": {
+      "evra": "2.5.1-3.el9.x86_64",
+      "digest": "sha256:a61f1441d7108e8e81773860252a4103925d1396b047641de6afaed6eb7cb502",
+      "metadata": {
+        "sourcerpm": "attr"
+      }
+    },
+    "audit-libs": {
+      "evra": "3.1.2-2.el9.x86_64",
+      "digest": "sha256:b96ba9a1f6f27c137c5e942d4c9e09754686a82dc2966488928841e69b71acb5",
+      "metadata": {
+        "sourcerpm": "audit"
+      }
+    },
+    "avahi-libs": {
+      "evra": "0.8-20.el9.x86_64",
+      "digest": "sha256:3fdc372b3c5a49f96cc891202cb7623f2a703ee176be3bfd7ab49e1cfd2ea0b2",
+      "metadata": {
+        "sourcerpm": "avahi"
+      }
+    },
+    "basesystem": {
+      "evra": "11-13.el9.noarch",
+      "digest": "sha256:4bf863df5dd2028c5f4c4f562141266f5287644c762e3bbac1fccd3984bfcb98",
+      "metadata": {
+        "sourcerpm": "basesystem"
+      }
+    },
+    "bash": {
+      "evra": "5.1.8-9.el9.x86_64",
+      "digest": "sha256:05dc1b806bd5456d40e3d7f882ead037aaf480c596e83fbfb6ab86be74a2d8d1",
+      "metadata": {
+        "sourcerpm": "bash"
+      }
+    },
+    "bash-completion": {
+      "evra": "1:2.11-5.el9.noarch",
+      "digest": "sha256:88eba1820092941db59086eb73ad97b6c916f2f1a7cabbcbaf70cb399430e9a4",
+      "metadata": {
+        "sourcerpm": "bash-completion"
+      }
+    },
+    "bind-libs": {
+      "evra": "32:9.16.23-18.el9_4.1.x86_64",
+      "digest": "sha256:f165e3c85dce5474bf3e0195b3c1c53852ad737190b6a15a02a055a355d5db8f",
+      "metadata": {
+        "sourcerpm": "bind"
+      }
+    },
+    "bind-license": {
+      "evra": "32:9.16.23-18.el9_4.1.noarch",
+      "digest": "sha256:ae7bf12a28a5753931c0725bf5b9bbea371aa3cbefdd5fe0075bedd29c59be6a",
+      "metadata": {
+        "sourcerpm": "bind"
+      }
+    },
+    "bind-utils": {
+      "evra": "32:9.16.23-18.el9_4.1.x86_64",
+      "digest": "sha256:e1fa4991dcc797ad11d0e7cde132d418677f9a3c16b4d523336289b428eeab16",
+      "metadata": {
+        "sourcerpm": "bind"
+      }
+    },
+    "binutils": {
+      "evra": "2.35.2-43.el9.x86_64",
+      "digest": "sha256:04d310acebab893ad766dd74d5951c39c3cb15f783e1d565837a10caada9d0d5",
+      "metadata": {
+        "sourcerpm": "binutils"
+      }
+    },
+    "binutils-gold": {
+      "evra": "2.35.2-43.el9.x86_64",
+      "digest": "sha256:2f93aa496c4fde282aabcab05cb5c78a14e13beb19596ddc3809bb13cf9e2a57",
+      "metadata": {
+        "sourcerpm": "binutils"
+      }
+    },
+    "bootc": {
+      "evra": "0.1.9-3.el9_4.x86_64",
+      "digest": "sha256:9558720d3b519c8e57b6341cd7c1e412a92802d9b8e2f6b2ecea7adef4f38806",
+      "metadata": {
+        "sourcerpm": "bootc"
+      }
+    },
+    "bootupd": {
+      "evra": "0.2.18-1.el9.x86_64",
+      "digest": "sha256:b3e7f56e7772c43d55cd10c28542aa444d529eae004d8d3af655421837974027",
+      "metadata": {
+        "sourcerpm": "rust-bootupd"
+      }
+    },
+    "bsdtar": {
+      "evra": "3.5.3-4.el9.x86_64",
+      "digest": "sha256:ddd23a488aeb3fb31196d48bd8317c9a10f1b3171562e7ae18e7351e5378f5ef",
+      "metadata": {
+        "sourcerpm": "libarchive"
+      }
+    },
+    "bubblewrap": {
+      "evra": "0.4.1-6.el9.x86_64",
+      "digest": "sha256:af40baa22e735e28b1b61eedc344a608458e04ef6d6d53a09da0b1137f5d19a5",
+      "metadata": {
+        "sourcerpm": "bubblewrap"
+      }
+    },
+    "bzip2": {
+      "evra": "1.0.8-8.el9.x86_64",
+      "digest": "sha256:b41eb3eb431d151976d9f90cac1b445612bdd0be1058619549c74a0d3afa9fa1",
+      "metadata": {
+        "sourcerpm": "bzip2"
+      }
+    },
+    "bzip2-libs": {
+      "evra": "1.0.8-8.el9.x86_64",
+      "digest": "sha256:9bc817c619b6917fa2a69d10f83696dbee8711238ad0682fef07c3fc1b9269df",
+      "metadata": {
+        "sourcerpm": "bzip2"
+      }
+    },
+    "c-ares": {
+      "evra": "1.19.1-1.el9.x86_64",
+      "digest": "sha256:7de0a522fbed2a3cb769b0fe88341111cffee80ee8a2faae43b86fae7ad6a0d9",
+      "metadata": {
+        "sourcerpm": "c-ares"
+      }
+    },
+    "ca-certificates": {
+      "evra": "2023.2.60_v7.0.306-90.1.el9_2.noarch",
+      "digest": "sha256:d3e4a4442304087004454c37cdf9f49fe0292ededc506002c9a0e660c4964e2f",
+      "metadata": {
+        "sourcerpm": "ca-certificates"
+      }
+    },
+    "chrony": {
+      "evra": "4.5-1.el9.x86_64",
+      "digest": "sha256:9fb3a96f1586095f26ba56419eac0196db953908f8f7a516d8efb108c2009400",
+      "metadata": {
+        "sourcerpm": "chrony"
+      }
+    },
+    "cloud-utils-growpart": {
+      "evra": "0.33-1.el9.x86_64",
+      "digest": "sha256:3d8cf6bbcd2ffdef831f5c25beb3438a7de8cdbe4ebd5d9ecea570f826e1af7e",
+      "metadata": {
+        "sourcerpm": "cloud-utils"
+      }
+    },
+    "composefs": {
+      "evra": "1.0.3-2.el9.x86_64",
+      "digest": "sha256:e7663d9a46935ff56932567b07b1c7deedd5ca006a1bc2a776d85a36da6828a9",
+      "metadata": {
+        "sourcerpm": "composefs"
+      }
+    },
+    "composefs-libs": {
+      "evra": "1.0.3-2.el9.x86_64",
+      "digest": "sha256:0359f4e8f1529d3a22ea4ccf5ba6a1fb02d148f7a5b65fa64487a833363906de",
+      "metadata": {
+        "sourcerpm": "composefs"
+      }
+    },
+    "conmon": {
+      "evra": "2:2.1.10-1.el9.x86_64",
+      "digest": "sha256:c9d474e14967c1fa2dbd79f899b25021f87ede55ed9a75b34b1879b52f16b9c7",
+      "metadata": {
+        "sourcerpm": "conmon"
+      }
+    },
+    "console-login-helper-messages": {
+      "evra": "0.21.3-1.el9.noarch",
+      "digest": "sha256:f4b65f91c7aa4e05ad466f90c86c70b7c4810ede6be9a962d01e29483ae70cfe",
+      "metadata": {
+        "sourcerpm": "console-login-helper-messages"
+      }
+    },
+    "console-login-helper-messages-issuegen": {
+      "evra": "0.21.3-1.el9.noarch",
+      "digest": "sha256:493a108b883b6b64dcf5f8f55c55d390d8486155abb291d263fd6c4a83aad554",
+      "metadata": {
+        "sourcerpm": "console-login-helper-messages"
+      }
+    },
+    "console-login-helper-messages-profile": {
+      "evra": "0.21.3-1.el9.noarch",
+      "digest": "sha256:3d8fd83f92f41dca359a4f72e8f7bcd71363940fd9c68dc3a077079a59509e7a",
+      "metadata": {
+        "sourcerpm": "console-login-helper-messages"
+      }
+    },
+    "container-selinux": {
+      "evra": "3:2.229.0-1.el9_3.noarch",
+      "digest": "sha256:aa610e2e137caaf07b491f7828a035970d4153f25d3e4f0b26e9e7225dbfde27",
+      "metadata": {
+        "sourcerpm": "container-selinux"
+      }
+    },
+    "containers-common": {
+      "evra": "2:1-91.el9_4.x86_64",
+      "digest": "sha256:24c93bfb126c126a317c736a1acec33c2d2b211dec2ec8d0b863c018a3554cbb",
+      "metadata": {
+        "sourcerpm": "containers-common"
+      }
+    },
+    "coreutils": {
+      "evra": "8.32-35.el9.x86_64",
+      "digest": "sha256:06fb117e4277dba8eebafc017addfdea0746927b78249eef257fd11327573c67",
+      "metadata": {
+        "sourcerpm": "coreutils"
+      }
+    },
+    "coreutils-common": {
+      "evra": "8.32-35.el9.x86_64",
+      "digest": "sha256:851fe291a51b3488d2c54ed090790a9c85b188ff39371fd2e6adfb2035cd224b",
+      "metadata": {
+        "sourcerpm": "coreutils"
+      }
+    },
+    "cpio": {
+      "evra": "2.13-16.el9.x86_64",
+      "digest": "sha256:ae870e41cf924ab7094031038223d019eb83becae0b28885ac2f3abb53528b03",
+      "metadata": {
+        "sourcerpm": "cpio"
+      }
+    },
+    "cracklib": {
+      "evra": "2.9.6-27.el9.x86_64",
+      "digest": "sha256:c8d3fb92675c72332f02bd28933fc1beea57cc2c9990e5abaf607a26f60d06ff",
+      "metadata": {
+        "sourcerpm": "cracklib"
+      }
+    },
+    "cracklib-dicts": {
+      "evra": "2.9.6-27.el9.x86_64",
+      "digest": "sha256:1b30c112d0ba0be44f13c7d9be962839f4aeeb7fc8de01d20c313713010932f9",
+      "metadata": {
+        "sourcerpm": "cracklib"
+      }
+    },
+    "criu": {
+      "evra": "3.19-1.el9.x86_64",
+      "digest": "sha256:14c07188b00156f6ce18dade2fbb9023f91577fd41681d8321349d6874b116db",
+      "metadata": {
+        "sourcerpm": "criu"
+      }
+    },
+    "criu-libs": {
+      "evra": "3.19-1.el9.x86_64",
+      "digest": "sha256:5378f3b17893ef423cec873d6c72439bba6d42bf4118d092a0a25d9055e2f250",
+      "metadata": {
+        "sourcerpm": "criu"
+      }
+    },
+    "crun": {
+      "evra": "1.14.3-1.el9.x86_64",
+      "digest": "sha256:e06f4c8154de6703f3399121aa1ff0dba83a4b85d15f94cc2fd8e0051da9e0ab",
+      "metadata": {
+        "sourcerpm": "crun"
+      }
+    },
+    "crypto-policies": {
+      "evra": "20240202-1.git283706d.el9.noarch",
+      "digest": "sha256:fa1650f1feef3bb947c1e5a4271c9f48ba15a302bf6beca972f11a9859c1f539",
+      "metadata": {
+        "sourcerpm": "crypto-policies"
+      }
+    },
+    "crypto-policies-scripts": {
+      "evra": "20240202-1.git283706d.el9.noarch",
+      "digest": "sha256:55267602e17ed3ed2d728ca3f018cdd90da6227634ea231b9a910a3311f08d52",
+      "metadata": {
+        "sourcerpm": "crypto-policies"
+      }
+    },
+    "cryptsetup": {
+      "evra": "2.6.0-3.el9.x86_64",
+      "digest": "sha256:50ac0cc165e96457b0fed715a4009104e684dec41cb6a7b898f893364c43a0ef",
+      "metadata": {
+        "sourcerpm": "cryptsetup"
+      }
+    },
+    "cryptsetup-libs": {
+      "evra": "2.6.0-3.el9.x86_64",
+      "digest": "sha256:1cd3be9c2bd2da92c2de26659d631816631bcedd369fd3a9f66261cec265779b",
+      "metadata": {
+        "sourcerpm": "cryptsetup"
+      }
+    },
+    "curl": {
+      "evra": "7.76.1-29.el9_4.x86_64",
+      "digest": "sha256:1e883fd4b6b0a9feb861413252031a44d9454703daa72dcd91bb8309a492945b",
+      "metadata": {
+        "sourcerpm": "curl"
+      }
+    },
+    "cyrus-sasl-gssapi": {
+      "evra": "2.1.27-21.el9.x86_64",
+      "digest": "sha256:a557821ae931ac23f686268c1dc1523c5f5f71f2f387847aaafaedfeee7cc09d",
+      "metadata": {
+        "sourcerpm": "cyrus-sasl"
+      }
+    },
+    "cyrus-sasl-lib": {
+      "evra": "2.1.27-21.el9.x86_64",
+      "digest": "sha256:c36a9898b62647f3c9ef290291a6ede4bd901d662cb6f2a20ed184b686dbfbf5",
+      "metadata": {
+        "sourcerpm": "cyrus-sasl"
+      }
+    },
+    "dbus": {
+      "evra": "1:1.12.20-8.el9.x86_64",
+      "digest": "sha256:9881ab5d079615ce96794a5409477ee1938253b275b7769c6a0570fb3bf48fe6",
+      "metadata": {
+        "sourcerpm": "dbus"
+      }
+    },
+    "dbus-broker": {
+      "evra": "28-7.el9.x86_64",
+      "digest": "sha256:e35cfb6ec5fe983f3a3af7822894fb048afb8ed98ecad04410c83a7da6ec2474",
+      "metadata": {
+        "sourcerpm": "dbus-broker"
+      }
+    },
+    "dbus-common": {
+      "evra": "1:1.12.20-8.el9.noarch",
+      "digest": "sha256:32c8415006399b71da377105f237c4dcb079c0d40e35d2e20fbfbcef937d62a6",
+      "metadata": {
+        "sourcerpm": "dbus"
+      }
+    },
+    "dbus-libs": {
+      "evra": "1:1.12.20-8.el9.x86_64",
+      "digest": "sha256:4113248f231b84002e87ce15b021b9cf5dfce3a26539fd432f0c2af99f1c976e",
+      "metadata": {
+        "sourcerpm": "dbus"
+      }
+    },
+    "device-mapper": {
+      "evra": "9:1.02.197-2.el9.x86_64",
+      "digest": "sha256:4747e4d928f6757a98367177533b4de787fd5a4b7b2dc9a57d5b2733d6f51044",
+      "metadata": {
+        "sourcerpm": "lvm2"
+      }
+    },
+    "device-mapper-event": {
+      "evra": "9:1.02.197-2.el9.x86_64",
+      "digest": "sha256:d89a587791874f31a336162fc735d8521bf7cb6015729e1822874c38002dd0de",
+      "metadata": {
+        "sourcerpm": "lvm2"
+      }
+    },
+    "device-mapper-event-libs": {
+      "evra": "9:1.02.197-2.el9.x86_64",
+      "digest": "sha256:ef4966bf2d0886ec6e946c2222b2e033e79bc578752b08779562eb8c00a5ecbe",
+      "metadata": {
+        "sourcerpm": "lvm2"
+      }
+    },
+    "device-mapper-libs": {
+      "evra": "9:1.02.197-2.el9.x86_64",
+      "digest": "sha256:e084e5b91734448ad8480e4adeed2398a4a524500ffcbcef4742c19099309012",
+      "metadata": {
+        "sourcerpm": "lvm2"
+      }
+    },
+    "device-mapper-persistent-data": {
+      "evra": "1.0.9-3.el9_4.x86_64",
+      "digest": "sha256:1a9e2db5c0e3e3381cea4ffc87a239f5fc4629462d341c65d11f92bc51fe4c7f",
+      "metadata": {
+        "sourcerpm": "device-mapper-persistent-data"
+      }
+    },
+    "diffutils": {
+      "evra": "3.7-12.el9.x86_64",
+      "digest": "sha256:a8c5e26a191e0db30c08c3490070c299127c2deba0751a1a5e78f65450e258db",
+      "metadata": {
+        "sourcerpm": "diffutils"
+      }
+    },
+    "dmidecode": {
+      "evra": "1:3.5-3.el9.x86_64",
+      "digest": "sha256:c827299cacd302d12cf689410bae4d0e98d7110c7f1273c7523c8bacd1cf31e4",
+      "metadata": {
+        "sourcerpm": "dmidecode"
+      }
+    },
+    "dnf": {
+      "evra": "4.14.0-9.el9.alma.1.noarch",
+      "digest": "sha256:4424bb64e2adf85cd566c79bbd98d0ee085170a1a86b6ce3cce62febdb03a758",
+      "metadata": {
+        "sourcerpm": "dnf"
+      }
+    },
+    "dnf-data": {
+      "evra": "4.14.0-9.el9.alma.1.noarch",
+      "digest": "sha256:717daebc1e15817a9f18f9cab2c1fec2c657786ad152696beb83111cd2d1d622",
+      "metadata": {
+        "sourcerpm": "dnf"
+      }
+    },
+    "dosfstools": {
+      "evra": "4.2-3.el9.x86_64",
+      "digest": "sha256:0c9368f77e36362ed458401bb728668b7e38f31a10a86aee194c9a95c75cc872",
+      "metadata": {
+        "sourcerpm": "dosfstools"
+      }
+    },
+    "dracut": {
+      "evra": "057-53.git20240104.el9.x86_64",
+      "digest": "sha256:2e88c261716b20c183c081f8af984bdacb8a04f002fff7e2ded92f74f3a7875f",
+      "metadata": {
+        "sourcerpm": "dracut"
+      }
+    },
+    "dracut-network": {
+      "evra": "057-53.git20240104.el9.x86_64",
+      "digest": "sha256:9bbdf78570743d04c6bc78309ce503fb5cac584242af1aad6d82a84d2ffca520",
+      "metadata": {
+        "sourcerpm": "dracut"
+      }
+    },
+    "dracut-squash": {
+      "evra": "057-53.git20240104.el9.x86_64",
+      "digest": "sha256:b26ecae2a7963156a83f8ca7310352917af05971a566a4845747d00fc05fa634",
+      "metadata": {
+        "sourcerpm": "dracut"
+      }
+    },
+    "e2fsprogs": {
+      "evra": "1.46.5-5.el9.x86_64",
+      "digest": "sha256:708ccc5f0416fef5feab9be20689913d2b231253a6eaaefea2ac0e73fe4b9690",
+      "metadata": {
+        "sourcerpm": "e2fsprogs"
+      }
+    },
+    "e2fsprogs-libs": {
+      "evra": "1.46.5-5.el9.x86_64",
+      "digest": "sha256:037b05efb8863dd35250ee152fd8a1b5eeaebd8452d49584a6fdbc3b091883f3",
+      "metadata": {
+        "sourcerpm": "e2fsprogs"
+      }
+    },
+    "efi-filesystem": {
+      "evra": "6-2.el9_0.0.1.noarch",
+      "digest": "sha256:781bbb306dff8a5bf213883969af532acb13c71c0f020b6eaa7a7e41d2773fee",
+      "metadata": {
+        "sourcerpm": "efi-rpm-macros"
+      }
+    },
+    "efibootmgr": {
+      "evra": "16-12.el9.x86_64",
+      "digest": "sha256:279b4ac4d212869f78295b279533067b9e76c06ced71c82383d61e2500c67881",
+      "metadata": {
+        "sourcerpm": "efibootmgr"
+      }
+    },
+    "efivar-libs": {
+      "evra": "38-3.el9.x86_64",
+      "digest": "sha256:495a06e202e63ad5e1dd7ac75266003f134f19769db334d88d7752dbf2160f7b",
+      "metadata": {
+        "sourcerpm": "efivar"
+      }
+    },
+    "elfutils-debuginfod-client": {
+      "evra": "0.190-2.el9.x86_64",
+      "digest": "sha256:b070e76c8799271186f1d36953d459b4ed8a57f9f564baf2deeda4de9e0a9024",
+      "metadata": {
+        "sourcerpm": "elfutils"
+      }
+    },
+    "elfutils-default-yama-scope": {
+      "evra": "0.190-2.el9.noarch",
+      "digest": "sha256:e61b115deff31c6ea43f0897dd3cda9fa9dfb770471d8003a7ee8ec6cbba8e63",
+      "metadata": {
+        "sourcerpm": "elfutils"
+      }
+    },
+    "elfutils-libelf": {
+      "evra": "0.190-2.el9.x86_64",
+      "digest": "sha256:44fd1464a5caa8e61aced16a4f077257bbd83c272c5b37dbee7655095740d44a",
+      "metadata": {
+        "sourcerpm": "elfutils"
+      }
+    },
+    "elfutils-libs": {
+      "evra": "0.190-2.el9.x86_64",
+      "digest": "sha256:9338a3baedf20b70560ee7eefe8da82c4b059a7f26e2563db108b08e2bb85971",
+      "metadata": {
+        "sourcerpm": "elfutils"
+      }
+    },
+    "ethtool": {
+      "evra": "2:6.2-1.el9.x86_64",
+      "digest": "sha256:0f58df00a95ab850d80d398bd11849361531a9c3d36b33d1d686d6ced7d3264a",
+      "metadata": {
+        "sourcerpm": "ethtool"
+      }
+    },
+    "expat": {
+      "evra": "2.5.0-2.el9_4.x86_64",
+      "digest": "sha256:854d3da6ed481dd8cb2a56eafa16509fe6a300394d40488102e2df3a0a9ad618",
+      "metadata": {
+        "sourcerpm": "expat"
+      }
+    },
+    "file": {
+      "evra": "5.39-16.el9.x86_64",
+      "digest": "sha256:abe175b558e56897b3e930e68e91959baace2e8966b8d17d53c19c10db2b8e62",
+      "metadata": {
+        "sourcerpm": "file"
+      }
+    },
+    "file-libs": {
+      "evra": "5.39-16.el9.x86_64",
+      "digest": "sha256:4b1f183535ebcce0ed63936df0b7c54c4ed2d4b3d76a0d89f8c7c1702a8a99ba",
+      "metadata": {
+        "sourcerpm": "file"
+      }
+    },
+    "filesystem": {
+      "evra": "3.16-2.el9.x86_64",
+      "digest": "sha256:c420afbedbbb574415208090090afcfaf37d9cb81846577405ab80a2f457120e",
+      "metadata": {
+        "sourcerpm": "filesystem"
+      }
+    },
+    "findutils": {
+      "evra": "1:4.8.0-6.el9.x86_64",
+      "digest": "sha256:603460e057aff40ce47121dd64663e712f7fea8b422a358055a8eb427a33f57c",
+      "metadata": {
+        "sourcerpm": "findutils"
+      }
+    },
+    "flashrom": {
+      "evra": "1.2-10.el9.x86_64",
+      "digest": "sha256:3da38389890acb9ec5f32298bfb09f2850cbb1f53959cf791f890304b1043800",
+      "metadata": {
+        "sourcerpm": "flashrom"
+      }
+    },
+    "fstrm": {
+      "evra": "0.6.1-3.el9.x86_64",
+      "digest": "sha256:1c008309c16e6e3cca6263c748a4b3722d5216df92338e5e28128080ab07d77b",
+      "metadata": {
+        "sourcerpm": "fstrm"
+      }
+    },
+    "fuse": {
+      "evra": "2.9.9-15.el9.x86_64",
+      "digest": "sha256:094143d2099e61d23fc2d2ae4d75837e9fbcd8da7da2e7d74b4869a713a937d3",
+      "metadata": {
+        "sourcerpm": "fuse"
+      }
+    },
+    "fuse-common": {
+      "evra": "3.10.2-8.el9.x86_64",
+      "digest": "sha256:11f83c58baa91915f35971af37e2df46666ba8966b351d627fb45ee6b8603537",
+      "metadata": {
+        "sourcerpm": "fuse3"
+      }
+    },
+    "fuse-libs": {
+      "evra": "2.9.9-15.el9.x86_64",
+      "digest": "sha256:f89d7e0b2924dbee9ac09c35456d5187b5cd4a91d5db226f7e0bdb2e591c0319",
+      "metadata": {
+        "sourcerpm": "fuse"
+      }
+    },
+    "fuse-overlayfs": {
+      "evra": "1.13-1.el9.x86_64",
+      "digest": "sha256:8fe03e9d5db9353d7bfcd40ed6f4eb87b8b98163222880c163dea4c3096d9655",
+      "metadata": {
+        "sourcerpm": "fuse-overlayfs"
+      }
+    },
+    "fuse3": {
+      "evra": "3.10.2-8.el9.x86_64",
+      "digest": "sha256:ef96a6bc69892e10fa42976437aee86eac7cf4295382b73f2201b56333aaff22",
+      "metadata": {
+        "sourcerpm": "fuse3"
+      }
+    },
+    "fuse3-libs": {
+      "evra": "3.10.2-8.el9.x86_64",
+      "digest": "sha256:8997b301160169e2fbb060abb23dd7749daa4c8f3aa2e76cd9de2fe9b5fe157d",
+      "metadata": {
+        "sourcerpm": "fuse3"
+      }
+    },
+    "fwupd": {
+      "evra": "1.9.13-2.el9.alma.1.x86_64",
+      "digest": "sha256:c567de4c7b8d5a2296e50924e4cacf8af37d58f65ddf56e34e410e3b486f7fed",
+      "metadata": {
+        "sourcerpm": "fwupd"
+      }
+    },
+    "fwupd-plugin-flashrom": {
+      "evra": "1.9.13-2.el9.alma.1.x86_64",
+      "digest": "sha256:ca7b6c38a314f5027bb6b994808410268823f70c4c504d92282c7e6a8ed36894",
+      "metadata": {
+        "sourcerpm": "fwupd"
+      }
+    },
+    "gawk": {
+      "evra": "5.1.0-6.el9.x86_64",
+      "digest": "sha256:1e4825dee708e02efa86f1583b34ae85f6bae698f1074f43010063a24f81274e",
+      "metadata": {
+        "sourcerpm": "gawk"
+      }
+    },
+    "gawk-all-langpacks": {
+      "evra": "5.1.0-6.el9.x86_64",
+      "digest": "sha256:d15c2ea027bb3902b65084e42b5c88fbedee6a9044ad7b2f2ec075be489cb15d",
+      "metadata": {
+        "sourcerpm": "gawk"
+      }
+    },
+    "gdbm-libs": {
+      "evra": "1:1.19-4.el9.x86_64",
+      "digest": "sha256:81f7b809855bae313be81892525fe100c5eff50a7102d36d7f6ef8bed65e628c",
+      "metadata": {
+        "sourcerpm": "gdbm"
+      }
+    },
+    "gdisk": {
+      "evra": "1.0.7-5.el9.x86_64",
+      "digest": "sha256:a04a6c94274c7388090dfcefad1bde479f2d1aaa4c8c52e9948faccfe0c4162c",
+      "metadata": {
+        "sourcerpm": "gdisk"
+      }
+    },
+    "gettext": {
+      "evra": "0.21-8.el9.x86_64",
+      "digest": "sha256:b2c20ab97df37bccdf0448ed14c6e281163fc4c7339dd9842559df3f385fff86",
+      "metadata": {
+        "sourcerpm": "gettext"
+      }
+    },
+    "gettext-libs": {
+      "evra": "0.21-8.el9.x86_64",
+      "digest": "sha256:30d426bd3344d1d3f68dfbb298a63c8b1e58800f61feea91d5a20efdf40d0fa9",
+      "metadata": {
+        "sourcerpm": "gettext"
+      }
+    },
+    "glib2": {
+      "evra": "2.68.4-14.el9.x86_64",
+      "digest": "sha256:07828b33c17e2155a8b4dcd708c1965d53d59689ad2c62586e293ef63cfd689d",
+      "metadata": {
+        "sourcerpm": "glib2"
+      }
+    },
+    "glibc": {
+      "evra": "2.34-100.el9_4.2.x86_64",
+      "digest": "sha256:58ee1d470b75422fd3b16ef00dcfd2325d5fe59d657f1734c743cb2c5f3a05be",
+      "metadata": {
+        "sourcerpm": "glibc"
+      }
+    },
+    "glibc-common": {
+      "evra": "2.34-100.el9_4.2.x86_64",
+      "digest": "sha256:3eb7997301f4a22fe03ae82546ee9e6862512e16739b2a7567f2dcc145943e2d",
+      "metadata": {
+        "sourcerpm": "glibc"
+      }
+    },
+    "glibc-gconv-extra": {
+      "evra": "2.34-100.el9_4.2.x86_64",
+      "digest": "sha256:bd675fea8dd8119d1c9ea7a1e82a900332ca38c3a3abc229fcf9a67601249f74",
+      "metadata": {
+        "sourcerpm": "glibc"
+      }
+    },
+    "glibc-minimal-langpack": {
+      "evra": "2.34-100.el9_4.2.x86_64",
+      "digest": "sha256:b41e2859c6bf672fb55eca9c6bbbe2e48527c73241fa14fdcee1a4657dbcd16f",
+      "metadata": {
+        "sourcerpm": "glibc"
+      }
+    },
+    "gmp": {
+      "evra": "1:6.2.0-13.el9.x86_64",
+      "digest": "sha256:babe0b1385e723476a216d5f4b72453e031c3d683b19344786c2bddf7203cb04",
+      "metadata": {
+        "sourcerpm": "gmp"
+      }
+    },
+    "gnupg2": {
+      "evra": "2.3.3-4.el9.x86_64",
+      "digest": "sha256:e7c4e4a508c47e3286d3dd5ec7b86924ca31ae5a593c67e552edbee5edf4be12",
+      "metadata": {
+        "sourcerpm": "gnupg2"
+      }
+    },
+    "gnutls": {
+      "evra": "3.8.3-4.el9_4.x86_64",
+      "digest": "sha256:16c48c504fe62f8e19cac7c6442d3e08bba487f610c2f533116dac32357cda86",
+      "metadata": {
+        "sourcerpm": "gnutls"
+      }
+    },
+    "gpgme": {
+      "evra": "1.15.1-6.el9.x86_64",
+      "digest": "sha256:b001c5b0f299a69906e03ae33d9f4b2e86e767d31f9b1769c5ec8eb4f8c7b586",
+      "metadata": {
+        "sourcerpm": "gpgme"
+      }
+    },
+    "grep": {
+      "evra": "3.6-5.el9.x86_64",
+      "digest": "sha256:5179fb7856da29755c865b80c71a755dcd1830f7cdac6ba0958ed60ad613f62f",
+      "metadata": {
+        "sourcerpm": "grep"
+      }
+    },
+    "grub2-common": {
+      "evra": "1:2.06-77.el9.alma.1.noarch",
+      "digest": "sha256:fd4804f9aabf9ab0aa42432b26d96c2a942ebbfd80c9ea052e867d50d260cf5c",
+      "metadata": {
+        "sourcerpm": "grub2"
+      }
+    },
+    "grub2-efi-x64": {
+      "evra": "1:2.06-77.el9.alma.1.x86_64",
+      "digest": "sha256:b02f1f05ae576f78122af4674ba5d279d6dd4809330d513481eae0bfdf2521f9",
+      "metadata": {
+        "sourcerpm": "grub2"
+      }
+    },
+    "grub2-pc": {
+      "evra": "1:2.06-77.el9.alma.1.x86_64",
+      "digest": "sha256:66026ed762c385e48c7dddd93508185cfb7d8dc10ae4c5599b2b6771d53f94e7",
+      "metadata": {
+        "sourcerpm": "grub2"
+      }
+    },
+    "grub2-pc-modules": {
+      "evra": "1:2.06-77.el9.alma.1.noarch",
+      "digest": "sha256:1b0e6216aa285ff2b09fde2a5789e456445a8e73d0ed0a93df0949d84fc9139c",
+      "metadata": {
+        "sourcerpm": "grub2"
+      }
+    },
+    "grub2-tools": {
+      "evra": "1:2.06-77.el9.alma.1.x86_64",
+      "digest": "sha256:21a434a0426173c7d87aa0e7cd9c8a51389f5819ba65efc9431599160edfe7a9",
+      "metadata": {
+        "sourcerpm": "grub2"
+      }
+    },
+    "grub2-tools-minimal": {
+      "evra": "1:2.06-77.el9.alma.1.x86_64",
+      "digest": "sha256:fea118ef08a9e654d6b0d3674619d2b94851a15c9c8fcd6ae192d2a908ea7e22",
+      "metadata": {
+        "sourcerpm": "grub2"
+      }
+    },
+    "gssproxy": {
+      "evra": "0.8.4-6.el9.x86_64",
+      "digest": "sha256:6359792e3db128bedf31e7e1c944f9cfe8fa10d83e38479713fda85030f57677",
+      "metadata": {
+        "sourcerpm": "gssproxy"
+      }
+    },
+    "gzip": {
+      "evra": "1.12-1.el9.x86_64",
+      "digest": "sha256:677946f3a3ed35caab57fb7611633ed68f0a90101e0e834e393e16908c13e843",
+      "metadata": {
+        "sourcerpm": "gzip"
+      }
+    },
+    "hostname": {
+      "evra": "3.23-6.el9.x86_64",
+      "digest": "sha256:2cb4db37e0c8f27b4bb23dee49d3af66d91f1cedf02242d343251ed45b81b853",
+      "metadata": {
+        "sourcerpm": "hostname"
+      }
+    },
+    "ima-evm-utils": {
+      "evra": "1.4-4.el9.x86_64",
+      "digest": "sha256:479529685caf37cee320a938c7192f18631e01f3b028968570ad2e9f31be428d",
+      "metadata": {
+        "sourcerpm": "ima-evm-utils"
+      }
+    },
+    "inih": {
+      "evra": "49-6.el9.x86_64",
+      "digest": "sha256:b8db6005a8d59daeabe6236f4b68217d542f64294e93ba0951218ed26e51aa55",
+      "metadata": {
+        "sourcerpm": "inih"
+      }
+    },
+    "iproute": {
+      "evra": "6.2.0-6.el9_4.x86_64",
+      "digest": "sha256:0dad63d696df9754d8394fb19d27169c82cf5fbfa5361cb085ceb5f69f766b7b",
+      "metadata": {
+        "sourcerpm": "iproute"
+      }
+    },
+    "iproute-tc": {
+      "evra": "6.2.0-6.el9_4.x86_64",
+      "digest": "sha256:add88a797481d3589f22429e82382cbef2edb30d1fb19d95733f19a07bc5000e",
+      "metadata": {
+        "sourcerpm": "iproute"
+      }
+    },
+    "iptables-libs": {
+      "evra": "1.8.10-2.el9.x86_64",
+      "digest": "sha256:32159c2d6c35fe920d2d17214ef8ed39550a4099d8c3dac7bd6567058e87ae57",
+      "metadata": {
+        "sourcerpm": "iptables"
+      }
+    },
+    "iptables-nft": {
+      "evra": "1.8.10-2.el9.x86_64",
+      "digest": "sha256:0f7410fec4c28edbacbfa296d14771b619143defceb1a7655654d24ab37b5d85",
+      "metadata": {
+        "sourcerpm": "iptables"
+      }
+    },
+    "iptables-nft-services": {
+      "evra": "1.8.10-2.el9.noarch",
+      "digest": "sha256:c8f2bc50e1eadff548d547600d5c01832edbc76489ca1d0e32c534e0a6309489",
+      "metadata": {
+        "sourcerpm": "iptables"
+      }
+    },
+    "iputils": {
+      "evra": "20210202-9.el9.x86_64",
+      "digest": "sha256:6ee66cf92080b525e6a6984a7bcbd980b5a2014f4b479a6ecf03e6b56c209a8d",
+      "metadata": {
+        "sourcerpm": "iputils"
+      }
+    },
+    "irqbalance": {
+      "evra": "2:1.9.2-3.el9.x86_64",
+      "digest": "sha256:407c30083f0ff7a6ea5c4912d9e6305b56adf1da392ec98664115748efcaa8cf",
+      "metadata": {
+        "sourcerpm": "irqbalance"
+      }
+    },
+    "jansson": {
+      "evra": "2.14-1.el9.x86_64",
+      "digest": "sha256:dd896908b21f9cd2452ab26d1bfc7586b4d55eea9436b38adc0e89be01abf0ff",
+      "metadata": {
+        "sourcerpm": "jansson"
+      }
+    },
+    "jq": {
+      "evra": "1.6-16.el9.x86_64",
+      "digest": "sha256:ab2f8f4badb7ebdf30acdf5163dbf4bdbd2162b0ba5add82af5a9e1f88732581",
+      "metadata": {
+        "sourcerpm": "jq"
+      }
+    },
+    "json-c": {
+      "evra": "0.14-11.el9.x86_64",
+      "digest": "sha256:dbbd9ef69c75e2a21aae1b917f05063dded6d35daf625d46ff359f6b389c227c",
+      "metadata": {
+        "sourcerpm": "json-c"
+      }
+    },
+    "json-glib": {
+      "evra": "1.6.6-1.el9.x86_64",
+      "digest": "sha256:68e4f2db489b4c1deb63ded2dfdb9490d3e31667c756cd2550ce80c01713ecb2",
+      "metadata": {
+        "sourcerpm": "json-glib"
+      }
+    },
+    "kbd": {
+      "evra": "2.4.0-9.el9.x86_64",
+      "digest": "sha256:e46609855070bdca0d3b991405ba3e035b1b48358141da5c546ebb92e95a3b10",
+      "metadata": {
+        "sourcerpm": "kbd"
+      }
+    },
+    "kbd-legacy": {
+      "evra": "2.4.0-9.el9.noarch",
+      "digest": "sha256:a5d1985b127b9a1c9ada1e49e9b75e8e53cc3a12e29c4fd2d654415d43216c56",
+      "metadata": {
+        "sourcerpm": "kbd"
+      }
+    },
+    "kbd-misc": {
+      "evra": "2.4.0-9.el9.noarch",
+      "digest": "sha256:4cb41776031853ed84cb5a2c58960810837d545e16d02f6239b2f9c8d95320f8",
+      "metadata": {
+        "sourcerpm": "kbd"
+      }
+    },
+    "kernel": {
+      "evra": "5.14.0-427.18.1.el9_4.x86_64",
+      "digest": "sha256:f503b95f2cb0200e4630ec0cd65b57ae3458f334dea414f4ed91111f424c8ab6",
+      "metadata": {
+        "sourcerpm": "kernel"
+      }
+    },
+    "kernel-core": {
+      "evra": "5.14.0-427.18.1.el9_4.x86_64",
+      "digest": "sha256:79efbc6a0bd9f1a636559223af067419ae99044fc4e8bb0b0f6aaf076b2aec83",
+      "metadata": {
+        "sourcerpm": "kernel"
+      }
+    },
+    "kernel-modules": {
+      "evra": "5.14.0-427.18.1.el9_4.x86_64",
+      "digest": "sha256:21c4c16c079d6352ebff2d75d3c84294749d3983bb5bf50afacf4039dc2d3d9f",
+      "metadata": {
+        "sourcerpm": "kernel"
+      }
+    },
+    "kernel-modules-core": {
+      "evra": "5.14.0-427.18.1.el9_4.x86_64",
+      "digest": "sha256:cc8aeba59a492ae576016f321bf3d049eef6c9bb04b47045f2bdbe98814a6537",
+      "metadata": {
+        "sourcerpm": "kernel"
+      }
+    },
+    "kexec-tools": {
+      "evra": "2.0.27-8.el9.x86_64",
+      "digest": "sha256:a46f4775b12b00409b487d795e96e355b1267050af561ce58fad357939d56886",
+      "metadata": {
+        "sourcerpm": "kexec-tools"
+      }
+    },
+    "keyutils": {
+      "evra": "1.6.3-1.el9.x86_64",
+      "digest": "sha256:1fdc912dc1d41759225d68e5a1367ce2578bdbadf71a15c1f6ff84e34ec32436",
+      "metadata": {
+        "sourcerpm": "keyutils"
+      }
+    },
+    "keyutils-libs": {
+      "evra": "1.6.3-1.el9.x86_64",
+      "digest": "sha256:b0f15b1712150c0634ebc4aba29671539dd9c94f2350190a83e34e678168d0ac",
+      "metadata": {
+        "sourcerpm": "keyutils"
+      }
+    },
+    "kmod": {
+      "evra": "28-9.el9.x86_64",
+      "digest": "sha256:83e0c116d91c4cd5dfaa6dd1970e398927fc952612dfb80ec625fd9acc458baa",
+      "metadata": {
+        "sourcerpm": "kmod"
+      }
+    },
+    "kmod-libs": {
+      "evra": "28-9.el9.x86_64",
+      "digest": "sha256:428b9f450f30431a4b75fae141d66ca2d4e1340369d7a086d753e62dbe3a73ed",
+      "metadata": {
+        "sourcerpm": "kmod"
+      }
+    },
+    "kpartx": {
+      "evra": "0.8.7-27.el9.x86_64",
+      "digest": "sha256:cccb9b8c07115b29e19b96496a07aaf1f77a6985d4114bf7e62161c688511180",
+      "metadata": {
+        "sourcerpm": "device-mapper-multipath"
+      }
+    },
+    "krb5-libs": {
+      "evra": "1.21.1-1.el9.x86_64",
+      "digest": "sha256:a1555ecee5147dacf2aa5abf6004f57eb9ec2d2d3c5a26426550722e508ced88",
+      "metadata": {
+        "sourcerpm": "krb5"
+      }
+    },
+    "less": {
+      "evra": "590-4.el9_4.x86_64",
+      "digest": "sha256:e991bce4845ee1f31a098544ba30f87f98efb472cb290114468f6a562f6b80fb",
+      "metadata": {
+        "sourcerpm": "less"
+      }
+    },
+    "libacl": {
+      "evra": "2.3.1-4.el9.x86_64",
+      "digest": "sha256:8412086dee714db21802aacceea3b515ab21e5247a9703df72829fa23a6be042",
+      "metadata": {
+        "sourcerpm": "acl"
+      }
+    },
+    "libaio": {
+      "evra": "0.3.111-13.el9.x86_64",
+      "digest": "sha256:d2ee672a09f4d932568a9c0464ca7d7095fae72bab0b9e51ef596b146b683c08",
+      "metadata": {
+        "sourcerpm": "libaio"
+      }
+    },
+    "libarchive": {
+      "evra": "3.5.3-4.el9.x86_64",
+      "digest": "sha256:fe0bfa5fb09f8d090f8bf8de322141f9a664c400bda521678dffcded5da40036",
+      "metadata": {
+        "sourcerpm": "libarchive"
+      }
+    },
+    "libassuan": {
+      "evra": "2.5.5-3.el9.x86_64",
+      "digest": "sha256:3201aaeb3240c3497673200c50fc27c2b07effd1c3fdd2fbd17a83373e80afb4",
+      "metadata": {
+        "sourcerpm": "libassuan"
+      }
+    },
+    "libatasmart": {
+      "evra": "0.19-22.el9.x86_64",
+      "digest": "sha256:946adb4fe82e2e38a4fc47e990577501d936f42765fc55d736b6f96eb018cd75",
+      "metadata": {
+        "sourcerpm": "libatasmart"
+      }
+    },
+    "libattr": {
+      "evra": "2.5.1-3.el9.x86_64",
+      "digest": "sha256:48e5ecb6d335b9e4facb7be2e50de010885f733026abbc007ee29550db91ee47",
+      "metadata": {
+        "sourcerpm": "attr"
+      }
+    },
+    "libbasicobjects": {
+      "evra": "0.1.1-53.el9.x86_64",
+      "digest": "sha256:17261314a39ca93822b3d212365cbb94d02e00e9b411194c85bbb6effd012ff6",
+      "metadata": {
+        "sourcerpm": "ding-libs"
+      }
+    },
+    "libblkid": {
+      "evra": "2.37.4-18.el9.x86_64",
+      "digest": "sha256:bca0bcc885290d9d6296cafb82afe950ee4faecae2ac7feaeb4abd3b75bf0b41",
+      "metadata": {
+        "sourcerpm": "util-linux"
+      }
+    },
+    "libblockdev": {
+      "evra": "2.28-10.el9.x86_64",
+      "digest": "sha256:d123fc0049bd91913733b34a926380ec9a1eb0926e5637c3312c47d7f7c1c5b4",
+      "metadata": {
+        "sourcerpm": "libblockdev"
+      }
+    },
+    "libblockdev-crypto": {
+      "evra": "2.28-10.el9.x86_64",
+      "digest": "sha256:7fad3f7fe2af837e6605f1ef2612203d5ae4640e7496c8254d9126a1c045250e",
+      "metadata": {
+        "sourcerpm": "libblockdev"
+      }
+    },
+    "libblockdev-fs": {
+      "evra": "2.28-10.el9.x86_64",
+      "digest": "sha256:a065e4c0e52c56fb1a191f7cee270a2339301c6ea4969e69fd440f1ad6709a37",
+      "metadata": {
+        "sourcerpm": "libblockdev"
+      }
+    },
+    "libblockdev-loop": {
+      "evra": "2.28-10.el9.x86_64",
+      "digest": "sha256:e103e61ea129829920c0c1e959117b27d3506c97a65d52e651e09c2f8ec8fa37",
+      "metadata": {
+        "sourcerpm": "libblockdev"
+      }
+    },
+    "libblockdev-mdraid": {
+      "evra": "2.28-10.el9.x86_64",
+      "digest": "sha256:a8c0c8d5d3c47a278a210955b78c0a65b8921d7a8903ef692b715e2636d34fd2",
+      "metadata": {
+        "sourcerpm": "libblockdev"
+      }
+    },
+    "libblockdev-part": {
+      "evra": "2.28-10.el9.x86_64",
+      "digest": "sha256:21c7ace16a8601a8d516069423d135c852a89c0d117d56f751bcb7ca493d1419",
+      "metadata": {
+        "sourcerpm": "libblockdev"
+      }
+    },
+    "libblockdev-swap": {
+      "evra": "2.28-10.el9.x86_64",
+      "digest": "sha256:60ef9434f7c6fcf6c037d2593d8ccbf12427b554b7ceb6b0772bb20b4bebfd36",
+      "metadata": {
+        "sourcerpm": "libblockdev"
+      }
+    },
+    "libblockdev-utils": {
+      "evra": "2.28-10.el9.x86_64",
+      "digest": "sha256:35d2cbd68a6a66bc5638441e3e61bf2a8209b032b3423c334202f6971e744ff4",
+      "metadata": {
+        "sourcerpm": "libblockdev"
+      }
+    },
+    "libbpf": {
+      "evra": "2:1.3.0-2.el9.x86_64",
+      "digest": "sha256:4d9b72c279a48faacb6d5e5e49a4c91aa893cca663f5d152d655ff54a5b996a0",
+      "metadata": {
+        "sourcerpm": "libbpf"
+      }
+    },
+    "libbrotli": {
+      "evra": "1.0.9-6.el9.x86_64",
+      "digest": "sha256:d40bfa4577faba346b9146c8613d2f0e5e1c4042463697ce97cf7338416b2247",
+      "metadata": {
+        "sourcerpm": "brotli"
+      }
+    },
+    "libbytesize": {
+      "evra": "2.5-3.el9.x86_64",
+      "digest": "sha256:2e19c28918885a5fdcd0f9d04f0698b9fbe2393090d45266e3277145511db6d7",
+      "metadata": {
+        "sourcerpm": "libbytesize"
+      }
+    },
+    "libcap": {
+      "evra": "2.48-9.el9_2.x86_64",
+      "digest": "sha256:0ac0a6e3a85d73c7f9a6d11cb701bba345b9b355e25a8656ad4f3a635668c7af",
+      "metadata": {
+        "sourcerpm": "libcap"
+      }
+    },
+    "libcap-ng": {
+      "evra": "0.8.2-7.el9.x86_64",
+      "digest": "sha256:2186dd2969f77d2779b02a98204177439488bf6c87454c5c57296fbda7910e60",
+      "metadata": {
+        "sourcerpm": "libcap-ng"
+      }
+    },
+    "libcbor": {
+      "evra": "0.7.0-5.el9.x86_64",
+      "digest": "sha256:cc69b079cb3e28061981a5b6469a3486cfb8a2ce20228c32338847c6e0436724",
+      "metadata": {
+        "sourcerpm": "libcbor"
+      }
+    },
+    "libcollection": {
+      "evra": "0.7.0-53.el9.x86_64",
+      "digest": "sha256:45e0a6de46b904222dc83972cfbd1cf42e85e4dea9d7eee46abb57ce8cf06d5d",
+      "metadata": {
+        "sourcerpm": "ding-libs"
+      }
+    },
+    "libcom_err": {
+      "evra": "1.46.5-5.el9.x86_64",
+      "digest": "sha256:297506471cc93d52da342bfc7a7850eb32dc29999b490c4871528160843ccd5a",
+      "metadata": {
+        "sourcerpm": "e2fsprogs"
+      }
+    },
+    "libcomps": {
+      "evra": "0.1.18-1.el9.x86_64",
+      "digest": "sha256:0aa19481094ad07d04c120663ca69901ffb548e89f1514cff2747eb345f0a398",
+      "metadata": {
+        "sourcerpm": "libcomps"
+      }
+    },
+    "libcurl": {
+      "evra": "7.76.1-29.el9_4.x86_64",
+      "digest": "sha256:1a63f62f9b1a5f34fe52a2c52abea1c1a03b20bb46a5baecad74e88c784be08f",
+      "metadata": {
+        "sourcerpm": "curl"
+      }
+    },
+    "libdb": {
+      "evra": "5.3.28-53.el9.x86_64",
+      "digest": "sha256:414aeaae0f88840f49cd42c18e38f524e7115b9487eb8153efc202869c703c0e",
+      "metadata": {
+        "sourcerpm": "libdb"
+      }
+    },
+    "libdhash": {
+      "evra": "0.5.0-53.el9.x86_64",
+      "digest": "sha256:01338cf8ac707793e8f33e65995b0327902a055a9a7755eba1627bc9e43bf992",
+      "metadata": {
+        "sourcerpm": "ding-libs"
+      }
+    },
+    "libdnf": {
+      "evra": "0.69.0-8.el9.alma.1.x86_64",
+      "digest": "sha256:773d84b53259757bf025f75eae5b63fb5993f2ef4e9397d9092d5447dd4dfe87",
+      "metadata": {
+        "sourcerpm": "libdnf"
+      }
+    },
+    "libeconf": {
+      "evra": "0.4.1-3.el9_2.x86_64",
+      "digest": "sha256:6bbcc385bdb8a50abf7aced5a4e54f469df0332012b66c8ce8e9fed5c1ac18a4",
+      "metadata": {
+        "sourcerpm": "libeconf"
+      }
+    },
+    "libedit": {
+      "evra": "3.1-38.20210216cvs.el9.x86_64",
+      "digest": "sha256:82b44c2653a9be837317a7eeae643d26f1fdbad28ac38a92949d4ec2b76fa4a8",
+      "metadata": {
+        "sourcerpm": "libedit"
+      }
+    },
+    "libev": {
+      "evra": "4.33-5.el9.x86_64",
+      "digest": "sha256:9081796e5ecbf19460412b1337874a9b92f981e293615db8aa42aced9fbb39ae",
+      "metadata": {
+        "sourcerpm": "libev"
+      }
+    },
+    "libevent": {
+      "evra": "2.1.12-6.el9.x86_64",
+      "digest": "sha256:b1f59b95f689a3a42186e434e47ef2a8d94a38372ddd387e25e0f08f194901ec",
+      "metadata": {
+        "sourcerpm": "libevent"
+      }
+    },
+    "libfdisk": {
+      "evra": "2.37.4-18.el9.x86_64",
+      "digest": "sha256:87f32c8a6e8c8d4640330dd6716f43fc5e70c772018ce1b7c1376b339f91a51b",
+      "metadata": {
+        "sourcerpm": "util-linux"
+      }
+    },
+    "libffi": {
+      "evra": "3.4.2-8.el9.x86_64",
+      "digest": "sha256:1cf2d122e5c423681394c1bc599ee2281d2eafff5a3749842bc93c37db4bed5e",
+      "metadata": {
+        "sourcerpm": "libffi"
+      }
+    },
+    "libfido2": {
+      "evra": "1.13.0-2.el9.x86_64",
+      "digest": "sha256:dd0253f9e0a4238ea5edc1313fdcca4926f631e4fae1dccec09c630b6761721d",
+      "metadata": {
+        "sourcerpm": "libfido2"
+      }
+    },
+    "libgcc": {
+      "evra": "11.4.1-3.el9.alma.1.x86_64",
+      "digest": "sha256:0e9c6a82731dd479136db3ce61f5057ec2f4d265a40f7abe516533243f1629cc",
+      "metadata": {
+        "sourcerpm": "gcc"
+      }
+    },
+    "libgcrypt": {
+      "evra": "1.10.0-10.el9_2.x86_64",
+      "digest": "sha256:c8ec6fdaf3bcc65bd5e3789749ef37b4ebaf8eb6201f62d00af808a9ef651632",
+      "metadata": {
+        "sourcerpm": "libgcrypt"
+      }
+    },
+    "libgomp": {
+      "evra": "11.4.1-3.el9.alma.1.x86_64",
+      "digest": "sha256:e5d25ee0f11525a198108356a60894cd5349f256d0a0ae53a76f14828a8aca62",
+      "metadata": {
+        "sourcerpm": "gcc"
+      }
+    },
+    "libgpg-error": {
+      "evra": "1.42-5.el9.x86_64",
+      "digest": "sha256:f28fabeb02add41b8156c394427da9dbf99882d8c42055367f872130ee424c97",
+      "metadata": {
+        "sourcerpm": "libgpg-error"
+      }
+    },
+    "libgudev": {
+      "evra": "237-1.el9.x86_64",
+      "digest": "sha256:d4fa77951cd622faa67160bf202920fc507a9e7fa54a9d1acfaf5e9f048e281b",
+      "metadata": {
+        "sourcerpm": "libgudev"
+      }
+    },
+    "libgusb": {
+      "evra": "0.3.8-2.el9.x86_64",
+      "digest": "sha256:784d04463eed08b1439372e824d635eb373e17c94de19e504a16869ae4854742",
+      "metadata": {
+        "sourcerpm": "libgusb"
+      }
+    },
+    "libicu": {
+      "evra": "67.1-9.el9.x86_64",
+      "digest": "sha256:b43399ad2ddfd327dffdb89c4ffc5791ccabb21c1c8772ec90a2e20ee14595bd",
+      "metadata": {
+        "sourcerpm": "icu"
+      }
+    },
+    "libidn2": {
+      "evra": "2.3.0-7.el9.x86_64",
+      "digest": "sha256:c3ff43237c05258ee0dd77c28540fc8d0d824f1567b115ddfd555b78d2ee0e7a",
+      "metadata": {
+        "sourcerpm": "libidn2"
+      }
+    },
+    "libini_config": {
+      "evra": "1.3.1-53.el9.x86_64",
+      "digest": "sha256:4d6edbe8dcba07a0e1c84f0bbc1f4cf42126ee1e4f2524c922815c772d74be1f",
+      "metadata": {
+        "sourcerpm": "ding-libs"
+      }
+    },
+    "libipa_hbac": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:117676c95736e2d0d7d7ef318a1e0e33f0bb991315cb7ed49fdfb841c7763e1c",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "libjcat": {
+      "evra": "0.1.6-3.el9.x86_64",
+      "digest": "sha256:c8a6b43fe9bc1a25f86ddee79e0577ab47a42934fd55344f1424d3b31f9486c3",
+      "metadata": {
+        "sourcerpm": "libjcat"
+      }
+    },
+    "libkcapi": {
+      "evra": "1.4.0-2.el9.x86_64",
+      "digest": "sha256:18e9a932028b291efd7ecbdc6b30b4bf8178dbf9a825f1ef55b6bef753571738",
+      "metadata": {
+        "sourcerpm": "libkcapi"
+      }
+    },
+    "libkcapi-hmaccalc": {
+      "evra": "1.4.0-2.el9.x86_64",
+      "digest": "sha256:1d3bcc3bdaa35c156efae482245c3ba1deeb32811d02aa472b3131c46d8ec81f",
+      "metadata": {
+        "sourcerpm": "libkcapi"
+      }
+    },
+    "libksba": {
+      "evra": "1.5.1-6.el9_1.x86_64",
+      "digest": "sha256:95b84e9a29325368df9ac97533c9fad91120c7dbc5c7274858e4f894aa7846af",
+      "metadata": {
+        "sourcerpm": "libksba"
+      }
+    },
+    "libldb": {
+      "evra": "2.8.0-1.el9.x86_64",
+      "digest": "sha256:571dfdec39bc9555385435278a9ccc1ea46aaebefb98c257d5807ca239b50680",
+      "metadata": {
+        "sourcerpm": "libldb"
+      }
+    },
+    "libmaxminddb": {
+      "evra": "1.5.2-3.el9.x86_64",
+      "digest": "sha256:c7703c49f941a0a4ae1b669165b5037a7c8babf2528ecf1b5ca6389d47deb3b2",
+      "metadata": {
+        "sourcerpm": "libmaxminddb"
+      }
+    },
+    "libmnl": {
+      "evra": "1.0.4-15.el9.x86_64",
+      "digest": "sha256:9445fd85788f6b68628f32c888e5abc98721674b0dec14385edcbf282e6ebf60",
+      "metadata": {
+        "sourcerpm": "libmnl"
+      }
+    },
+    "libmodulemd": {
+      "evra": "2.13.0-2.el9.x86_64",
+      "digest": "sha256:7651e560e9f38abce5ec1b0308b72779656aefddfc5340d7c333b4775b539972",
+      "metadata": {
+        "sourcerpm": "libmodulemd"
+      }
+    },
+    "libmount": {
+      "evra": "2.37.4-18.el9.x86_64",
+      "digest": "sha256:4f608a1e1e7a23ee84041e4a1ff131a513d02ff99b4bb6731fb3d124d05ab326",
+      "metadata": {
+        "sourcerpm": "util-linux"
+      }
+    },
+    "libndp": {
+      "evra": "1.8-4.el9.x86_64",
+      "digest": "sha256:8bccdbe7262ddacd98ba5dbd12fcab2bcccefcf6f27ffcd7e265a35bd4d38d68",
+      "metadata": {
+        "sourcerpm": "libndp"
+      }
+    },
+    "libnet": {
+      "evra": "1.2-6.el9.x86_64",
+      "digest": "sha256:52153dd75dacab653d0f3e2368568795e6fc7da5e94791c74fce46a998432e96",
+      "metadata": {
+        "sourcerpm": "libnet"
+      }
+    },
+    "libnetfilter_conntrack": {
+      "evra": "1.0.9-1.el9.x86_64",
+      "digest": "sha256:e25ba24329e14e76e82d9b324ac1472e3fdcd5f061e718f23e792e7f6397192e",
+      "metadata": {
+        "sourcerpm": "libnetfilter_conntrack"
+      }
+    },
+    "libnfnetlink": {
+      "evra": "1.0.1-21.el9.x86_64",
+      "digest": "sha256:9936a8c4cf2003536d5af53ea09ca58122796e1383dc994779d46c6cc65060aa",
+      "metadata": {
+        "sourcerpm": "libnfnetlink"
+      }
+    },
+    "libnfsidmap": {
+      "evra": "1:2.5.4-25.el9.x86_64",
+      "digest": "sha256:acc9ad01700c5cc10bfab6199fdb4d3684c7c616ba872c472dc2c9babb49352d",
+      "metadata": {
+        "sourcerpm": "nfs-utils"
+      }
+    },
+    "libnftnl": {
+      "evra": "1.2.6-2.el9.x86_64",
+      "digest": "sha256:1c84e9a522b1267118ec4c3d8b53f33f3fd37889533ff7c46397fe806d4a34c2",
+      "metadata": {
+        "sourcerpm": "libnftnl"
+      }
+    },
+    "libnghttp2": {
+      "evra": "1.43.0-5.el9_4.3.x86_64",
+      "digest": "sha256:6ed96231e1ec061486e746d27ff76615c098eaac1f7aeb100e50df7f5a1b8a96",
+      "metadata": {
+        "sourcerpm": "nghttp2"
+      }
+    },
+    "libnl3": {
+      "evra": "3.9.0-1.el9.x86_64",
+      "digest": "sha256:ccc910f8a8277af3c3f710faad34c17c24553af42bc09c8df1755ec243be10aa",
+      "metadata": {
+        "sourcerpm": "libnl3"
+      }
+    },
+    "libnvme": {
+      "evra": "1.6-1.el9.x86_64",
+      "digest": "sha256:462b1d04533f3cc5b6bc4a4cbe82bc0d2fca637677ee4b2e9289bb350616a574",
+      "metadata": {
+        "sourcerpm": "libnvme"
+      }
+    },
+    "libpath_utils": {
+      "evra": "0.2.1-53.el9.x86_64",
+      "digest": "sha256:b917ba7f30cf6938d877674afce1226bea99be8ff3bcbef2abc77ebe547e7b1e",
+      "metadata": {
+        "sourcerpm": "ding-libs"
+      }
+    },
+    "libpkgconf": {
+      "evra": "1.7.3-10.el9.x86_64",
+      "digest": "sha256:a90c9d3fc5fa04512d3c8b0d931d6974fe2c88bacb80b7f5d3a7edab7812034b",
+      "metadata": {
+        "sourcerpm": "pkgconf"
+      }
+    },
+    "libpsl": {
+      "evra": "0.21.1-5.el9.x86_64",
+      "digest": "sha256:94c116701e12f839064f26d4b8abe64678fe2678c3f0b9d6f4d15cabcbdd317f",
+      "metadata": {
+        "sourcerpm": "libpsl"
+      }
+    },
+    "libpwquality": {
+      "evra": "1.4.4-8.el9.x86_64",
+      "digest": "sha256:71f55997aef67d1a58608e1b1047115d6b2693a9f1f7e05dac759db66a72bcda",
+      "metadata": {
+        "sourcerpm": "libpwquality"
+      }
+    },
+    "libref_array": {
+      "evra": "0.1.5-53.el9.x86_64",
+      "digest": "sha256:651f537ba5333d3429e6f920f66d065de303d1ea0fbce63943fbb2fd1c169371",
+      "metadata": {
+        "sourcerpm": "ding-libs"
+      }
+    },
+    "librepo": {
+      "evra": "1.14.5-2.el9.x86_64",
+      "digest": "sha256:64f3f407c2bbc60f6d08e83e1ce451e39a41c81976274cfaa5d31c852214f367",
+      "metadata": {
+        "sourcerpm": "librepo"
+      }
+    },
+    "libreport-filesystem": {
+      "evra": "2.15.2-6.el9.alma.noarch",
+      "digest": "sha256:8f7db085207761ac349bd86bed74bec5757b273d51b10d4bcbf188396b0f2368",
+      "metadata": {
+        "sourcerpm": "libreport"
+      }
+    },
+    "libseccomp": {
+      "evra": "2.5.2-2.el9.x86_64",
+      "digest": "sha256:6abff5821cf4692a3cd4b849ab92362d17e36cd555f7a6832d7000ab21b4114c",
+      "metadata": {
+        "sourcerpm": "libseccomp"
+      }
+    },
+    "libselinux": {
+      "evra": "3.6-1.el9.x86_64",
+      "digest": "sha256:b8cf502d7bf3bcb99a1dbfb65b4d2f6df66bf702f5e8c34e5b5d473c37a7c1ad",
+      "metadata": {
+        "sourcerpm": "libselinux"
+      }
+    },
+    "libselinux-utils": {
+      "evra": "3.6-1.el9.x86_64",
+      "digest": "sha256:ce3f51cfb163796cf4eafb7e366031287b8854da531f9819c9b9828cd2b9af08",
+      "metadata": {
+        "sourcerpm": "libselinux"
+      }
+    },
+    "libsemanage": {
+      "evra": "3.6-1.el9.x86_64",
+      "digest": "sha256:e284eada9b4b5a972c01b5024e0facbbea7ca29d2e2682380302e33da44fe904",
+      "metadata": {
+        "sourcerpm": "libsemanage"
+      }
+    },
+    "libsepol": {
+      "evra": "3.6-1.el9.x86_64",
+      "digest": "sha256:70a8045b955d16af0fdfe9554758e245d905cc9a4dd231ba52153f0187dfe770",
+      "metadata": {
+        "sourcerpm": "libsepol"
+      }
+    },
+    "libsigsegv": {
+      "evra": "2.13-4.el9.x86_64",
+      "digest": "sha256:fc15b147b44bd9d39b93679a45711438024b43550860829316a5106cc8f2aa02",
+      "metadata": {
+        "sourcerpm": "libsigsegv"
+      }
+    },
+    "libslirp": {
+      "evra": "4.4.0-7.el9.x86_64",
+      "digest": "sha256:952cba99c36ec04927428bf43bbecf477424fcac52fdff6ac9b7b01299b5aae6",
+      "metadata": {
+        "sourcerpm": "libslirp"
+      }
+    },
+    "libsmartcols": {
+      "evra": "2.37.4-18.el9.x86_64",
+      "digest": "sha256:e04af4109adf1ac43214cca5061a5b5fe9a2ae2a669e59e07cd9f0d1fde907bf",
+      "metadata": {
+        "sourcerpm": "util-linux"
+      }
+    },
+    "libsmbclient": {
+      "evra": "4.19.4-104.el9.x86_64",
+      "digest": "sha256:cd6c754ab7905d39a5c94378e125e631bbb70f9b5454dff810c8db3872ec37ae",
+      "metadata": {
+        "sourcerpm": "samba"
+      }
+    },
+    "libsolv": {
+      "evra": "0.7.24-2.el9.x86_64",
+      "digest": "sha256:2a34605e6ab298d8f38228cffcfaae8181fc86265cfd165742e2ecc8b254ea49",
+      "metadata": {
+        "sourcerpm": "libsolv"
+      }
+    },
+    "libss": {
+      "evra": "1.46.5-5.el9.x86_64",
+      "digest": "sha256:9430f57c1ef15a2fe2eec25d951e7f2853d7bf1eee60c4697c880be46ee5e707",
+      "metadata": {
+        "sourcerpm": "e2fsprogs"
+      }
+    },
+    "libssh": {
+      "evra": "0.10.4-13.el9.x86_64",
+      "digest": "sha256:3fde58b1c5fd34aa3e3c4f56a22a4e3149d2fa83dcf9f1db1c87cb455ab62fde",
+      "metadata": {
+        "sourcerpm": "libssh"
+      }
+    },
+    "libssh-config": {
+      "evra": "0.10.4-13.el9.noarch",
+      "digest": "sha256:85ecc8ec9402526a3679378df72e4bca55583c0b6f819f5f3bc34f3f3f338430",
+      "metadata": {
+        "sourcerpm": "libssh"
+      }
+    },
+    "libsss_certmap": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:e147b2bc2fdee3e42e5e3c691e537d7e663babefe98f27fac364845f72b3f635",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "libsss_idmap": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:f6043a252d831934c24fb582e6dc5521e3733b9d1f9ee12b2b05bbaac1280323",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "libsss_nss_idmap": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:663f7f0a2de6737d10c6f8f5aecd11b4afe4a215b5021d2b5bbc0350024079b0",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "libsss_sudo": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:951855761aa8175b311b937bf535cee7c3e6d0b8bea5d1326498803bba7ac20a",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "libstdc++": {
+      "evra": "11.4.1-3.el9.alma.1.x86_64",
+      "digest": "sha256:7d96b44ea0bd8b3d08e9dba295b43b90e6a03ba3e8fefdefe73e25bf8753e092",
+      "metadata": {
+        "sourcerpm": "gcc"
+      }
+    },
+    "libtalloc": {
+      "evra": "2.4.1-1.el9.x86_64",
+      "digest": "sha256:8bc0f4551b55c4ed3b9363f8803c002fcedc09db13ef88ae7356900bfe108068",
+      "metadata": {
+        "sourcerpm": "libtalloc"
+      }
+    },
+    "libtasn1": {
+      "evra": "4.16.0-8.el9_1.x86_64",
+      "digest": "sha256:2dd3a1ad2785df642cb03dfed6dfbeec929ff8b14e52e61272ca7e89f86ba3cd",
+      "metadata": {
+        "sourcerpm": "libtasn1"
+      }
+    },
+    "libtdb": {
+      "evra": "1.4.9-1.el9.x86_64",
+      "digest": "sha256:3df2b7211be1cdd24b4856a9c2e3e77e3d4dc1aacaa90fdef88107cf6e180eb3",
+      "metadata": {
+        "sourcerpm": "libtdb"
+      }
+    },
+    "libtevent": {
+      "evra": "0.16.0-1.el9.x86_64",
+      "digest": "sha256:5dc8a25cf088a57bbc1de5bf4d830a299e8376d8374d692964972972cd3dd139",
+      "metadata": {
+        "sourcerpm": "libtevent"
+      }
+    },
+    "libtirpc": {
+      "evra": "1.3.3-8.el9_4.x86_64",
+      "digest": "sha256:38f25c0e3aade5b9b9697b3eb9eee80e7784cbdc672f265a75c57ef917140e8e",
+      "metadata": {
+        "sourcerpm": "libtirpc"
+      }
+    },
+    "libudisks2": {
+      "evra": "2.9.4-9.el9.x86_64",
+      "digest": "sha256:9fd0a709a156a74526c6c96a9b9496ab267f9f76dd98767bc1e38e25278ff760",
+      "metadata": {
+        "sourcerpm": "udisks2"
+      }
+    },
+    "libunistring": {
+      "evra": "0.9.10-15.el9.x86_64",
+      "digest": "sha256:d2f86fbee729a4900a433a6c52a3cb95d9b52b1d79c9e719ee3ef509813eb6d9",
+      "metadata": {
+        "sourcerpm": "libunistring"
+      }
+    },
+    "libusbx": {
+      "evra": "1.0.26-1.el9.x86_64",
+      "digest": "sha256:d8ddfd2b72839891bcfdf234f9c11828d1d6991ab11449ae3207a143aebdc631",
+      "metadata": {
+        "sourcerpm": "libusbx"
+      }
+    },
+    "libuser": {
+      "evra": "0.63-13.el9.x86_64",
+      "digest": "sha256:946168f36c1258dde67512e588d8216beb06555cad52098c055e76e4dbc94caa",
+      "metadata": {
+        "sourcerpm": "libuser"
+      }
+    },
+    "libutempter": {
+      "evra": "1.2.1-6.el9.x86_64",
+      "digest": "sha256:80c5d13e72c0c94b92a6c2900176404d1b07343e9d3df23c53e3b7f5bffab9bf",
+      "metadata": {
+        "sourcerpm": "libutempter"
+      }
+    },
+    "libuuid": {
+      "evra": "2.37.4-18.el9.x86_64",
+      "digest": "sha256:4393183d33568e4421ebec0c9cb7ae631465414e7fa8b1fe416978c979421d0f",
+      "metadata": {
+        "sourcerpm": "util-linux"
+      }
+    },
+    "libuv": {
+      "evra": "1:1.42.0-1.el9.x86_64",
+      "digest": "sha256:be4cd132717bd457391d853514f9e596ea46d052d7694fc5eb48f1e418551ba8",
+      "metadata": {
+        "sourcerpm": "libuv"
+      }
+    },
+    "libverto": {
+      "evra": "0.3.2-3.el9.x86_64",
+      "digest": "sha256:c0efaf592ca113e3c5a439bb1cd5b19a9d8581cbc5df0a1c41064fff1f020467",
+      "metadata": {
+        "sourcerpm": "libverto"
+      }
+    },
+    "libverto-libev": {
+      "evra": "0.3.2-3.el9.x86_64",
+      "digest": "sha256:fdcb6aa8eb8d3cf2b764e17c4c61a9c5922cd68d4c7cfa4a8989d97f8d01d388",
+      "metadata": {
+        "sourcerpm": "libverto"
+      }
+    },
+    "libwbclient": {
+      "evra": "4.19.4-104.el9.x86_64",
+      "digest": "sha256:af6d58c23c83614d42c2f5cd1bcfac56f22229c6ea53a55e38dc1b46e7c0e06e",
+      "metadata": {
+        "sourcerpm": "samba"
+      }
+    },
+    "libxcrypt": {
+      "evra": "4.4.18-3.el9.x86_64",
+      "digest": "sha256:a0d439a44585ba94577302fdea641c94d31467fe1e0c43c97a094ad0b3a881ac",
+      "metadata": {
+        "sourcerpm": "libxcrypt"
+      }
+    },
+    "libxcrypt-compat": {
+      "evra": "4.4.18-3.el9.x86_64",
+      "digest": "sha256:87550d10388b61f028583e4ee45f9c6f9618cdb4503df0f60f27404142aa30b0",
+      "metadata": {
+        "sourcerpm": "libxcrypt"
+      }
+    },
+    "libxml2": {
+      "evra": "2.9.13-6.el9_4.x86_64",
+      "digest": "sha256:aa32c00bdfb1adecf1490add9ea876cbb2bb368879433f3873915598188c0a89",
+      "metadata": {
+        "sourcerpm": "libxml2"
+      }
+    },
+    "libxmlb": {
+      "evra": "0.3.10-1.el9.x86_64",
+      "digest": "sha256:bdc4d8dfde29448ce091138479509dc85cac55f9d5293141e5a976c67702ee85",
+      "metadata": {
+        "sourcerpm": "libxmlb"
+      }
+    },
+    "libyaml": {
+      "evra": "0.2.5-7.el9.x86_64",
+      "digest": "sha256:dca58130edd3e024b5078a85f10baa15f1ccde3ce2613031ebb49811f94b6d24",
+      "metadata": {
+        "sourcerpm": "libyaml"
+      }
+    },
+    "libzstd": {
+      "evra": "1.5.1-2.el9.x86_64",
+      "digest": "sha256:2e5215e225cec2db43d92c3b3380812a6f8684e881ed415670299e1e0fe7d1ce",
+      "metadata": {
+        "sourcerpm": "zstd"
+      }
+    },
+    "linux-firmware": {
+      "evra": "20240219-143.el9.noarch",
+      "digest": "sha256:d7d1a90fe8df0c4d555712be529bf84e90b150fa21232f06eb013a33c988c246",
+      "metadata": {
+        "sourcerpm": "linux-firmware"
+      }
+    },
+    "linux-firmware-whence": {
+      "evra": "20240219-143.el9.noarch",
+      "digest": "sha256:fe490c5aeebfe70ea09bbb6e61f5a5d04f43cfda0dd381ca8b0f1f8cd4b07ba6",
+      "metadata": {
+        "sourcerpm": "linux-firmware"
+      }
+    },
+    "lmdb-libs": {
+      "evra": "0.9.29-3.el9.x86_64",
+      "digest": "sha256:3e41248e951c5775bbbcb52147119ab26c6b1cfcc72bcd4f91ce489574eb817c",
+      "metadata": {
+        "sourcerpm": "lmdb"
+      }
+    },
+    "logrotate": {
+      "evra": "3.18.0-8.el9.x86_64",
+      "digest": "sha256:81137f9e2411c4830c66d708733007cd9480c58635414d0e4c17fb20f6081693",
+      "metadata": {
+        "sourcerpm": "logrotate"
+      }
+    },
+    "lsof": {
+      "evra": "4.94.0-3.el9.x86_64",
+      "digest": "sha256:b15f8723bc62ea999f28cca340745b408167fea50a258b5ca4da63da7e4a7b56",
+      "metadata": {
+        "sourcerpm": "lsof"
+      }
+    },
+    "lua-libs": {
+      "evra": "5.4.4-4.el9.x86_64",
+      "digest": "sha256:b8faa64cae1c25cde4f6e6b270cc8292e3efb23776127dfffc6aa8fcef18aeae",
+      "metadata": {
+        "sourcerpm": "lua"
+      }
+    },
+    "lvm2": {
+      "evra": "9:2.03.23-2.el9.x86_64",
+      "digest": "sha256:15a9972e84975b341ea63f24b15e10c4a99df8b942d348a49f2a1d65854ff389",
+      "metadata": {
+        "sourcerpm": "lvm2"
+      }
+    },
+    "lvm2-libs": {
+      "evra": "9:2.03.23-2.el9.x86_64",
+      "digest": "sha256:f5f86af74cdd016acd69c5fbd834b6ed0d23b2af6124690d50554c1a1dd2552f",
+      "metadata": {
+        "sourcerpm": "lvm2"
+      }
+    },
+    "lz4-libs": {
+      "evra": "1.9.3-5.el9.x86_64",
+      "digest": "sha256:439e701491af6a957ac4d7dc69cccee1a945333f19d8bfcbd896b5119af01aab",
+      "metadata": {
+        "sourcerpm": "lz4"
+      }
+    },
+    "lzo": {
+      "evra": "2.10-7.el9.x86_64",
+      "digest": "sha256:9aa0975140913fa81fd263f56b96ca6c876be829e06cb35018ba55aac244ad8d",
+      "metadata": {
+        "sourcerpm": "lzo"
+      }
+    },
+    "mdadm": {
+      "evra": "4.2-12.el9_4.x86_64",
+      "digest": "sha256:8407d5bcd0a32d2ed62dec62fe96bea6849949e48f55a01d6784cebd18c43994",
+      "metadata": {
+        "sourcerpm": "mdadm"
+      }
+    },
+    "microcode_ctl": {
+      "evra": "4:20230808-2.20231009.1.el9_3.noarch",
+      "digest": "sha256:42924ff3758b6505ffc20e59776a54dfcf180d5dfba42104374c9efc9cf00331",
+      "metadata": {
+        "sourcerpm": "microcode_ctl"
+      }
+    },
+    "mokutil": {
+      "evra": "2:0.6.0-4.el9.x86_64",
+      "digest": "sha256:bad12faf4ffa2b3f7eb56b3c83d6e8f87d48fc2a76f81214438bea6a8c0a1a53",
+      "metadata": {
+        "sourcerpm": "mokutil"
+      }
+    },
+    "mpfr": {
+      "evra": "4.1.0-7.el9.x86_64",
+      "digest": "sha256:5708780ca5c42532a8d0697b395a6493aa86066b74091bc495ed0239a55fd155",
+      "metadata": {
+        "sourcerpm": "mpfr"
+      }
+    },
+    "nano": {
+      "evra": "5.6.1-5.el9.x86_64",
+      "digest": "sha256:915ee3d3976120248d032739c9503471f5b8c2150e95c4a73737a41ea91a1550",
+      "metadata": {
+        "sourcerpm": "nano"
+      }
+    },
+    "ncurses": {
+      "evra": "6.2-10.20210508.el9.x86_64",
+      "digest": "sha256:155276c65c4b61656c9c4dfeee0557652b5501ac26026cb91ac8c8b48333daca",
+      "metadata": {
+        "sourcerpm": "ncurses"
+      }
+    },
+    "ncurses-base": {
+      "evra": "6.2-10.20210508.el9.noarch",
+      "digest": "sha256:d8307bfbd2428c8d08deffaff1ec61f7bc016ef03c77798b32ce021965e1bc65",
+      "metadata": {
+        "sourcerpm": "ncurses"
+      }
+    },
+    "ncurses-libs": {
+      "evra": "6.2-10.20210508.el9.x86_64",
+      "digest": "sha256:d06b0e491481a345faf21a69666cbdc302d19b54fb29ae1aa78fa6b205f9e604",
+      "metadata": {
+        "sourcerpm": "ncurses"
+      }
+    },
+    "net-tools": {
+      "evra": "2.0-0.62.20160912git.el9.x86_64",
+      "digest": "sha256:65ee9ebe26dd786a1c6007f2fa1cc60113abab514fbea3b1fc561ebd357d0807",
+      "metadata": {
+        "sourcerpm": "net-tools"
+      }
+    },
+    "netavark": {
+      "evra": "2:1.10.3-1.el9.x86_64",
+      "digest": "sha256:6a7afdc3c4e60e1b333d4e2b8c8e39646c7a31643be80f2359a47d4463a4e6b2",
+      "metadata": {
+        "sourcerpm": "netavark"
+      }
+    },
+    "nettle": {
+      "evra": "3.9.1-1.el9.x86_64",
+      "digest": "sha256:9786b6610d17aa495fb640ba6d046bf73704915b82d12e6d8339090ff4891de5",
+      "metadata": {
+        "sourcerpm": "nettle"
+      }
+    },
+    "newt": {
+      "evra": "0.52.21-11.el9.x86_64",
+      "digest": "sha256:5f4a6ed03f191d81961f34c459a1c18523350ba16022919f561ea555b7889906",
+      "metadata": {
+        "sourcerpm": "newt"
+      }
+    },
+    "nfs-utils": {
+      "evra": "1:2.5.4-25.el9.x86_64",
+      "digest": "sha256:cdb6f38d1381f0a01f3db882d65ffabae93c222b411703b0aaf0f48150f74d49",
+      "metadata": {
+        "sourcerpm": "nfs-utils"
+      }
+    },
+    "nftables": {
+      "evra": "1:1.0.9-1.el9.x86_64",
+      "digest": "sha256:ee9d0d7ca41baeb6023117d560df1c0b94245ca1d6f8c2b6a3ac1faa421aeb45",
+      "metadata": {
+        "sourcerpm": "nftables"
+      }
+    },
+    "npth": {
+      "evra": "1.6-8.el9.x86_64",
+      "digest": "sha256:9d2ed3841c8c39d3694e2dd1b2e9342d4cefe1a20401efd1793ca53000ba259f",
+      "metadata": {
+        "sourcerpm": "npth"
+      }
+    },
+    "nspr": {
+      "evra": "4.35.0-7.el9_4.x86_64",
+      "digest": "sha256:745fe83c79559c35062029f8844a40d0d21a79e7b7c133bbb85819546c1be3af",
+      "metadata": {
+        "sourcerpm": "nss"
+      }
+    },
+    "nss": {
+      "evra": "3.90.0-7.el9_4.x86_64",
+      "digest": "sha256:ffb942b1c9bb4a894c3dd5bedea0edd22b2fa8c5c2f3f7e7db979b150b234d6d",
+      "metadata": {
+        "sourcerpm": "nss"
+      }
+    },
+    "nss-altfiles": {
+      "evra": "2.18.1-20.el9.x86_64",
+      "digest": "sha256:1740568505248ffc8424dc10e398fa019a8389fa5f601d0aaa707089f9a6bd94",
+      "metadata": {
+        "sourcerpm": "nss-altfiles"
+      }
+    },
+    "nss-softokn": {
+      "evra": "3.90.0-7.el9_4.x86_64",
+      "digest": "sha256:90e8f876556542a8509e82624c3b42923dfdad0e0a5a7bc42eea81b2bd51eccf",
+      "metadata": {
+        "sourcerpm": "nss"
+      }
+    },
+    "nss-softokn-freebl": {
+      "evra": "3.90.0-7.el9_4.x86_64",
+      "digest": "sha256:204ebc74d211da5fc6d50a9a7f6d7bd05ce22cb97486ee3f9e2c6bfacc23fe13",
+      "metadata": {
+        "sourcerpm": "nss"
+      }
+    },
+    "nss-sysinit": {
+      "evra": "3.90.0-7.el9_4.x86_64",
+      "digest": "sha256:4cd3acfcd30faa9f5ffd9b58a512bc68cb1c0682ade2cd3af86c1d597721bb26",
+      "metadata": {
+        "sourcerpm": "nss"
+      }
+    },
+    "nss-util": {
+      "evra": "3.90.0-7.el9_4.x86_64",
+      "digest": "sha256:482ff6e599622470545b78693fde4a6cc55a540a6cb808eb98c7aad19e29217e",
+      "metadata": {
+        "sourcerpm": "nss"
+      }
+    },
+    "numactl-libs": {
+      "evra": "2.0.16-3.el9.x86_64",
+      "digest": "sha256:1a427dbc863f6fca1ce0c05c5432e0047f302bd6b7dbfe633a7aca7f4e8ed23a",
+      "metadata": {
+        "sourcerpm": "numactl"
+      }
+    },
+    "nvme-cli": {
+      "evra": "2.6-5.el9.x86_64",
+      "digest": "sha256:96b2973f9a22b6597d4380290d130b1a50cdd6b2d89730e167bfb9b1a58c652c",
+      "metadata": {
+        "sourcerpm": "nvme-cli"
+      }
+    },
+    "oniguruma": {
+      "evra": "6.9.6-1.el9.5.x86_64",
+      "digest": "sha256:b43fef96d9998563f229f24b148ecaf8e2e918fe44a5c5c8ed3466d5650c2400",
+      "metadata": {
+        "sourcerpm": "oniguruma"
+      }
+    },
+    "openldap": {
+      "evra": "2.6.6-3.el9.x86_64",
+      "digest": "sha256:bf5649d69633ff62c35a93192983e5b1a0432b88f5d0ef1a7484b8dc76d69ef7",
+      "metadata": {
+        "sourcerpm": "openldap"
+      }
+    },
+    "openssh": {
+      "evra": "8.7p1-38.el9.x86_64",
+      "digest": "sha256:cf3587e236b0a8297ca2f7219e1a8d9f77743927d89ef55acab7b0b123cd5fa5",
+      "metadata": {
+        "sourcerpm": "openssh"
+      }
+    },
+    "openssh-clients": {
+      "evra": "8.7p1-38.el9.x86_64",
+      "digest": "sha256:8cd04fb89fc7531f3bb9ce45e3f6c3cd0b43955a2282aa28a270c563fab61a74",
+      "metadata": {
+        "sourcerpm": "openssh"
+      }
+    },
+    "openssh-server": {
+      "evra": "8.7p1-38.el9.x86_64",
+      "digest": "sha256:e518ff8dd852c21661c037668bd02e5207e74f7f6c31e16b4e0cb7e7916428e2",
+      "metadata": {
+        "sourcerpm": "openssh"
+      }
+    },
+    "openssl": {
+      "evra": "1:3.0.7-27.el9.x86_64",
+      "digest": "sha256:fe27c582e6e3f9a048c2c5f3c5b3e300b87b54948eb8138662b5ff0d4e3e238f",
+      "metadata": {
+        "sourcerpm": "openssl"
+      }
+    },
+    "openssl-libs": {
+      "evra": "1:3.0.7-27.el9.x86_64",
+      "digest": "sha256:d541d3311e82d9743d848fa95ea854472966479190eddcc3a39b083d64e1bfca",
+      "metadata": {
+        "sourcerpm": "openssl"
+      }
+    },
+    "os-prober": {
+      "evra": "1.77-10.el9.x86_64",
+      "digest": "sha256:a6611ef49886e7b7b405b6770a9f0495856c7009403256460d053ba0a52fd530",
+      "metadata": {
+        "sourcerpm": "os-prober"
+      }
+    },
+    "ostree": {
+      "evra": "2024.4-3.el9_4.x86_64",
+      "digest": "sha256:a0f9eec2b5fe829c50242912d75006df11bd55302c8a067cd341169c15531aca",
+      "metadata": {
+        "sourcerpm": "ostree"
+      }
+    },
+    "ostree-libs": {
+      "evra": "2024.4-3.el9_4.x86_64",
+      "digest": "sha256:57c99941d525879fbb1e5e69011b769ee17a30bea60df6f81d39ab6fa681d0d1",
+      "metadata": {
+        "sourcerpm": "ostree"
+      }
+    },
+    "p11-kit": {
+      "evra": "0.25.3-2.el9.x86_64",
+      "digest": "sha256:97f7ae42919b0d414232bf19739db0524cefee21af73385a473bea22663c5a39",
+      "metadata": {
+        "sourcerpm": "p11-kit"
+      }
+    },
+    "p11-kit-trust": {
+      "evra": "0.25.3-2.el9.x86_64",
+      "digest": "sha256:c7ff6e2c0985097c56f34509ecd5dfca8403066f6e75f09f0569b5ca4dfe429b",
+      "metadata": {
+        "sourcerpm": "p11-kit"
+      }
+    },
+    "pam": {
+      "evra": "1.5.1-19.el9.x86_64",
+      "digest": "sha256:8e5fe731f8eaebf41be0ed080c415eb86bbbf9a315df51f4f2d2792902b4e189",
+      "metadata": {
+        "sourcerpm": "pam"
+      }
+    },
+    "parted": {
+      "evra": "3.5-2.el9.x86_64",
+      "digest": "sha256:68d53c712550c9763dc8373643389c9289ba3ac0c05ae1a185ba740e96f2065b",
+      "metadata": {
+        "sourcerpm": "parted"
+      }
+    },
+    "passt": {
+      "evra": "0^20231204.gb86afe3-1.el9.x86_64",
+      "digest": "sha256:47a852b76502b0b1e936dccc9ad34ae2cca21642410c4e807570ab46ee7ab660",
+      "metadata": {
+        "sourcerpm": "passt"
+      }
+    },
+    "passt-selinux": {
+      "evra": "0^20231204.gb86afe3-1.el9.noarch",
+      "digest": "sha256:095cf5565e9796547fab27d20f0bdb16d2f21ea3959669a9cdeed6dac5282d3a",
+      "metadata": {
+        "sourcerpm": "passt"
+      }
+    },
+    "passwd": {
+      "evra": "0.80-12.el9.x86_64",
+      "digest": "sha256:0984bf35e398bd3d48e1530fe7f55afc6fdff0252ac8e763e25494aa74eca0da",
+      "metadata": {
+        "sourcerpm": "passwd"
+      }
+    },
+    "pciutils-libs": {
+      "evra": "3.7.0-5.el9.x86_64",
+      "digest": "sha256:308bd897d8f9a36020d70edc79089a3595b22b149200d67c37e2d4e6147a9f75",
+      "metadata": {
+        "sourcerpm": "pciutils"
+      }
+    },
+    "pcre": {
+      "evra": "8.44-3.el9.3.x86_64",
+      "digest": "sha256:c820efcb78631c509b9d2675d44073edf90c8f16d6e1fc42fb528780fc74fab5",
+      "metadata": {
+        "sourcerpm": "pcre"
+      }
+    },
+    "pcre2": {
+      "evra": "10.40-5.el9.x86_64",
+      "digest": "sha256:b6426cf348b1d9da1c91170316060fcfe6efedeecedaeba21751f998dd831d6c",
+      "metadata": {
+        "sourcerpm": "pcre2"
+      }
+    },
+    "pcre2-syntax": {
+      "evra": "10.40-5.el9.noarch",
+      "digest": "sha256:9f213434d98367b049a00781dcc9995f4a7c1a605e61a9773fe15aa6f81fd7f9",
+      "metadata": {
+        "sourcerpm": "pcre2"
+      }
+    },
+    "pigz": {
+      "evra": "2.5-4.el9.x86_64",
+      "digest": "sha256:b381637a8579d9ce60d73eaee9cc130e738385fa132ca0a40312801f913a1eef",
+      "metadata": {
+        "sourcerpm": "pigz"
+      }
+    },
+    "pkgconf": {
+      "evra": "1.7.3-10.el9.x86_64",
+      "digest": "sha256:fb56b0e6f58a832259d5409bbda13a622a3b2fe01a7e5ab2cc22dbdce7a8b045",
+      "metadata": {
+        "sourcerpm": "pkgconf"
+      }
+    },
+    "pkgconf-m4": {
+      "evra": "1.7.3-10.el9.noarch",
+      "digest": "sha256:0f89e1097abba7a1ef29e025763e3445cd5d52bf90ee5443320857fd6ca38894",
+      "metadata": {
+        "sourcerpm": "pkgconf"
+      }
+    },
+    "pkgconf-pkg-config": {
+      "evra": "1.7.3-10.el9.x86_64",
+      "digest": "sha256:b3d402962eff346273eff100c60d42b15f6995376dcfe43ea3d44accec1b360e",
+      "metadata": {
+        "sourcerpm": "pkgconf"
+      }
+    },
+    "podman": {
+      "evra": "4:4.9.4-3.el9_4.x86_64",
+      "digest": "sha256:3bb64b40fd9c828df1390a1ff5c5d7078b94354c86099c01f8aba90bf643210a",
+      "metadata": {
+        "sourcerpm": "podman"
+      }
+    },
+    "policycoreutils": {
+      "evra": "3.6-2.1.el9.x86_64",
+      "digest": "sha256:2ca98461c49594defe1bdd9d87a24258a9b2f8fe7349067ccd99e3093a1e39af",
+      "metadata": {
+        "sourcerpm": "policycoreutils"
+      }
+    },
+    "polkit": {
+      "evra": "0.117-11.el9.x86_64",
+      "digest": "sha256:1bc13397dd4ec52490f653a039fa15acf685c635963774c3c78046caa417997d",
+      "metadata": {
+        "sourcerpm": "polkit"
+      }
+    },
+    "polkit-libs": {
+      "evra": "0.117-11.el9.x86_64",
+      "digest": "sha256:7ec8578f712ae7fca09ab6b763ce420eee164149898141c98688078a1cbc1c0c",
+      "metadata": {
+        "sourcerpm": "polkit"
+      }
+    },
+    "polkit-pkla-compat": {
+      "evra": "0.1-21.el9.x86_64",
+      "digest": "sha256:0fa74d6176f270c976e084a91a1658decfd196b28ad1a37ccb771cd42ae3519d",
+      "metadata": {
+        "sourcerpm": "polkit-pkla-compat"
+      }
+    },
+    "popt": {
+      "evra": "1.18-8.el9.x86_64",
+      "digest": "sha256:3136600b3b57d067ff12d1c962b31f4b11b938df56acbbc01737aee876732faa",
+      "metadata": {
+        "sourcerpm": "popt"
+      }
+    },
+    "procps-ng": {
+      "evra": "3.3.17-14.el9.x86_64",
+      "digest": "sha256:33e5281f3008a15c034a26dc6065dab8b509c182cff4864d5692a3dccb51692b",
+      "metadata": {
+        "sourcerpm": "procps-ng"
+      }
+    },
+    "protobuf-c": {
+      "evra": "1.3.3-13.el9.x86_64",
+      "digest": "sha256:3650a3e5c9c5c37b107f5d950ca1c97f516aac5f452e7ddf7a294264b770e05e",
+      "metadata": {
+        "sourcerpm": "protobuf-c"
+      }
+    },
+    "psmisc": {
+      "evra": "23.4-3.el9.x86_64",
+      "digest": "sha256:fd1ba8a5c28f8888205c02b4c695766ed64c77e26ced0cd5aba59cbaacca17a9",
+      "metadata": {
+        "sourcerpm": "psmisc"
+      }
+    },
+    "publicsuffix-list-dafsa": {
+      "evra": "20210518-3.el9.noarch",
+      "digest": "sha256:b4565f94c798225ca57325460a9e49caa16decc9a8f60d7389c1f16ded8f221c",
+      "metadata": {
+        "sourcerpm": "publicsuffix-list"
+      }
+    },
+    "python-unversioned-command": {
+      "evra": "3.9.18-3.el9.noarch",
+      "digest": "sha256:f6947f25f3e9031aa3ae98a5fbf0d29c632364ebf7906fa43be8fb694723269c",
+      "metadata": {
+        "sourcerpm": "python3.9"
+      }
+    },
+    "python3": {
+      "evra": "3.9.18-3.el9.x86_64",
+      "digest": "sha256:ef3600ac07bd7bd2091d3c461af23f309c398c39a87c77898ad1552c769b9ea6",
+      "metadata": {
+        "sourcerpm": "python3.9"
+      }
+    },
+    "python3-chardet": {
+      "evra": "4.0.0-5.el9.noarch",
+      "digest": "sha256:52d6afa33958bc273064178f6d6b12073396b0f2109ed5aa46dec9fec10b216e",
+      "metadata": {
+        "sourcerpm": "python-chardet"
+      }
+    },
+    "python3-dbus": {
+      "evra": "1.2.18-2.el9.x86_64",
+      "digest": "sha256:6f25c4a8038efcb5a09acaf9258ced916c47a09ef84686ad8a57b3284c3d5e00",
+      "metadata": {
+        "sourcerpm": "dbus-python"
+      }
+    },
+    "python3-dnf": {
+      "evra": "4.14.0-9.el9.alma.1.noarch",
+      "digest": "sha256:c76bd48aa67829eb16edc0b15531f0dbcd6c14541ba713dc412c67b22cf2ac1e",
+      "metadata": {
+        "sourcerpm": "dnf"
+      }
+    },
+    "python3-file-magic": {
+      "evra": "5.39-16.el9.noarch",
+      "digest": "sha256:62fb8e14b9695ce3cc2bd865118725b0051215cac1cc03649dc2308fb701bcae",
+      "metadata": {
+        "sourcerpm": "file"
+      }
+    },
+    "python3-gpg": {
+      "evra": "1.15.1-6.el9.x86_64",
+      "digest": "sha256:c44596e9947c5e0e6186bffec952b7dc18294038eb17052de261a6e3d9285a2b",
+      "metadata": {
+        "sourcerpm": "gpgme"
+      }
+    },
+    "python3-hawkey": {
+      "evra": "0.69.0-8.el9.alma.1.x86_64",
+      "digest": "sha256:a7143b2c80590d6644c47f6401ed53932777a1b50fb0606a6dba0607cb3e94f7",
+      "metadata": {
+        "sourcerpm": "libdnf"
+      }
+    },
+    "python3-idna": {
+      "evra": "2.10-7.el9.noarch",
+      "digest": "sha256:266f5a37e457e5bc8f2de36a6911e343aa2dceed61d29044897d72e184c1730b",
+      "metadata": {
+        "sourcerpm": "python-idna"
+      }
+    },
+    "python3-libcomps": {
+      "evra": "0.1.18-1.el9.x86_64",
+      "digest": "sha256:05d86903b14d3d9a5b65c83409db27eaa170453cd54156f0036161766f000bd9",
+      "metadata": {
+        "sourcerpm": "libcomps"
+      }
+    },
+    "python3-libdnf": {
+      "evra": "0.69.0-8.el9.alma.1.x86_64",
+      "digest": "sha256:a51fd57757dfc7669e6808124ebc81079b98a34a36cf44dd5013d79e57962686",
+      "metadata": {
+        "sourcerpm": "libdnf"
+      }
+    },
+    "python3-libs": {
+      "evra": "3.9.18-3.el9.x86_64",
+      "digest": "sha256:5f87a78282d3ce3cde7a3ebe2f10a60740eb2300c36b02472b96a361c8b39fac",
+      "metadata": {
+        "sourcerpm": "python3.9"
+      }
+    },
+    "python3-pexpect": {
+      "evra": "4.8.0-7.el9.noarch",
+      "digest": "sha256:f386e325f4ede3b0e68627cd3f5af54661a71b5dad852b7fab434127b217ee28",
+      "metadata": {
+        "sourcerpm": "python-pexpect"
+      }
+    },
+    "python3-pip-wheel": {
+      "evra": "21.2.3-8.el9.noarch",
+      "digest": "sha256:bef628a425363f4f4f4ef85632738919e710427efaf76c942d2f037aa9912474",
+      "metadata": {
+        "sourcerpm": "python-pip"
+      }
+    },
+    "python3-ptyprocess": {
+      "evra": "0.6.0-12.el9.noarch",
+      "digest": "sha256:a5919c6729f9b913323582c9dc8d81d7a01774db2d94b08198b5b776691a1435",
+      "metadata": {
+        "sourcerpm": "python-ptyprocess"
+      }
+    },
+    "python3-pysocks": {
+      "evra": "1.7.1-12.el9.noarch",
+      "digest": "sha256:fa55c082a85a2ee69445c32c74ebe8ab00afca86a5c84a90497c6bbb5a9970dd",
+      "metadata": {
+        "sourcerpm": "python-pysocks"
+      }
+    },
+    "python3-pyyaml": {
+      "evra": "5.4.1-6.el9.x86_64",
+      "digest": "sha256:07c98c019f29e51da1f6bbd9b3d22324a848c55406edd0b8051e4a868c9f5ed5",
+      "metadata": {
+        "sourcerpm": "PyYAML"
+      }
+    },
+    "python3-requests": {
+      "evra": "2.25.1-8.el9.noarch",
+      "digest": "sha256:1328f3ca10b6cf353b6116c1324f76df298945469b8f230d3e7eebce819c0f93",
+      "metadata": {
+        "sourcerpm": "python-requests"
+      }
+    },
+    "python3-rpm": {
+      "evra": "4.16.1.3-29.el9.x86_64",
+      "digest": "sha256:65e66fb39d357d9f577ea0d49c89a72aba1bafc9a58cfee80f2c2506ba5b202b",
+      "metadata": {
+        "sourcerpm": "rpm"
+      }
+    },
+    "python3-setuptools": {
+      "evra": "53.0.0-12.el9.noarch",
+      "digest": "sha256:dd1268c5c72eb72192e2ce3f63250a6e844a6de481a169b8bc02ba53e6d9141b",
+      "metadata": {
+        "sourcerpm": "python-setuptools"
+      }
+    },
+    "python3-setuptools-wheel": {
+      "evra": "53.0.0-12.el9.noarch",
+      "digest": "sha256:4f5af727ef5f9c2eb7708a4a445a67993082119b80656d161800b5f09630e549",
+      "metadata": {
+        "sourcerpm": "python-setuptools"
+      }
+    },
+    "python3-six": {
+      "evra": "1.15.0-9.el9.noarch",
+      "digest": "sha256:51521745ef08f176c6a28c785a8ad95e66e75d7165629abc2870b19438172df1",
+      "metadata": {
+        "sourcerpm": "python-six"
+      }
+    },
+    "python3-urllib3": {
+      "evra": "1.26.5-5.el9.noarch",
+      "digest": "sha256:463bf17803ce2df18be1c7a4e8eb1045911e436cc138969f1aed6f13c9b86ce7",
+      "metadata": {
+        "sourcerpm": "python-urllib3"
+      }
+    },
+    "quota": {
+      "evra": "1:4.06-6.el9.x86_64",
+      "digest": "sha256:87ed80e4f3250e12dbda9fe1af2d8f35a89028b29bc17fe5f755bc9e8009f866",
+      "metadata": {
+        "sourcerpm": "quota"
+      }
+    },
+    "quota-nls": {
+      "evra": "1:4.06-6.el9.noarch",
+      "digest": "sha256:0f692c348d2afb220ee21a0f58d53c49503b615948d79d4fb7ba000fae5e3a3d",
+      "metadata": {
+        "sourcerpm": "quota"
+      }
+    },
+    "readline": {
+      "evra": "8.1-4.el9.x86_64",
+      "digest": "sha256:9255afa1a678af404a5a6a739d67444c1404789e952ec34b84899019d76282d6",
+      "metadata": {
+        "sourcerpm": "readline"
+      }
+    },
+    "rpcbind": {
+      "evra": "1.2.6-7.el9.x86_64",
+      "digest": "sha256:0f37ea0847a8a7a9517947818c1c98b7ac3236ec6964474120b0ab4b6e307019",
+      "metadata": {
+        "sourcerpm": "rpcbind"
+      }
+    },
+    "rpm": {
+      "evra": "4.16.1.3-29.el9.x86_64",
+      "digest": "sha256:d91563958e938d2d725833fe49c19aaca602291857c1ab8cf6b8e9d4c2886082",
+      "metadata": {
+        "sourcerpm": "rpm"
+      }
+    },
+    "rpm-build-libs": {
+      "evra": "4.16.1.3-29.el9.x86_64",
+      "digest": "sha256:68d59da0359b7773520e7deacbc246282cfbf7c3b09c8658c45047069bc456c7",
+      "metadata": {
+        "sourcerpm": "rpm"
+      }
+    },
+    "rpm-libs": {
+      "evra": "4.16.1.3-29.el9.x86_64",
+      "digest": "sha256:8d834116996676d20793776a94d00d2268710b3bf631f13742e8a73dde49b71b",
+      "metadata": {
+        "sourcerpm": "rpm"
+      }
+    },
+    "rpm-ostree": {
+      "evra": "2024.3-1.el9.x86_64",
+      "digest": "sha256:663744e5eb1f5bd88a0dfd3f9584c4d73567f39d8870b4b6db881ebb5967fe40",
+      "metadata": {
+        "sourcerpm": "rpm-ostree"
+      }
+    },
+    "rpm-ostree-libs": {
+      "evra": "2024.3-1.el9.x86_64",
+      "digest": "sha256:74ce69cd2e82b06cd5566a4e590ba8b1c6ed924b19014738985617535a004c0b",
+      "metadata": {
+        "sourcerpm": "rpm-ostree"
+      }
+    },
+    "rpm-plugin-selinux": {
+      "evra": "4.16.1.3-29.el9.x86_64",
+      "digest": "sha256:118352dd2ebab945efea65121c314bf5e4b710e3f357af6ad024b84f32370413",
+      "metadata": {
+        "sourcerpm": "rpm"
+      }
+    },
+    "rpm-plugin-systemd-inhibit": {
+      "evra": "4.16.1.3-29.el9.x86_64",
+      "digest": "sha256:c4c8c42bda98f90b060e6eae255a30eb2f3fbbd45f82cdb0fabfab9cff970f65",
+      "metadata": {
+        "sourcerpm": "rpm"
+      }
+    },
+    "rpm-sign-libs": {
+      "evra": "4.16.1.3-29.el9.x86_64",
+      "digest": "sha256:999d9a900a79c8a57b0b20d973df32bf3868197116dfab98285f5582972e9b6a",
+      "metadata": {
+        "sourcerpm": "rpm"
+      }
+    },
+    "samba-client-libs": {
+      "evra": "4.19.4-104.el9.x86_64",
+      "digest": "sha256:8b7c2e3eee980584518a701c11b051a34eb5844defaa38c893678b25078c9927",
+      "metadata": {
+        "sourcerpm": "samba"
+      }
+    },
+    "samba-common": {
+      "evra": "4.19.4-104.el9.noarch",
+      "digest": "sha256:4aa8c995fc6a60f6e2a2d4764285b7cf6b3a1d684a08b3ad6361885ab9e2aae9",
+      "metadata": {
+        "sourcerpm": "samba"
+      }
+    },
+    "samba-common-libs": {
+      "evra": "4.19.4-104.el9.x86_64",
+      "digest": "sha256:a66251743364c3e6126a8ed6b95214c6711616ea2573f8eca367a01e971ddd18",
+      "metadata": {
+        "sourcerpm": "samba"
+      }
+    },
+    "sed": {
+      "evra": "4.8-9.el9.x86_64",
+      "digest": "sha256:099290d81ec6c46a58194d651a601336f67e165885ccad1999dbc97f8e96dcec",
+      "metadata": {
+        "sourcerpm": "sed"
+      }
+    },
+    "selinux-policy": {
+      "evra": "38.1.35-2.el9_4.noarch",
+      "digest": "sha256:7c4403814070cbd89e2d5ac6ae9cffd2e461697c362161cab1c99308087ebb45",
+      "metadata": {
+        "sourcerpm": "selinux-policy"
+      }
+    },
+    "selinux-policy-targeted": {
+      "evra": "38.1.35-2.el9_4.noarch",
+      "digest": "sha256:3eccd2b6d04480d0c106a2dabe1af4ce1d3585917e476d129f0cd00f19613de3",
+      "metadata": {
+        "sourcerpm": "selinux-policy"
+      }
+    },
+    "setup": {
+      "evra": "2.13.7-10.el9.noarch",
+      "digest": "sha256:b327e592753bf3943119b115eddb51f992cce2cfe33de69be13a1e824c9abc7c",
+      "metadata": {
+        "sourcerpm": "setup"
+      }
+    },
+    "sg3_utils": {
+      "evra": "1.47-9.el9.x86_64",
+      "digest": "sha256:268b07f46bbd99dd44ad2e5518b5ee3a9a2a7b5e2052e983e717dbf443c65f1a",
+      "metadata": {
+        "sourcerpm": "sg3_utils"
+      }
+    },
+    "sg3_utils-libs": {
+      "evra": "1.47-9.el9.x86_64",
+      "digest": "sha256:71a6d6866bcf8a0a882e8935cf5d4c178af51b304518bf2392dc348235609ce7",
+      "metadata": {
+        "sourcerpm": "sg3_utils"
+      }
+    },
+    "shadow-utils": {
+      "evra": "2:4.9-8.el9.x86_64",
+      "digest": "sha256:23bf5c43a25b335103bedae89618438976bab5d2b3d36330bbde4b96cd30e9cb",
+      "metadata": {
+        "sourcerpm": "shadow-utils"
+      }
+    },
+    "shadow-utils-subid": {
+      "evra": "2:4.9-8.el9.x86_64",
+      "digest": "sha256:945a4b17d3ce881fd829ba5b0d9387f1b9426e00d8376caca08f95d133e1ac06",
+      "metadata": {
+        "sourcerpm": "shadow-utils"
+      }
+    },
+    "shared-mime-info": {
+      "evra": "2.1-5.el9.x86_64",
+      "digest": "sha256:7f293fca407f549a24bef5fa8179da6aaf637deaac362c79cfa968f867ad34ac",
+      "metadata": {
+        "sourcerpm": "shared-mime-info"
+      }
+    },
+    "shim-x64": {
+      "evra": "15.8-4.el9_3.alma.1.x86_64",
+      "digest": "sha256:190274ec5c3d10347c176cf70168fda177502feb1cf74aa61e1759596c481460",
+      "metadata": {
+        "sourcerpm": "shim"
+      }
+    },
+    "skopeo": {
+      "evra": "2:1.14.3-2.el9_4.x86_64",
+      "digest": "sha256:54d444395c81cb51cb3ebdb5985bd4fd3b5689743128132634515c496491aba8",
+      "metadata": {
+        "sourcerpm": "skopeo"
+      }
+    },
+    "slang": {
+      "evra": "2.3.2-11.el9.x86_64",
+      "digest": "sha256:9a54345bb715e0a9ed17c476e23ef49fb4935ee26418377f275fd55529b8a758",
+      "metadata": {
+        "sourcerpm": "slang"
+      }
+    },
+    "slirp4netns": {
+      "evra": "1.2.3-1.el9.x86_64",
+      "digest": "sha256:c64619e53f4e81e9ade6538ffa8e5cc3bbbc017bbd5a410dc20da9a8b672fae9",
+      "metadata": {
+        "sourcerpm": "slirp4netns"
+      }
+    },
+    "snappy": {
+      "evra": "1.1.8-8.el9.x86_64",
+      "digest": "sha256:09e8e7e7f58da6410559d27bb492a2664fa7add837c477fc8a3fdb4c597e0089",
+      "metadata": {
+        "sourcerpm": "snappy"
+      }
+    },
+    "socat": {
+      "evra": "1.7.4.1-5.el9.x86_64",
+      "digest": "sha256:a3205468aff05f03f208ff656a468705350a01a18253be4119782c0022f6145e",
+      "metadata": {
+        "sourcerpm": "socat"
+      }
+    },
+    "sos": {
+      "evra": "4.7.0-1.el9.alma.1.noarch",
+      "digest": "sha256:44b1502dcfad95052b52df7c767607a2aca512adcdd670f728dfcc2917d19219",
+      "metadata": {
+        "sourcerpm": "sos"
+      }
+    },
+    "sqlite-libs": {
+      "evra": "3.34.1-7.el9_3.x86_64",
+      "digest": "sha256:e7f87444f24a03b37caa02942082b6d4283067ecbbd3f7798f882d22b55713cf",
+      "metadata": {
+        "sourcerpm": "sqlite"
+      }
+    },
+    "squashfs-tools": {
+      "evra": "4.4-10.git1.el9.x86_64",
+      "digest": "sha256:c0082aafae43da8d7a204dac17717178df0b805302af6e15b28f494ae2e8d482",
+      "metadata": {
+        "sourcerpm": "squashfs-tools"
+      }
+    },
+    "sssd-ad": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:3812b6a2c3093ff7dd3cf19dbfe72ff9d572f58d2a647fb959be1bf0271eb907",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "sssd-client": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:e974f5c92ac84aebe37a24ac9f678a7bf620615096d4fd6046de4430a06a94cd",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "sssd-common": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:2390652b18dbc4e9762e9deced3f9e22046066d90e9fd300296c860380bc813d",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "sssd-common-pac": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:813084b250ed51373e8e6e5c717240d0c299f946089c5ef5306e9987b00fc6e0",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "sssd-ipa": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:e04efad60918a2167c19da5af3d68ff1e0901d2cdc4a978a86ca9e499f6ee497",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "sssd-krb5": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:e06c70e6c6f13c734524383a31c7561ebf57703e3899f42685058713865bcade",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "sssd-krb5-common": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:3d9bba34cb863a88be2cd1bb76b24408cb7fb2cf06b366189f651be8eafdddb1",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "sssd-ldap": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:8cd9ffd9d7dbf690b44b16cf1dde19452fd974186599bf8a962af5df98a66712",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "sssd-nfs-idmap": {
+      "evra": "2.9.4-6.el9_4.x86_64",
+      "digest": "sha256:e51aebe58eac06cbcf71d37e096b4d4744239dc7c46c00f097e2848b3de69c25",
+      "metadata": {
+        "sourcerpm": "sssd"
+      }
+    },
+    "stalld": {
+      "evra": "1.19.1-2.el9.x86_64",
+      "digest": "sha256:6d8cd07c430a46cafc8c90ee9460348cc82f767027bbce6e6c4aae3f79ca632e",
+      "metadata": {
+        "sourcerpm": "stalld"
+      }
+    },
+    "sudo": {
+      "evra": "1.9.5p2-10.el9_3.x86_64",
+      "digest": "sha256:1254f39f3995a137bc47f62081b2cb946d897570191afe7f8cce49af5ce7153d",
+      "metadata": {
+        "sourcerpm": "sudo"
+      }
+    },
+    "systemd": {
+      "evra": "252-32.el9_4.alma.1.x86_64",
+      "digest": "sha256:53ae7ca5323f96a091f403cb7fe220422e56dad8af30e933dadac2ae7a34226e",
+      "metadata": {
+        "sourcerpm": "systemd"
+      }
+    },
+    "systemd-libs": {
+      "evra": "252-32.el9_4.alma.1.x86_64",
+      "digest": "sha256:7658ef639b88e76e456d72e44cdcc7fad4d373213e79a679c0a0ab689a5f797b",
+      "metadata": {
+        "sourcerpm": "systemd"
+      }
+    },
+    "systemd-pam": {
+      "evra": "252-32.el9_4.alma.1.x86_64",
+      "digest": "sha256:a7c3a495158f72de7c597262dbeffedfb8a5bfa76a55ab020c642f8aaf6ead50",
+      "metadata": {
+        "sourcerpm": "systemd"
+      }
+    },
+    "systemd-resolved": {
+      "evra": "252-32.el9_4.alma.1.x86_64",
+      "digest": "sha256:d31a0cbe04f5d1ed02a678733f270784fe8d2451ccddcc40695d91d6fd1f0713",
+      "metadata": {
+        "sourcerpm": "systemd"
+      }
+    },
+    "systemd-rpm-macros": {
+      "evra": "252-32.el9_4.alma.1.noarch",
+      "digest": "sha256:d90c0d6253154dbaa4d1cac7580811b07043b6f51a1da78b07d86e461af91e0b",
+      "metadata": {
+        "sourcerpm": "systemd"
+      }
+    },
+    "systemd-udev": {
+      "evra": "252-32.el9_4.alma.1.x86_64",
+      "digest": "sha256:479bd29b156216894d72ed2547482afecd4d5c7ce4ce0dadfff6cac8cea5940d",
+      "metadata": {
+        "sourcerpm": "systemd"
+      }
+    },
+    "tar": {
+      "evra": "2:1.34-6.el9_1.x86_64",
+      "digest": "sha256:c3da94e4ff327e244f225a30653e6a9988d470e161cb114e0d58ac7b0fc14d04",
+      "metadata": {
+        "sourcerpm": "tar"
+      }
+    },
+    "toolbox": {
+      "evra": "0.0.99.5-2.el9.x86_64",
+      "digest": "sha256:495601d579ebe2c41e8c7a941ffd9aca99449c505d01e86a606438b54c417e61",
+      "metadata": {
+        "sourcerpm": "toolbox"
+      }
+    },
+    "tpm2-tools": {
+      "evra": "5.2-3.el9.x86_64",
+      "digest": "sha256:ad5aabcea5f8aaadcb5324cde76ea53144446ac2083e8040cc3fb94dd12473f5",
+      "metadata": {
+        "sourcerpm": "tpm2-tools"
+      }
+    },
+    "tpm2-tss": {
+      "evra": "3.2.2-2.el9.x86_64",
+      "digest": "sha256:5cabaeb0d59caa0034b1a9b2fdecd38a29646ff0db4d10cd9f8e0ac90e3f4bfe",
+      "metadata": {
+        "sourcerpm": "tpm2-tss"
+      }
+    },
+    "tzdata": {
+      "evra": "2024a-1.el9.noarch",
+      "digest": "sha256:975c3d893a4f3a29d7982a9fbc63c0aa46683b7d43cda68153d403ce8459a87f",
+      "metadata": {
+        "sourcerpm": "tzdata"
+      }
+    },
+    "udisks2": {
+      "evra": "2.9.4-9.el9.x86_64",
+      "digest": "sha256:b0a75b24d8eefdd89b2b5c8e1af4b239d814ef434b4ca9adf0e1c80929e66c16",
+      "metadata": {
+        "sourcerpm": "udisks2"
+      }
+    },
+    "userspace-rcu": {
+      "evra": "0.12.1-6.el9.x86_64",
+      "digest": "sha256:e40cdc547f586de61738bd2c796ffa7292f10b9a1054f98db227ca472effb4f8",
+      "metadata": {
+        "sourcerpm": "userspace-rcu"
+      }
+    },
+    "util-linux": {
+      "evra": "2.37.4-18.el9.x86_64",
+      "digest": "sha256:85691217190f4bf9a3dc7083b07abde4ce22ad9dab397f65877c44da596178b5",
+      "metadata": {
+        "sourcerpm": "util-linux"
+      }
+    },
+    "util-linux-core": {
+      "evra": "2.37.4-18.el9.x86_64",
+      "digest": "sha256:ebc71f58b33989cc3777e3f56f5ef1ce3a12dc43a64da8e886f77bd6a82f8e1b",
+      "metadata": {
+        "sourcerpm": "util-linux"
+      }
+    },
+    "vim-minimal": {
+      "evra": "2:8.2.2637-20.el9_1.x86_64",
+      "digest": "sha256:36046fba11d5a5b088d03661bdcf7e4b36344d9e9a3368985a432d59d7a591ac",
+      "metadata": {
+        "sourcerpm": "vim"
+      }
+    },
+    "volume_key-libs": {
+      "evra": "0.3.12-15.el9.x86_64",
+      "digest": "sha256:4d8df91f6e1592409852df32cf714fcd641b708be04bda17122af64ef7e54540",
+      "metadata": {
+        "sourcerpm": "volume_key"
+      }
+    },
+    "which": {
+      "evra": "2.21-29.el9.x86_64",
+      "digest": "sha256:1f7e0fb5fa6223cc1e83532aaa71288904a92ca9c8eef5e2edd5ae4af5f36105",
+      "metadata": {
+        "sourcerpm": "which"
+      }
+    },
+    "xfsprogs": {
+      "evra": "6.3.0-1.el9.x86_64",
+      "digest": "sha256:4ea62ab23f49423897803b73917bf5842eaa0f18ceeef39b417d96417a425043",
+      "metadata": {
+        "sourcerpm": "xfsprogs"
+      }
+    },
+    "xz": {
+      "evra": "5.2.5-8.el9_0.x86_64",
+      "digest": "sha256:4567587f72bb7fdcc4f2e5b6c731d83b0e14e841680c557d4ca2e19775a364c2",
+      "metadata": {
+        "sourcerpm": "xz"
+      }
+    },
+    "xz-libs": {
+      "evra": "5.2.5-8.el9_0.x86_64",
+      "digest": "sha256:b75e6d24dd17688b0047572858f1e0bd5d3edcc9bba31075235e307eeb6195d3",
+      "metadata": {
+        "sourcerpm": "xz"
+      }
+    },
+    "yajl": {
+      "evra": "2.1.0-22.el9.x86_64",
+      "digest": "sha256:537c1e046d5e68ac6f868f30fdca0a19909de29400dfbe326f29f0d5a48c3928",
+      "metadata": {
+        "sourcerpm": "yajl"
+      }
+    },
+    "yum": {
+      "evra": "4.14.0-9.el9.alma.1.noarch",
+      "digest": "sha256:70fdc04326b0b98b2c9977c8e70ee1a06673ec98c271c73583ca8d861bea24ae",
+      "metadata": {
+        "sourcerpm": "dnf"
+      }
+    },
+    "zlib": {
+      "evra": "1.2.11-40.el9.x86_64",
+      "digest": "sha256:90d7d5d145c6d397645ffefdff40e3d2783e3bf3bfa7b6c1f089c2cad81a3191",
+      "metadata": {
+        "sourcerpm": "zlib"
+      }
+    },
+    "zram-generator": {
+      "evra": "0.3.2-7.el9.x86_64",
+      "digest": "sha256:89feecee7fa92fff02af9cdb5125a1b7b09c073e9e169d897a95afefff586b4b",
+      "metadata": {
+        "sourcerpm": "rust-zram-generator"
+      }
+    },
+    "zstd": {
+      "evra": "1.5.1-2.el9.x86_64",
+      "digest": "sha256:ad0b416104e3e3e535014134eff0ec08b07c15f0c0ae26920b01a9b1dae7ad4f",
+      "metadata": {
+        "sourcerpm": "zstd"
+      }
+    }
+  },
+  "metadata": {
+    "generated": "2024-06-02T00:00:00Z",
+    "rpmmd_repos": {
+      "appstream": {
+        "generated": "2024-05-31T12:44:44Z"
+      },
+      "baseos": {
+        "generated": "2024-05-31T12:45:10Z"
+      }
+    }
+  }
+}
