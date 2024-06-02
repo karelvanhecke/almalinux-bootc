@@ -73,6 +73,36 @@ jobs:
           retention-days: 1
           compression-level: 0 # oci-archive is already compressed
 
+  scan:
+    name: Vulnerability scan
+    runs-on: ubuntu-24.04
+    needs: build
+    permissions:
+      security-events: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+
+      - name: Download oci archive
+        uses: actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e # v4.1.7
+        with:
+          name: ${{ needs.build.outputs.ociarchive }}
+
+      - name: Scan image with Grype
+        uses: anchore/scan-action@3343887d815d7b07465f6fdcd395bd66508d486a # v3.6.4
+        id: scan
+        with:
+          image: oci-archive:${{ needs.build.outputs.ociarchive }}
+          fail-build: false
+          output-format: sarif
+          only-fixed: true
+          grype-version: v0.78.0
+
+      - name: Upload image scan results to GitHub
+        uses: github/codeql-action/upload-sarif@f079b8493333aace61c81488f8bd40919487bd9f # v3.25.7
+        with:
+          sarif_file: ${{ steps.scan.outputs.sarif }}
+
   test-install-to-disk:
     name: Test install to disk
     needs: build
