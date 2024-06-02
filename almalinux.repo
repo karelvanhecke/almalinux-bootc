@@ -1,0 +1,15 @@
+[baseos]
+name=AlmaLinux $releasever - BaseOS
+baseurl=https://repo.almalinux.org/almalinux/$releasever/BaseOS/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///src/RPM-GPG-KEY-AlmaLinux
+enabled_metadata=1
+
+[appstream]
+name=AlmaLinux $releasever - AppStream
+baseurl=https://repo.almalinux.org/almalinux/$releasever/AppStream/$basearch/os/
+enabled=1
+gpgcheck=1
+gpgkey=file:///src/RPM-GPG-KEY-AlmaLinux
+enabled_metadata=1
