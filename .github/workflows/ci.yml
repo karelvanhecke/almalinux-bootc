@@ -1,13 +1,31 @@
-name: Release
+name: Continuous Integration
 
 on:
   push:
-    tags:
-      - v[0-9]+.[0-9]+.[0-9]+
+    branches:
+      - main
+      - v[0-9]+
 
 jobs:
+  check-changes:
+    name: Check changes since last commit
+    runs-on: ubuntu-24.04
+    outputs:
+      image: ${{ steps.changes.outputs.image }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+
+      - name: Check changes
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+        id: changes
+        with:
+          filters: ./.github/paths-filter.yml
+
   gen-metadata:
     name: Generate metadata
+    needs: check-changes
+    if: ${{ needs.check-changes.outputs.image == 'true' }}
     runs-on: ubuntu-24.04
     outputs:
       tags: ${{ steps.metadata.outputs.tags }}
@@ -16,13 +34,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
 
-      - name: Validate tag version
+      - name: Validate release branch version
+        if: ${{ github.ref_name != 'main' }}
         run: |
           #!/bin/bash
           set -xeo pipefail
 
           releasever=$(yq '.releasever' almalinux-bootc-version.yaml
-          if [[ ${GITHUB_REF_NAME%.*} != "v${releasever}" ]]
+          if [[ ${GITHUB_REF_NAME#v*} != ${releasever%%.*} ]]
           then
             echo "Release branch major version should match major version in manifest"
             exit 1
@@ -35,33 +54,17 @@ jobs:
           set -xeo pipefail
 
           releasever=$(yq '.releasever' almalinux-bootc-version.yaml
-          echo "version=${GITHUB_REF_NAME#v*}" >> "$GITHUB_OUTPUT"
-          echo "tags=\"${GITHUB_REF_NAME%%.*} ${GITHUB_REF_NAME%.*} ${GITHUB_REF_NAME}\"" >> "$GITHUB_OUTPUT"
+          echo "version=${releasever}+$GITHUB_SHA" >> "$GITHUB_OUTPUT"
+          echo "tags=\"$GITHUB_REF_NAME $GITHUB_SHA\"" >> "$GITHUB_OUTPUT"
 
   build-push:
-    name: Build and push release image
+    name: Build and push CI image
     uses: ./.github/workflows/build-push.yml
     with:
-      image: almalinux
+      image: almalinux-ci
       tags: ${{ needs.gen-metadata.outputs.tags }}
       version: ${{ needs.gen-metadata.outputs.version }}
     secrets: inherit
     needs: gen-metadata
     permissions:
       packages: write
-
-  release:
-    name: Create GitHub release
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
-
-      - name: Create Github release
-        uses: softprops/action-gh-release@69320dbe05506a9a39fc8ae11030b214ec2d1f87 # v2.0.5
-        with:
-          name: ${{ github.ref_name }}
-          tag_name: ${{ github.ref }}
-          generate_release_notes: true
-          draft: true
