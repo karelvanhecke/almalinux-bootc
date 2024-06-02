@@ -41,12 +41,16 @@ jobs:
 
           echo "tags=$tags" >> "$GITHUB_OUTPUT"
 
+      - name: Install qemu dependencies
+        uses: docker/setup-qemu-action@68827325e0b33c7199eb31dd4e31fbe9023e06e3 # v3.0.0
+
       - name: Build image
         id: build
         uses: redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056 # v2.13
         with:
           image: ${{ inputs.image }}
           tags: ${{ steps.tags.outputs.tags }}
+          archs: amd64, arm64
           containerfiles: |
             Dockerfile
           oci: 'true'
@@ -75,7 +79,7 @@ jobs:
           COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
           COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
         run: >-
-          cosign sign --yes --key env://COSIGN_PRIVATE_KEY
+          cosign sign --recursive --yes --key env://COSIGN_PRIVATE_KEY
           --registry-password='${{ secrets.GITHUB_TOKEN }}'
           --registry-username='${{ github.actor }}'
           ${{ inputs.registry }}/${{ steps.build.outputs.image }}@${{ steps.push.outputs.digest }}
