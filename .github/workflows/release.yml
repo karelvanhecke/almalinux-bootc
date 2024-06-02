@@ -36,7 +36,8 @@ jobs:
 
           releasever=$(yq '.releasever' almalinux-bootc-version.yaml)
           echo "version=${GITHUB_REF_NAME#v*}" >> "$GITHUB_OUTPUT"
-          echo "tags=\"${GITHUB_REF_NAME%%.*} ${GITHUB_REF_NAME%.*} ${GITHUB_REF_NAME}\"" >> "$GITHUB_OUTPUT"
+          tags="${GITHUB_REF_NAME%%.*} ${GITHUB_REF_NAME%.*} ${GITHUB_REF_NAME}"
+          echo "tags=$tags" >> "$GITHUB_OUTPUT"
 
   build-push:
     name: Build and push release image
