@@ -1,0 +1,63 @@
+name: Vulnerability scan
+
+on:
+  schedule:
+    - cron: 45 5 * * *
+
+env:
+  IMAGE: ghcr.io/${{ github.repository_owner }}/bootc/almalinux
+
+jobs:
+  scan:
+    name: Scan container images and upload SARIF file
+    runs-on: ubuntu-24.04
+    permissions:
+      security-events: write
+    strategy:
+      matrix:
+        version: ["v9"]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+
+      - name: Setup Cosign
+        uses: sigstore/cosign-installer@59acb6260d9c0ba8f4a2f9d9b48431a222b68e20 # v3.5.0
+
+      - name: Verify image
+        id: verify
+        run: |
+          #!/bin/bash
+
+          set -xeo pipefail
+          
+          digest=$(cosign verify --key cosign.pub ${{ env.IMAGE }}:${{ matrix.version }} | jq -r '.[0].critical.image."docker-manifest-digest"')
+          echo "digest=$digest" >> "$GITHUB_OUTPUT"
+
+      - name: Get image metadata
+        id: metadata
+        run: |
+          commit=$(skopeo inspect docker://$IMAGE@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.revision"')
+          tag=refs/tags/v$(skopeo inspect docker://$IMAGE@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.version"')
+
+          echo "commit=$commit" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: Start podman daemon
+        run: systemctl --user start podman.socket
+
+      - name: Scan image with Grype
+        uses: anchore/scan-action@3343887d815d7b07465f6fdcd395bd66508d486a # v3.6.4
+        id: scan
+        with:
+          image: podman:${{ env.IMAGE }}:${{ matrix.version }}@${{ steps.verify.outputs.digest }}
+          fail-build: false
+          output-format: sarif
+          only-fixed: true
+          grype-version: v0.78.0
+
+      - name: Upload image scan results to GitHub
+        uses: github/codeql-action/upload-sarif@f079b8493333aace61c81488f8bd40919487bd9f # v3.25.7
+        with:
+          sarif_file: ${{ steps.scan.outputs.sarif }}
+          ref: ${{ steps.metadata.outputs.tag }}
+          sha: ${{ steps.metadata.outputs.commit }}
