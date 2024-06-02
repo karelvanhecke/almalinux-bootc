@@ -43,7 +43,7 @@ jobs:
           releasever=$(yq '.releasever' almalinux-bootc-version.yaml)
           if [[ ${GITHUB_REF_NAME#v*} != ${releasever%%.*} ]]
           then
-            echo "Release branch major version should match major version in manifest"
+            echo "Release branch should match major version in manifest"
             exit 1
           fi
 
