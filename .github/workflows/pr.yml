@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - main
+      - v[0-9]+
 
 jobs:
   check-changes:
@@ -40,7 +41,7 @@ jobs:
         id: build
         uses: redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056 # v2.13
         with:
-          image: almalinux-ci
+          image: almalinux-pr
           tags: ${{ github.sha }}
           containerfiles: |
             Dockerfile
