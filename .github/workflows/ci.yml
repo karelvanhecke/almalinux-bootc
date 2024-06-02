@@ -40,7 +40,7 @@ jobs:
           #!/bin/bash
           set -xeo pipefail
 
-          releasever=$(yq '.releasever' almalinux-bootc-version.yaml
+          releasever=$(yq '.releasever' almalinux-bootc-version.yaml)
           if [[ ${GITHUB_REF_NAME#v*} != ${releasever%%.*} ]]
           then
             echo "Release branch major version should match major version in manifest"
@@ -53,7 +53,7 @@ jobs:
           #!/bin/bash
           set -xeo pipefail
 
-          releasever=$(yq '.releasever' almalinux-bootc-version.yaml
+          releasever=$(yq '.releasever' almalinux-bootc-version.yaml)
           echo "version=${releasever}+$GITHUB_SHA" >> "$GITHUB_OUTPUT"
           echo "tags=\"$GITHUB_REF_NAME $GITHUB_SHA\"" >> "$GITHUB_OUTPUT"
 
