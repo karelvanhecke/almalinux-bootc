@@ -50,6 +50,7 @@ jobs:
     needs: gen-metadata
     permissions:
       packages: write
+      security-events: write
 
   release:
     name: Create GitHub release
