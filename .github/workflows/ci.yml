@@ -69,3 +69,4 @@ jobs:
     needs: gen-metadata
     permissions:
       packages: write
+      security-events: write
