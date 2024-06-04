@@ -28,8 +28,8 @@ jobs:
     needs: check-changes
     if: ${{ needs.check-changes.outputs.image == 'true' || needs.check-changes.outputs.builder == 'true' }}
     outputs:
-      localimage: ${{ steps.export.outputs.localimage }}
-      ociarchive: ${{ steps.export.outputs.ociarchive }}
+      local-image: ${{ steps.export.outputs.local-image }}
+      oci-archive: ${{ steps.export.outputs.oci-archive }}
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
@@ -59,17 +59,17 @@ jobs:
           #!/bin/bash
           set -xeo pipefail
 
-          localimage=localhost/${{ steps.build.outputs.image-with-tag }}
-          ociarchive=${{ steps.build.outputs.image }}-${{ steps.build.outputs.tags }}.tar
-          sudo skopeo copy containers-storage:[overlay@/home/runner/.local/share/containers/storage+/run/containers/storage]${localimage} oci-archive:${ociarchive}
-          echo "localimage=$localimage" >> "$GITHUB_OUTPUT"
-          echo "ociarchive=$ociarchive" >> "$GITHUB_OUTPUT"
+          local_image=localhost/${{ steps.build.outputs.image-with-tag }}
+          oci_archive=${{ steps.build.outputs.image }}-${{ steps.build.outputs.tags }}.tar
+          podman save --output $oci_archive --format oci-archive $local_image
+          echo "local-image=$local_image" >> "$GITHUB_OUTPUT"
+          echo "oci-archive=$oci_archive" >> "$GITHUB_OUTPUT"
 
       - name: Upload oci archive
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
         with:
-          name: ${{ steps.export.outputs.ociarchive }}
-          path: ${{ steps.export.outputs.ociarchive }}
+          name: ${{ steps.export.outputs.oci-archive }}
+          path: ${{ steps.export.outputs.oci-archive }}
           retention-days: 1
           compression-level: 0 # oci-archive is already compressed
 
@@ -77,8 +77,6 @@ jobs:
     name: Vulnerability scan
     runs-on: ubuntu-24.04
     needs: build
-    permissions:
-      security-events: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
@@ -86,22 +84,17 @@ jobs:
       - name: Download oci archive
         uses: actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e # v4.1.7
         with:
-          name: ${{ needs.build.outputs.ociarchive }}
+          name: ${{ needs.build.outputs.oci-archive }}
 
       - name: Scan image with Grype
         uses: anchore/scan-action@3343887d815d7b07465f6fdcd395bd66508d486a # v3.6.4
         id: scan
         with:
-          image: oci-archive:${{ needs.build.outputs.ociarchive }}
-          fail-build: false
-          output-format: sarif
+          image: oci-archive:${{ needs.build.outputs.oci-archive }}
+          fail-build: true
+          output-format: table
           only-fixed: true
           grype-version: v0.78.0
-
-      - name: Upload image scan results to GitHub
-        uses: github/codeql-action/upload-sarif@f079b8493333aace61c81488f8bd40919487bd9f # v3.25.7
-        with:
-          sarif_file: ${{ steps.scan.outputs.sarif }}
 
   test-install-to-disk:
     name: Test install to disk
@@ -111,13 +104,12 @@ jobs:
       - name: Download oci archive
         uses: actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e # v4.1.7
         with:
-          name: ${{ needs.build.outputs.ociarchive }}
+          name: ${{ needs.build.outputs.oci-archive }}
 
       - name: Import oci archive into containers-storage
         run: >-
-          sudo skopeo copy oci-archive:${{ needs.build.outputs.ociarchive }}
-          containers-storage:${{ needs.build.outputs.localimage }} &&
-          sudo rm ${{ needs.build.outputs.ociarchive }}
+          sudo podman load --input ${{ needs.build.outputs.oci-archive }} &&
+          sudo rm ${{ needs.build.outputs.oci-archive }}
 
       - name: Prepare disk file
         run: truncate -s5G disk.img
@@ -127,6 +119,6 @@ jobs:
           sudo podman run
           --rm --pid host --privileged --security-opt label=type:unconfined_t
           -v ./:/workdir -v /var/lib/containers/storage:/var/lib/containers/storage
-          ${{ needs.build.outputs.localimage }}
+          ${{ needs.build.outputs.local-image }}
           bootc install to-disk --generic-image --skip-fetch-check --via-loopback
           /workdir/disk.img
