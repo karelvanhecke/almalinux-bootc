@@ -55,11 +55,17 @@ jobs:
 
           releasever=$(yq '.releasever' almalinux-bootc-version.yaml)
           echo "version=${releasever}+$GITHUB_SHA" >> "$GITHUB_OUTPUT"
-          tags="$GITHUB_REF_NAME $GITHUB_SHA"
+          tags="$GITHUB_SHA $GITHUB_REF_NAME v$releasever"
+
+          if [[ $GITHUB_REF_NAME == "main" ]]
+          then
+            tags+=" v${releasever%%.*}"
+          fi
+
           echo "tags=$tags" >> "$GITHUB_OUTPUT"
 
-  build-push:
-    name: Build and push CI image
+  ci-image:
+    name: CI image
     uses: ./.github/workflows/build-push.yml
     with:
       image: almalinux-ci
