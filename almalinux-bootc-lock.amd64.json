@@ -974,29 +974,29 @@
       }
     },
     "kernel": {
-      "evra": "5.14.0-427.18.1.el9_4.x86_64",
-      "digest": "sha256:f503b95f2cb0200e4630ec0cd65b57ae3458f334dea414f4ed91111f424c8ab6",
+      "evra": "5.14.0-427.20.1.el9_4.x86_64",
+      "digest": "sha256:0ade9824f49c81b2e974d0b52f4506bba77d4a685f477ae5ab8245510b5b9627",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-core": {
-      "evra": "5.14.0-427.18.1.el9_4.x86_64",
-      "digest": "sha256:79efbc6a0bd9f1a636559223af067419ae99044fc4e8bb0b0f6aaf076b2aec83",
+      "evra": "5.14.0-427.20.1.el9_4.x86_64",
+      "digest": "sha256:e0a52225a03fa130bc43103c7937859335ae9ca9d79ae1fe7157d1a60a6d5c38",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-modules": {
-      "evra": "5.14.0-427.18.1.el9_4.x86_64",
-      "digest": "sha256:21c4c16c079d6352ebff2d75d3c84294749d3983bb5bf50afacf4039dc2d3d9f",
+      "evra": "5.14.0-427.20.1.el9_4.x86_64",
+      "digest": "sha256:d1f8aa1dcf70acb24c26890854a2313e46fc23daaa5e74d9b10cc88e436ec02c",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-modules-core": {
-      "evra": "5.14.0-427.18.1.el9_4.x86_64",
-      "digest": "sha256:cc8aeba59a492ae576016f321bf3d049eef6c9bb04b47045f2bdbe98814a6537",
+      "evra": "5.14.0-427.20.1.el9_4.x86_64",
+      "digest": "sha256:a579a2329082fe5910229f2add5aedef7d956af736b3509d738564c4362d07fd",
       "metadata": {
         "sourcerpm": "kernel"
       }
@@ -2963,13 +2963,13 @@
     }
   },
   "metadata": {
-    "generated": "2024-06-02T00:00:00Z",
+    "generated": "2024-06-12T00:00:00Z",
     "rpmmd_repos": {
       "appstream": {
-        "generated": "2024-05-31T12:44:44Z"
+        "generated": "2024-06-11T14:44:14Z"
       },
       "baseos": {
-        "generated": "2024-05-31T12:45:10Z"
+        "generated": "2024-06-11T14:44:41Z"
       }
     }
   }
