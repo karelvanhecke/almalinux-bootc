@@ -76,7 +76,7 @@ jobs:
           commit=$(skopeo inspect docker://${image_no_tag}@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.revision"')
           ref=""
 
-          image_name=$(echo ${{ matrix.image }} | sed -r 's/.+\/([^\/]+)$/\1/')
+          image_name=$(echo $image_no_tag | sed -r 's/.+\/([^\/]+)$/\1/')
           if [[ $image_name == $RELEASE_IMAGE ]]
           then
             ref=refs/tags/v$(skopeo inspect docker://${image_no_tag}@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.version"')
