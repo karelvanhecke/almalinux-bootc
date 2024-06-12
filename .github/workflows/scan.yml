@@ -3,19 +3,51 @@ name: Vulnerability scan
 on:
   schedule:
     - cron: 45 5 * * *
+  workflow_dispatch:
 
 env:
-  IMAGE: ghcr.io/${{ github.repository_owner }}/bootc/almalinux
+  REGISTRY: ghcr.io/${{ github.repository_owner }}/bootc
+  RELEASE_IMAGE: ${{ env.REGISTRY }}/almalinux
+  RELEASE_TAGS: "v9"
+  CI_IMAGE: ${{ env.REGISTRY }}/almalinux-ci
+  CI_TAGS: "main"
 
 jobs:
+  images:
+    name: Generate a list of release and CI images
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.list.outputs.images }}
+    steps:
+      - name: Generate image list
+        id: list
+        run: |
+          #!/bin/bash
+          set -xeo pipefail
+
+          images=""
+          for tag in $RELEASE_TAGS
+          do
+            images+="${RELEASE_IMAGE}:${tag} "
+          done
+          
+          for tag in $CI_TAGS
+          do
+            images+="${CI_IMAGE}:${tag} "
+          done
+
+          images=$(echo $images | sed 's/\s+$//' | jq --raw-input 'split(" ")' | jq -r tostring)
+          echo "images=$images" >> "$GITHUB_OUTPUT"
+
   scan:
     name: Scan container images and upload SARIF file
     runs-on: ubuntu-24.04
     permissions:
       security-events: write
+    needs: images
     strategy:
       matrix:
-        version: ["v9"]
+        image: ${{ fromJSON(needs.images.outputs.matrix) }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
@@ -30,26 +62,36 @@ jobs:
 
           set -xeo pipefail
           
-          digest=$(cosign verify --key cosign.pub ${{ env.IMAGE }}:${{ matrix.version }} | jq -r '.[0].critical.image."docker-manifest-digest"')
+          digest=$(cosign verify --key cosign.pub ${{ matrix.image }} | jq -r '.[0].critical.image."docker-manifest-digest"')
           echo "digest=$digest" >> "$GITHUB_OUTPUT"
 
       - name: Get image metadata
         id: metadata
         run: |
-          commit=$(skopeo inspect docker://$IMAGE@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.revision"')
-          tag=refs/tags/v$(skopeo inspect docker://$IMAGE@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.version"')
+          #!/bin/bash
+
+          set -xeo pipefail
+
+          image_no_tag=$(echo ${{ matrix.image }} | cut -f1 -d ':')
+          commit=$(skopeo inspect docker://${image_no_tag}@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.revision"')
+          tag=refs/tags/v$(skopeo inspect docker://${image_no_tag}@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.version"')
 
           echo "commit=$commit" >> "$GITHUB_OUTPUT"
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
 
-      - name: Start podman daemon
-        run: systemctl --user start podman.socket
+      - name: Verify attestation and extract SBOM
+        run: |
+          #!/bin/bash
 
-      - name: Scan image with Grype
+          set -xeo pipefail
+
+          cosign verify-attestation --key cosign.pub ${{ matrix.image }} | jq -r .payload | base64 -d | jq -r .predicate.Data > sbom.syft.json
+
+      - name: Scan SBOM with Grype
         uses: anchore/scan-action@3343887d815d7b07465f6fdcd395bd66508d486a # v3.6.4
         id: scan
         with:
-          image: podman:${{ env.IMAGE }}:${{ matrix.version }}@${{ steps.verify.outputs.digest }}
+          sbom: sbom.syft.json
           fail-build: false
           output-format: sarif
           only-fixed: true
