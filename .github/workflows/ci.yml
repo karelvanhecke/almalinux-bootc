@@ -25,7 +25,7 @@ jobs:
   gen-metadata:
     name: Generate metadata
     needs: check-changes
-    if: ${{ needs.check-changes.outputs.image == 'true' }}
+    if: ${{ needs.check-changes.outputs.image == 'true' || needs.check-changes.outputs.ci == 'true' }}
     runs-on: ubuntu-24.04
     outputs:
       tags: ${{ steps.metadata.outputs.tags }}

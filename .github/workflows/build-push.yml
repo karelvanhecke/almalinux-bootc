@@ -34,6 +34,24 @@ jobs:
         with:
           submodules: 'true'
 
+      - name: Generate metadata
+        id: metadata
+        run: |
+          #!/bin/bash
+          set -xeo pipefail
+
+          image="${{ inputs.registry }}/${{ inputs.image }}"
+          tags=""
+
+          for tag in ${{ inputs.tags }}
+          do
+            tags+="${image}:${tag} "
+          done
+          tags=$(echo $tags | sed 's/\s+$//')
+
+          echo "image=$image" >> "$GITHUB_OUTPUT"
+          echo "tags=$tags" >> "$GITHUB_OUTPUT"
+
       - name: Inject ostree version
         run: |
           #!/bin/bash
@@ -45,8 +63,7 @@ jobs:
         id: build
         uses: redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056 # v2.13
         with:
-          image: ${{ inputs.image }}
-          tags: ${{ inputs.tags }}
+          tags: ${{ steps.metadata.outputs.tags }}
           containerfiles: |
             Dockerfile
           oci: 'true'
@@ -61,9 +78,7 @@ jobs:
         id: push
         uses: redhat-actions/push-to-registry@5ed88d269cf581ea9ef6dd6806d01562096bee9c # v2.8
         with:
-          image: ${{ steps.build.outputs.image }}
-          tags: ${{ steps.build.outputs.tags }}
-          registry: ${{ inputs.registry }}
+          tags: ${{ steps.metadata.outputs.tags }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
@@ -78,7 +93,7 @@ jobs:
           cosign sign --yes --key env://COSIGN_PRIVATE_KEY
           --registry-password='${{ secrets.GITHUB_TOKEN }}'
           --registry-username='${{ github.actor }}'
-          ${{ inputs.registry }}/${{ steps.build.outputs.image }}@${{ steps.push.outputs.digest }}
+          ${{ steps.metadata.outputs.image }}@${{ steps.push.outputs.digest }}
 
       - name: Start podman daemon
         run: systemctl --user start podman.socket
@@ -102,7 +117,7 @@ jobs:
           --registry-password='${{ secrets.GITHUB_TOKEN }}'
           --registry-username='${{ github.actor }}'
           --predicate='${{ inputs.image }}-${{ inputs.version }}.syft.json'
-          ${{ inputs.registry }}/${{ steps.build.outputs.image }}@${{ steps.push.outputs.digest }}
+          ${{ steps.metadata.outputs.image }}@${{ steps.push.outputs.digest }}
 
       - name: Scan SBOM with Grype
         uses: anchore/scan-action@3343887d815d7b07465f6fdcd395bd66508d486a # v3.6.4
