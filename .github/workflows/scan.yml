@@ -74,10 +74,22 @@ jobs:
 
           image_no_tag=$(echo ${{ matrix.image }} | cut -f1 -d ':')
           commit=$(skopeo inspect docker://${image_no_tag}@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.revision"')
-          tag=refs/tags/v$(skopeo inspect docker://${image_no_tag}@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.version"')
+          ref=""
+
+          image_name=$(echo ${{ matrix.image }} | sed -r 's/.+\/([^\/]+)$/\1/')
+          if [[ $image_name == $RELEASE_IMAGE ]]
+          then
+            ref=refs/tags/v$(skopeo inspect docker://${image_no_tag}@${{ steps.verify.outputs.digest }} | jq -r '.Labels."org.opencontainers.image.version"')
+          elif [[ $image_name == $CI_IMAGE ]]
+          then
+            ref=refs/heads/$(echo ${{ matrix.image }} | cut -f2 -d ':')
+          else
+            echo "Failed to obtain ref"
+            exit 1
+          fi
 
           echo "commit=$commit" >> "$GITHUB_OUTPUT"
-          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "ref=$ref" >> "$GITHUB_OUTPUT"
 
       - name: Verify attestation and extract SBOM
         run: |
@@ -101,5 +113,5 @@ jobs:
         uses: github/codeql-action/upload-sarif@2e230e8fe0ad3a14a340ad0815ddb96d599d2aff # v3.25.8
         with:
           sarif_file: ${{ steps.scan.outputs.sarif }}
-          ref: ${{ steps.metadata.outputs.tag }}
+          ref: ${{ steps.metadata.outputs.ref }}
           sha: ${{ steps.metadata.outputs.commit }}
