@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       image: ${{ steps.changes.outputs.image }}
+      ci: ${{ steps.changes.outputs.ci }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
