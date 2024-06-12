@@ -7,9 +7,9 @@ on:
 
 env:
   REGISTRY: ghcr.io/${{ github.repository_owner }}/bootc
-  RELEASE_IMAGE: ${{ env.REGISTRY }}/almalinux
+  RELEASE_IMAGE: almalinux
   RELEASE_TAGS: "v9"
-  CI_IMAGE: ${{ env.REGISTRY }}/almalinux-ci
+  CI_IMAGE: almalinux-ci
   CI_TAGS: "main"
 
 jobs:
@@ -28,12 +28,12 @@ jobs:
           images=""
           for tag in $RELEASE_TAGS
           do
-            images+="${RELEASE_IMAGE}:${tag} "
+            images+="${REGISTRY}/${RELEASE_IMAGE}:${tag} "
           done
           
           for tag in $CI_TAGS
           do
-            images+="${CI_IMAGE}:${tag} "
+            images+="${REGISTRY}/${CI_IMAGE}:${tag} "
           done
 
           images=$(echo $images | sed 's/\s+$//' | jq --raw-input 'split(" ")' | jq -r tostring)
