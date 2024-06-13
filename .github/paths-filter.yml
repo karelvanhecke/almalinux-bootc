@@ -7,6 +7,3 @@ image:
 builder:
   - 'Dockerfile'
   - '.github/workflows/pr.yml'
-ci:
-  - '.github/workflows/ci.yml'
-  - '.github/workflows/build-push.yml'
