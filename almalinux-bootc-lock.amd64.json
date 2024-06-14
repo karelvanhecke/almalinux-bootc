@@ -1,29 +1,29 @@
 {
   "packages": {
     "NetworkManager": {
-      "evra": "1:1.46.0-4.el9_4.x86_64",
-      "digest": "sha256:8679e433c6fea0a9a3f1fd0fc2c776a4105f85aabc6ad2604d6df8f78b975b6c",
+      "evra": "1:1.46.0-8.el9_4.x86_64",
+      "digest": "sha256:679825a447b5d63705a18d3151967d08a4fb85a3d3c29f6ae9aa927d9fd20d04",
       "metadata": {
         "sourcerpm": "NetworkManager"
       }
     },
     "NetworkManager-cloud-setup": {
-      "evra": "1:1.46.0-4.el9_4.x86_64",
-      "digest": "sha256:ed66fdd40e8f1ca1f867f3ced93f11347677152b69b6c5103983dbbeee36127a",
+      "evra": "1:1.46.0-8.el9_4.x86_64",
+      "digest": "sha256:7674570aa189e959b26ee906bb0c4bf45abdecf563ac92b3aa28fd54d2a68d4b",
       "metadata": {
         "sourcerpm": "NetworkManager"
       }
     },
     "NetworkManager-libnm": {
-      "evra": "1:1.46.0-4.el9_4.x86_64",
-      "digest": "sha256:62898608088be78114da5fd79c3b65a5a159839d6e1fac776e53ca2a56d61440",
+      "evra": "1:1.46.0-8.el9_4.x86_64",
+      "digest": "sha256:b2d5274ee42ea2a28f8291c93afab2727b30fa37d07008f7ae99b2925e42aee7",
       "metadata": {
         "sourcerpm": "NetworkManager"
       }
     },
     "NetworkManager-tui": {
-      "evra": "1:1.46.0-4.el9_4.x86_64",
-      "digest": "sha256:c686af091f100ce4b116ed988034f84294f9a7a5afd7abe9bc797fd7a3405b7e",
+      "evra": "1:1.46.0-8.el9_4.x86_64",
+      "digest": "sha256:8b87da11eb9ea1055c7d586dd35123f167984d91ff1fec04161fdab2d7801bcb",
       "metadata": {
         "sourcerpm": "NetworkManager"
       }
@@ -204,8 +204,8 @@
       }
     },
     "c-ares": {
-      "evra": "1.19.1-1.el9.x86_64",
-      "digest": "sha256:7de0a522fbed2a3cb769b0fe88341111cffee80ee8a2faae43b86fae7ad6a0d9",
+      "evra": "1.19.1-2.el9_4.x86_64",
+      "digest": "sha256:759d2347c7912d7638c851b9afc5aae532569328787f64c5ed97beac09e31723",
       "metadata": {
         "sourcerpm": "c-ares"
       }
@@ -799,43 +799,43 @@
       }
     },
     "grub2-common": {
-      "evra": "1:2.06-77.el9.alma.1.noarch",
-      "digest": "sha256:fd4804f9aabf9ab0aa42432b26d96c2a942ebbfd80c9ea052e867d50d260cf5c",
+      "evra": "1:2.06-80.el9_4.alma.1.noarch",
+      "digest": "sha256:60fd9820569149e9deb51681436041283f354f7ad379767f7811b186d70a19fb",
       "metadata": {
         "sourcerpm": "grub2"
       }
     },
     "grub2-efi-x64": {
-      "evra": "1:2.06-77.el9.alma.1.x86_64",
-      "digest": "sha256:b02f1f05ae576f78122af4674ba5d279d6dd4809330d513481eae0bfdf2521f9",
+      "evra": "1:2.06-80.el9_4.alma.1.x86_64",
+      "digest": "sha256:4dcea0ce1f4e39f12a4ae1e70f796075e4e7a76d2d0bc57e9548d93659a66ef4",
       "metadata": {
         "sourcerpm": "grub2"
       }
     },
     "grub2-pc": {
-      "evra": "1:2.06-77.el9.alma.1.x86_64",
-      "digest": "sha256:66026ed762c385e48c7dddd93508185cfb7d8dc10ae4c5599b2b6771d53f94e7",
+      "evra": "1:2.06-80.el9_4.alma.1.x86_64",
+      "digest": "sha256:9c73246154108a3a46ebb7feb62beaf53777b652851e34a3ec7d54b928a8edfb",
       "metadata": {
         "sourcerpm": "grub2"
       }
     },
     "grub2-pc-modules": {
-      "evra": "1:2.06-77.el9.alma.1.noarch",
-      "digest": "sha256:1b0e6216aa285ff2b09fde2a5789e456445a8e73d0ed0a93df0949d84fc9139c",
+      "evra": "1:2.06-80.el9_4.alma.1.noarch",
+      "digest": "sha256:07b9293ae0b7320e9523103b9bc0668ea507c0311e737135594934b71f85a21e",
       "metadata": {
         "sourcerpm": "grub2"
       }
     },
     "grub2-tools": {
-      "evra": "1:2.06-77.el9.alma.1.x86_64",
-      "digest": "sha256:21a434a0426173c7d87aa0e7cd9c8a51389f5819ba65efc9431599160edfe7a9",
+      "evra": "1:2.06-80.el9_4.alma.1.x86_64",
+      "digest": "sha256:e638e0a31141689b39a5dc06f997090a518e0e8b4b2926cbe32be059255a251a",
       "metadata": {
         "sourcerpm": "grub2"
       }
     },
     "grub2-tools-minimal": {
-      "evra": "1:2.06-77.el9.alma.1.x86_64",
-      "digest": "sha256:fea118ef08a9e654d6b0d3674619d2b94851a15c9c8fcd6ae192d2a908ea7e22",
+      "evra": "1:2.06-80.el9_4.alma.1.x86_64",
+      "digest": "sha256:7dc8d525769f5b5293bd1f3b1960c5c984aca9b652d7a6e96a6290d2a92d5d32",
       "metadata": {
         "sourcerpm": "grub2"
       }
@@ -1611,8 +1611,8 @@
       }
     },
     "libsmbclient": {
-      "evra": "4.19.4-104.el9.x86_64",
-      "digest": "sha256:cd6c754ab7905d39a5c94378e125e631bbb70f9b5454dff810c8db3872ec37ae",
+      "evra": "4.19.4-105.el9_4.x86_64",
+      "digest": "sha256:59122b10f487d68e6c9f3a07b1b7de12267e1375f9815b9fb4cc91c2b23845fa",
       "metadata": {
         "sourcerpm": "samba"
       }
@@ -1779,8 +1779,8 @@
       }
     },
     "libwbclient": {
-      "evra": "4.19.4-104.el9.x86_64",
-      "digest": "sha256:af6d58c23c83614d42c2f5cd1bcfac56f22229c6ea53a55e38dc1b46e7c0e06e",
+      "evra": "4.19.4-105.el9_4.x86_64",
+      "digest": "sha256:202d45257b70eca1162c2493a7056b006a2abc6a7a8ac3844103039b04d33767",
       "metadata": {
         "sourcerpm": "samba"
       }
@@ -2122,15 +2122,15 @@
       }
     },
     "ostree": {
-      "evra": "2024.4-3.el9_4.x86_64",
-      "digest": "sha256:a0f9eec2b5fe829c50242912d75006df11bd55302c8a067cd341169c15531aca",
+      "evra": "2024.6-1.el9_4.x86_64",
+      "digest": "sha256:eb05165b804af10ff52dec9ac9baedf197766e7c1543cf86e0c549520567326f",
       "metadata": {
         "sourcerpm": "ostree"
       }
     },
     "ostree-libs": {
-      "evra": "2024.4-3.el9_4.x86_64",
-      "digest": "sha256:57c99941d525879fbb1e5e69011b769ee17a30bea60df6f81d39ab6fa681d0d1",
+      "evra": "2024.6-1.el9_4.x86_64",
+      "digest": "sha256:d3157ba724ba8e9d31f6fc2b84008481417cfdbcaec3f61e5a97d3263178ee9a",
       "metadata": {
         "sourcerpm": "ostree"
       }
@@ -2241,8 +2241,8 @@
       }
     },
     "podman": {
-      "evra": "4:4.9.4-3.el9_4.x86_64",
-      "digest": "sha256:3bb64b40fd9c828df1390a1ff5c5d7078b94354c86099c01f8aba90bf643210a",
+      "evra": "4:4.9.4-4.el9_4.x86_64",
+      "digest": "sha256:403ac3175eb2958960029c3ff99e96f9ff320b6a56bdf9734abfd9dfd2913cd8",
       "metadata": {
         "sourcerpm": "podman"
       }
@@ -2367,8 +2367,8 @@
       }
     },
     "python3-idna": {
-      "evra": "2.10-7.el9.noarch",
-      "digest": "sha256:266f5a37e457e5bc8f2de36a6911e343aa2dceed61d29044897d72e184c1730b",
+      "evra": "2.10-7.el9_4.1.noarch",
+      "digest": "sha256:466dae94af8101d05da26c89ac5e6cfdb2488f4e324c03eb856c034084d0ac7d",
       "metadata": {
         "sourcerpm": "python-idna"
       }
@@ -2521,15 +2521,15 @@
       }
     },
     "rpm-ostree": {
-      "evra": "2024.3-1.el9.x86_64",
-      "digest": "sha256:663744e5eb1f5bd88a0dfd3f9584c4d73567f39d8870b4b6db881ebb5967fe40",
+      "evra": "2024.3-4.el9_4.x86_64",
+      "digest": "sha256:fb38b16c996add093f7329855aeef4bc2649630fc07ae9050d3969862ffe91e5",
       "metadata": {
         "sourcerpm": "rpm-ostree"
       }
     },
     "rpm-ostree-libs": {
-      "evra": "2024.3-1.el9.x86_64",
-      "digest": "sha256:74ce69cd2e82b06cd5566a4e590ba8b1c6ed924b19014738985617535a004c0b",
+      "evra": "2024.3-4.el9_4.x86_64",
+      "digest": "sha256:4224c4e7449afdbe9b632ed3387bbd3bb9f826d111aed2e187b545db31ae87a5",
       "metadata": {
         "sourcerpm": "rpm-ostree"
       }
@@ -2556,22 +2556,22 @@
       }
     },
     "samba-client-libs": {
-      "evra": "4.19.4-104.el9.x86_64",
-      "digest": "sha256:8b7c2e3eee980584518a701c11b051a34eb5844defaa38c893678b25078c9927",
+      "evra": "4.19.4-105.el9_4.x86_64",
+      "digest": "sha256:765f10b4240be73061db26249fe7760d103aa77b987358388e1c5bb4daa4761f",
       "metadata": {
         "sourcerpm": "samba"
       }
     },
     "samba-common": {
-      "evra": "4.19.4-104.el9.noarch",
-      "digest": "sha256:4aa8c995fc6a60f6e2a2d4764285b7cf6b3a1d684a08b3ad6361885ab9e2aae9",
+      "evra": "4.19.4-105.el9_4.noarch",
+      "digest": "sha256:f4f7e12148a2b643854befa6bb90e42e82294da2670f8d453e0e71ce794b6983",
       "metadata": {
         "sourcerpm": "samba"
       }
     },
     "samba-common-libs": {
-      "evra": "4.19.4-104.el9.x86_64",
-      "digest": "sha256:a66251743364c3e6126a8ed6b95214c6711616ea2573f8eca367a01e971ddd18",
+      "evra": "4.19.4-105.el9_4.x86_64",
+      "digest": "sha256:bebda72d24d1cb8489232afe6fb7fc92b86f0f2b3deb96ac0b3e86e3da93147f",
       "metadata": {
         "sourcerpm": "samba"
       }
@@ -2675,8 +2675,8 @@
       }
     },
     "socat": {
-      "evra": "1.7.4.1-5.el9.x86_64",
-      "digest": "sha256:a3205468aff05f03f208ff656a468705350a01a18253be4119782c0022f6145e",
+      "evra": "1.7.4.1-5.el9_4.2.x86_64",
+      "digest": "sha256:42fa60a1c121f8d479febc9d861f17ab72e6d26589861625c3b5655b322e80cc",
       "metadata": {
         "sourcerpm": "socat"
       }
@@ -2963,13 +2963,13 @@
     }
   },
   "metadata": {
-    "generated": "2024-06-12T00:00:00Z",
+    "generated": "2024-06-14T00:00:00Z",
     "rpmmd_repos": {
       "appstream": {
-        "generated": "2024-06-11T14:44:14Z"
+        "generated": "2024-06-14T14:09:14Z"
       },
       "baseos": {
-        "generated": "2024-06-11T14:44:41Z"
+        "generated": "2024-06-14T14:09:49Z"
       }
     }
   }
