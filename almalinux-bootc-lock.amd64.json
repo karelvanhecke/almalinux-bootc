@@ -974,29 +974,29 @@
       }
     },
     "kernel": {
-      "evra": "5.14.0-427.20.1.el9_4.x86_64",
-      "digest": "sha256:0ade9824f49c81b2e974d0b52f4506bba77d4a685f477ae5ab8245510b5b9627",
+      "evra": "5.14.0-427.22.1.el9_4.x86_64",
+      "digest": "sha256:dbc5518109945bd15606ce22393bb2919cb481b17d25b8e67b748bb58903a8a8",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-core": {
-      "evra": "5.14.0-427.20.1.el9_4.x86_64",
-      "digest": "sha256:e0a52225a03fa130bc43103c7937859335ae9ca9d79ae1fe7157d1a60a6d5c38",
+      "evra": "5.14.0-427.22.1.el9_4.x86_64",
+      "digest": "sha256:7c0604e8f18e311ad4b09f3037915cd056559db6f0f6f1a0594a927fb8545a50",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-modules": {
-      "evra": "5.14.0-427.20.1.el9_4.x86_64",
-      "digest": "sha256:d1f8aa1dcf70acb24c26890854a2313e46fc23daaa5e74d9b10cc88e436ec02c",
+      "evra": "5.14.0-427.22.1.el9_4.x86_64",
+      "digest": "sha256:5f7655e92449c8807227c5e1e152c1b6facb88e4f61ad5a9508fb87f62a2f03f",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-modules-core": {
-      "evra": "5.14.0-427.20.1.el9_4.x86_64",
-      "digest": "sha256:a579a2329082fe5910229f2add5aedef7d956af736b3509d738564c4362d07fd",
+      "evra": "5.14.0-427.22.1.el9_4.x86_64",
+      "digest": "sha256:80b17328ba4cd732eb1e08c947620c9f6a663a270dbeb1365fc4bc2b96864ffa",
       "metadata": {
         "sourcerpm": "kernel"
       }
@@ -2311,15 +2311,15 @@
       }
     },
     "python-unversioned-command": {
-      "evra": "3.9.18-3.el9.noarch",
-      "digest": "sha256:f6947f25f3e9031aa3ae98a5fbf0d29c632364ebf7906fa43be8fb694723269c",
+      "evra": "3.9.18-3.el9_4.1.noarch",
+      "digest": "sha256:9a6e6fe85c1bf82d97516b4b79184dca8e7bfa773926061af401ec530726cca2",
       "metadata": {
         "sourcerpm": "python3.9"
       }
     },
     "python3": {
-      "evra": "3.9.18-3.el9.x86_64",
-      "digest": "sha256:ef3600ac07bd7bd2091d3c461af23f309c398c39a87c77898ad1552c769b9ea6",
+      "evra": "3.9.18-3.el9_4.1.x86_64",
+      "digest": "sha256:814c549f809e3054f7ec2fa8333d7001f47c82902e5061cf2a1ec2cac4128560",
       "metadata": {
         "sourcerpm": "python3.9"
       }
@@ -2388,8 +2388,8 @@
       }
     },
     "python3-libs": {
-      "evra": "3.9.18-3.el9.x86_64",
-      "digest": "sha256:5f87a78282d3ce3cde7a3ebe2f10a60740eb2300c36b02472b96a361c8b39fac",
+      "evra": "3.9.18-3.el9_4.1.x86_64",
+      "digest": "sha256:2a564f2fb6b6b837587608c878b54b518cba2afee4c7e1fafa5dc14f6711f7d3",
       "metadata": {
         "sourcerpm": "python3.9"
       }
@@ -2584,15 +2584,15 @@
       }
     },
     "selinux-policy": {
-      "evra": "38.1.35-2.el9_4.noarch",
-      "digest": "sha256:7c4403814070cbd89e2d5ac6ae9cffd2e461697c362161cab1c99308087ebb45",
+      "evra": "38.1.35-2.el9_4.2.noarch",
+      "digest": "sha256:cab5cb69636e0d6b6e43c0c8060dde4f28d5b5a0951c4c9799157276d7070dd8",
       "metadata": {
         "sourcerpm": "selinux-policy"
       }
     },
     "selinux-policy-targeted": {
-      "evra": "38.1.35-2.el9_4.noarch",
-      "digest": "sha256:3eccd2b6d04480d0c106a2dabe1af4ce1d3585917e476d129f0cd00f19613de3",
+      "evra": "38.1.35-2.el9_4.2.noarch",
+      "digest": "sha256:32021ae207225f0bdb998e45c4ada1f776bfd26cf54eb7b149407716ad07b96d",
       "metadata": {
         "sourcerpm": "selinux-policy"
       }
@@ -2682,8 +2682,8 @@
       }
     },
     "sos": {
-      "evra": "4.7.0-1.el9.alma.1.noarch",
-      "digest": "sha256:44b1502dcfad95052b52df7c767607a2aca512adcdd670f728dfcc2917d19219",
+      "evra": "4.7.1-3.el9.alma.1.noarch",
+      "digest": "sha256:849fa779f03654375cee6b4a72ab5a7072a92791f86411f7d4038dd392b0ce1a",
       "metadata": {
         "sourcerpm": "sos"
       }
@@ -2963,13 +2963,13 @@
     }
   },
   "metadata": {
-    "generated": "2024-06-14T00:00:00Z",
+    "generated": "2024-06-26T00:00:00Z",
     "rpmmd_repos": {
       "appstream": {
-        "generated": "2024-06-14T14:09:14Z"
+        "generated": "2024-06-25T16:16:27Z"
       },
       "baseos": {
-        "generated": "2024-06-14T14:09:49Z"
+        "generated": "2024-06-25T16:17:01Z"
       }
     }
   }
