@@ -2080,22 +2080,22 @@
       }
     },
     "openssh": {
-      "evra": "8.7p1-38.el9.x86_64",
-      "digest": "sha256:cf3587e236b0a8297ca2f7219e1a8d9f77743927d89ef55acab7b0b123cd5fa5",
+      "evra": "8.7p1-38.el9.alma.2.x86_64",
+      "digest": "sha256:14dd8b3eb060bebe497f5d09747265fb8adbc6aa43bdb68190558be955215e9d",
       "metadata": {
         "sourcerpm": "openssh"
       }
     },
     "openssh-clients": {
-      "evra": "8.7p1-38.el9.x86_64",
-      "digest": "sha256:8cd04fb89fc7531f3bb9ce45e3f6c3cd0b43955a2282aa28a270c563fab61a74",
+      "evra": "8.7p1-38.el9.alma.2.x86_64",
+      "digest": "sha256:2aa43a051f41d35872279645ff8d8a1d2ec423fb6fa1d55d060c70f881af3f0a",
       "metadata": {
         "sourcerpm": "openssh"
       }
     },
     "openssh-server": {
-      "evra": "8.7p1-38.el9.x86_64",
-      "digest": "sha256:e518ff8dd852c21661c037668bd02e5207e74f7f6c31e16b4e0cb7e7916428e2",
+      "evra": "8.7p1-38.el9.alma.2.x86_64",
+      "digest": "sha256:be490eef57a6a7fe25c914f103a7cb146f5726bb1e804808536a2787cff08e69",
       "metadata": {
         "sourcerpm": "openssh"
       }
@@ -2963,13 +2963,13 @@
     }
   },
   "metadata": {
-    "generated": "2024-06-26T00:00:00Z",
+    "generated": "2024-07-02T00:00:00Z",
     "rpmmd_repos": {
       "appstream": {
-        "generated": "2024-06-25T16:16:27Z"
+        "generated": "2024-07-01T18:30:01Z"
       },
       "baseos": {
-        "generated": "2024-06-25T16:17:01Z"
+        "generated": "2024-07-01T18:30:31Z"
       }
     }
   }
