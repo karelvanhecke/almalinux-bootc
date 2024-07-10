@@ -2241,8 +2241,8 @@
       }
     },
     "podman": {
-      "evra": "4:4.9.4-4.el9_4.x86_64",
-      "digest": "sha256:403ac3175eb2958960029c3ff99e96f9ff320b6a56bdf9734abfd9dfd2913cd8",
+      "evra": "4:4.9.4-5.el9_4.x86_64",
+      "digest": "sha256:ba6ba807c9e03c790dc6aefa09b1b8ea13238d739ea42cdef6066983aa3db618",
       "metadata": {
         "sourcerpm": "podman"
       }
@@ -2963,13 +2963,13 @@
     }
   },
   "metadata": {
-    "generated": "2024-07-02T00:00:00Z",
+    "generated": "2024-07-10T00:00:00Z",
     "rpmmd_repos": {
       "appstream": {
-        "generated": "2024-07-01T18:30:01Z"
+        "generated": "2024-07-09T16:59:06Z"
       },
       "baseos": {
-        "generated": "2024-07-01T18:30:31Z"
+        "generated": "2024-07-09T16:59:37Z"
       }
     }
   }
