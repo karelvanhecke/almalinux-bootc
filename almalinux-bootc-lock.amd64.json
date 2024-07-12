@@ -974,29 +974,29 @@
       }
     },
     "kernel": {
-      "evra": "5.14.0-427.22.1.el9_4.x86_64",
-      "digest": "sha256:dbc5518109945bd15606ce22393bb2919cb481b17d25b8e67b748bb58903a8a8",
+      "evra": "5.14.0-427.24.1.el9_4.x86_64",
+      "digest": "sha256:5ef04f28571c79da8adfee3661b81813d1b68ea0bee7f86814231b395e995ef7",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-core": {
-      "evra": "5.14.0-427.22.1.el9_4.x86_64",
-      "digest": "sha256:7c0604e8f18e311ad4b09f3037915cd056559db6f0f6f1a0594a927fb8545a50",
+      "evra": "5.14.0-427.24.1.el9_4.x86_64",
+      "digest": "sha256:a9f4012d82fc2a9493b83399315658cdbf99914152e14b1d0dfb7170504c2e36",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-modules": {
-      "evra": "5.14.0-427.22.1.el9_4.x86_64",
-      "digest": "sha256:5f7655e92449c8807227c5e1e152c1b6facb88e4f61ad5a9508fb87f62a2f03f",
+      "evra": "5.14.0-427.24.1.el9_4.x86_64",
+      "digest": "sha256:ca08de6edf6ece2ba953f78c13f06e558e8e26f4f837e7ecdc0aa522a6fbe13a",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-modules-core": {
-      "evra": "5.14.0-427.22.1.el9_4.x86_64",
-      "digest": "sha256:80b17328ba4cd732eb1e08c947620c9f6a663a270dbeb1365fc4bc2b96864ffa",
+      "evra": "5.14.0-427.24.1.el9_4.x86_64",
+      "digest": "sha256:4d173f4bc15f86fb99e1577b3be314f921ee0c5383d79782d037f21fcf0e60e2",
       "metadata": {
         "sourcerpm": "kernel"
       }
@@ -2080,22 +2080,22 @@
       }
     },
     "openssh": {
-      "evra": "8.7p1-38.el9.alma.2.x86_64",
-      "digest": "sha256:14dd8b3eb060bebe497f5d09747265fb8adbc6aa43bdb68190558be955215e9d",
+      "evra": "8.7p1-38.el9_4.4.x86_64",
+      "digest": "sha256:c67a826764c6e5b2bb6721292f01316e853fc9276a400591269bc5734f2a1239",
       "metadata": {
         "sourcerpm": "openssh"
       }
     },
     "openssh-clients": {
-      "evra": "8.7p1-38.el9.alma.2.x86_64",
-      "digest": "sha256:2aa43a051f41d35872279645ff8d8a1d2ec423fb6fa1d55d060c70f881af3f0a",
+      "evra": "8.7p1-38.el9_4.4.x86_64",
+      "digest": "sha256:197053c566edde7d1bcf4df5121b229c555bd6746f6d54b1c51b5f75bb6b3f27",
       "metadata": {
         "sourcerpm": "openssh"
       }
     },
     "openssh-server": {
-      "evra": "8.7p1-38.el9.alma.2.x86_64",
-      "digest": "sha256:be490eef57a6a7fe25c914f103a7cb146f5726bb1e804808536a2787cff08e69",
+      "evra": "8.7p1-38.el9_4.4.x86_64",
+      "digest": "sha256:628524e5f95313b117d2684160cf5c8486183ea5b03c0af7437b6688530aeecd",
       "metadata": {
         "sourcerpm": "openssh"
       }
@@ -2647,8 +2647,8 @@
       }
     },
     "skopeo": {
-      "evra": "2:1.14.3-2.el9_4.x86_64",
-      "digest": "sha256:54d444395c81cb51cb3ebdb5985bd4fd3b5689743128132634515c496491aba8",
+      "evra": "2:1.14.3-3.el9_4.x86_64",
+      "digest": "sha256:5c878115959eaabae51aebd475d757e9dd51e5c411bbdd0e6d6b13cfb74289f4",
       "metadata": {
         "sourcerpm": "skopeo"
       }
@@ -2963,13 +2963,13 @@
     }
   },
   "metadata": {
-    "generated": "2024-07-10T00:00:00Z",
+    "generated": "2024-07-12T00:00:00Z",
     "rpmmd_repos": {
       "appstream": {
-        "generated": "2024-07-09T16:59:06Z"
+        "generated": "2024-07-12T07:54:11Z"
       },
       "baseos": {
-        "generated": "2024-07-09T16:59:37Z"
+        "generated": "2024-07-12T07:54:44Z"
       }
     }
   }
