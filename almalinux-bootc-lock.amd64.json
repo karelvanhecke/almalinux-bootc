@@ -2640,8 +2640,8 @@
       }
     },
     "shim-x64": {
-      "evra": "15.8-4.el9_3.alma.1.x86_64",
-      "digest": "sha256:190274ec5c3d10347c176cf70168fda177502feb1cf74aa61e1759596c481460",
+      "evra": "15.8-4.el9_3.alma.2.x86_64",
+      "digest": "sha256:fee38eaf16f1979fb9ab7969e682b14fdaf2919e5f0def6ce3f3a103f1675d01",
       "metadata": {
         "sourcerpm": "shim"
       }
@@ -2963,13 +2963,13 @@
     }
   },
   "metadata": {
-    "generated": "2024-07-26T00:00:00Z",
+    "generated": "2024-08-02T00:00:00Z",
     "rpmmd_repos": {
       "appstream": {
-        "generated": "2024-07-25T14:17:46Z"
+        "generated": "2024-07-31T16:49:01Z"
       },
       "baseos": {
-        "generated": "2024-07-25T14:18:23Z"
+        "generated": "2024-07-31T16:49:36Z"
       }
     }
   }
