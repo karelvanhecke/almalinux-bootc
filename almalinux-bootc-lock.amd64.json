@@ -974,29 +974,29 @@
       }
     },
     "kernel": {
-      "evra": "5.14.0-427.26.1.el9_4.x86_64",
-      "digest": "sha256:4f9cb222879bc64c06837a0a0a98e631128692f737ef2b67b5a74d8305040495",
+      "evra": "5.14.0-427.28.1.el9_4.x86_64",
+      "digest": "sha256:97b23fa5418f6039ed9b8bf89a13544534e0138325a1b1ac0d3227651b37e350",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-core": {
-      "evra": "5.14.0-427.26.1.el9_4.x86_64",
-      "digest": "sha256:40847814679d88f6c6eaabd3101c0ccd070193b40b2482ce29314d2a8e76e2b2",
+      "evra": "5.14.0-427.28.1.el9_4.x86_64",
+      "digest": "sha256:c4bfd654279f68bf880dca80f61788a265fe84625e80576662cb466d77032488",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-modules": {
-      "evra": "5.14.0-427.26.1.el9_4.x86_64",
-      "digest": "sha256:956cbcf39033c9749539b2703edc6fb3a6edc427ca1185213f72eab95dad97ac",
+      "evra": "5.14.0-427.28.1.el9_4.x86_64",
+      "digest": "sha256:324e4dea5b05c154432415c3800d13bf6dd425fcc853e23c5b97d6056f522faa",
       "metadata": {
         "sourcerpm": "kernel"
       }
     },
     "kernel-modules-core": {
-      "evra": "5.14.0-427.26.1.el9_4.x86_64",
-      "digest": "sha256:c27ac9a66a0c0a008ca891037497307cf59b0057e60ad0f963c9937e51d7b40b",
+      "evra": "5.14.0-427.28.1.el9_4.x86_64",
+      "digest": "sha256:896562a66217c14baf9fa73760929b3286539109ce2fe14627391c1ce61a9c05",
       "metadata": {
         "sourcerpm": "kernel"
       }
@@ -2640,8 +2640,8 @@
       }
     },
     "shim-x64": {
-      "evra": "15.8-4.el9_3.alma.1.x86_64",
-      "digest": "sha256:190274ec5c3d10347c176cf70168fda177502feb1cf74aa61e1759596c481460",
+      "evra": "15.8-4.el9_3.alma.2.x86_64",
+      "digest": "sha256:fee38eaf16f1979fb9ab7969e682b14fdaf2919e5f0def6ce3f3a103f1675d01",
       "metadata": {
         "sourcerpm": "shim"
       }
@@ -2963,13 +2963,13 @@
     }
   },
   "metadata": {
-    "generated": "2024-07-26T00:00:00Z",
+    "generated": "2024-08-04T00:00:00Z",
     "rpmmd_repos": {
       "appstream": {
-        "generated": "2024-07-25T14:17:46Z"
+        "generated": "2024-08-02T15:58:56Z"
       },
       "baseos": {
-        "generated": "2024-07-25T14:18:23Z"
+        "generated": "2024-08-02T15:59:36Z"
       }
     }
   }
